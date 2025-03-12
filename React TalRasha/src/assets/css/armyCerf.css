@@ -1,0 +1,52 @@
+#documentArmy {
+    background-image: url(../img/armyCerf/bg.png);
+    background-repeat: no-repeat;
+    width: 382px;
+    height: 512px;
+
+    font-family: NEWYORKSIXTY;
+    text-transform: uppercase;
+
+    position: absolute;
+    right: 10%;
+    top: 26%;
+}
+#documentArmy .status {
+    font-size: 24px;
+
+    position: relative;
+    left: 9em;
+    top: 8em;
+}
+#documentArmy .status .active {
+    color: #1b924d;
+}
+#documentArmy .status .retired {
+    color: #921b1b;
+}
+#documentArmy .info {
+    color: #9a8c6a;
+    font-size: 16px;
+}
+#documentArmy .info .name {
+    position: relative;
+    top: 15em;
+    left: 1.5em;
+}
+#documentArmy .info .date {
+    position: relative;
+    top: 13.7em;
+    left: 5.5em;
+    text-align: center;
+}
+#documentArmy .info .rank {
+    position: relative;
+    top: 15em;
+    left: 1.5em;
+}
+#documentArmy .info .id {
+    position: relative;
+    top: 13.7em;
+    left: 5.5em;
+    text-align: center;
+}

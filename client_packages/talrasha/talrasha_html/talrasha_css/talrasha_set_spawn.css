@@ -1,0 +1,403 @@
+
+#setspawn * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-transform: none;
+}
+
+@font-face {
+	font-family: TalRashaGirloy;
+	src: url(../talrasha_font/talrasha_gilroy/talrasha_gilroy.ttf)
+}
+
+@font-face {
+	font-family: TalRashaGeometria;
+	src: url(../talrasha_font/talrasha_geometria/Geometria.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+.talrashabgsetspawn {
+	position: absolute;
+	width: calc(1920px * var(--scale-coefficient));
+	height: calc(1080px * var(--scale-coefficient));
+	left: calc(-215px * var(--scale-coefficient));
+	top: calc(-157px * var(--scale-coefficient));
+	background: url(../talrasha_image/talrasha_selector_character/talrasha_bg_login.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0.01%, rgba(0, 0, 0, 0.6) 0.02%, rgba(0, 0, 0, 0.8) 100%);
+	z-index: -1;
+}
+
+#setspawn {
+	display: none;
+	justify-content: center;
+    align-items: center;
+    font-family: TalRashaTTRegular;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 77.604vw;
+    height: 39.896vw;
+}
+
+#setspawn.active {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+#setspawn .select {
+	position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 4.740vw;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    font-style: normal;
+	font-weight: 500;
+	font-size: calc(25px * var(--scale-coefficient));
+	line-height: 2.188vw;
+}
+
+#setspawn .select:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+#setspawn .select svg {
+	width: 1.042vw;
+    height: 0.573vw;
+}
+
+#setspawn .select svg.top {
+	 position: absolute;
+    top: 0;
+    right: 0.052vw;
+}
+
+#setspawn .select svg.bottom {
+	    position: absolute;
+    top: 0;
+    left: 0.052vw;
+}
+
+#setspawn .logot {
+    width: calc(79px * var(--scale-coefficient));
+    height: calc(85px * var(--scale-coefficient));
+    position: absolute;
+    top: .510vw;
+}
+
+#setspawn .blockSpawn {
+	cursor: pointer;
+	width: 20.208vw;
+    height: 27.813vw;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(151, 151, 151, 0.2) 100%);
+	/*backdrop-filter: blur(5px);*/
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: #ffffff;
+	position: relative;
+	margin-right: 2.083vw;
+	padding-bottom: 4.740vw;
+}
+
+#setspawn .blockSpawn2 {
+	cursor: pointer;
+	width: 20.208vw;
+    height: 27.813vw;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(151, 151, 151, 0.2) 100%);
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: #ffffff;
+	position: relative;
+	margin-right: 2.083vw;
+	padding-bottom: 4.740vw;
+}
+
+#setspawn .blockSpawn3 {
+	cursor: pointer;
+	width: 20.208vw;
+    height: 27.813vw;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(151, 151, 151, 0.2) 100%);
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: #ffffff;
+	position: relative;
+	padding-bottom: 4.740vw;
+}
+
+#setspawn .blockSpawn4 {
+	cursor: pointer;
+	width: 20.208vw;
+    height: 27.813vw;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(151, 151, 151, 0.2) 100%);
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: #ffffff;
+	position: relative;
+	padding-bottom: 4.740vw;
+}
+
+#setspawn .blockSpawn .icon {
+	width: 14.988vw;
+    height: 14.471vw;
+	position: relative;
+	z-index: 2
+}
+#setspawn .blockSpawn2 .icon {
+	width: 14.988vw;
+    height: 14.471vw;
+	position: relative;
+	z-index: 2
+}
+#setspawn .blockSpawn3 .icon {
+	width: 14.988vw;
+    height: 14.471vw;
+	position: relative;
+	z-index: 2
+}
+#setspawn .blockSpawn4 .icon {
+	width: 14.988vw;
+    height: 14.471vw;
+	position: relative;
+	z-index: 2
+}
+
+#setspawn .blockSpawn .title {
+	text-align: center;
+    position: relative;
+    z-index: 2;
+    font-style: normal;
+    font-weight: 500;
+    font-size:  20px;
+    line-height: 1.458vw;
+    color: #FFFFFF;
+    width: 100%;
+    padding-left: 1.042vw;
+}
+
+#setspawn .blockSpawn2 .title {
+	text-align: center;
+    position: relative;
+    z-index: 2;
+    font-style: normal;
+    font-weight: 500;
+    font-size:  1.250vw;
+    line-height: 1.458vw;
+    color: #FFFFFF;
+    width: 100%;
+    padding-left: 1.042vw;
+}
+
+#setspawn .blockSpawn3 .title {
+	text-align: center;
+    position: relative;
+    z-index: 2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.250vw;
+    line-height: 1.458vw;
+    color: #FFFFFF;
+    width: 100%;
+    padding-left: 1.042vw;
+}
+
+#setspawn .blockSpawn4 .title {
+	text-align: center;
+    position: relative;
+    z-index: 2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.250vw;
+    line-height: 1.250vw;
+    color: #FFFFFF;
+    width: 100%;
+    padding-left: 1.042vw;
+}
+
+#setspawn .blockSpawn .desc {
+	width: 100%;
+    font-style: normal;
+    /*font-weight: 600;*/
+    font-size: 15px;
+    line-height:1.094vw;
+    color: rgba(255, 255, 255, 0.75);
+    /*opacity: 0.5;*/
+    margin-top: 0.365vw;
+    padding-left: 1.042vw;
+	text-align: center;
+}
+
+#setspawn .blockSpawn2 .desc {
+	width: 100%;
+    font-style: normal;
+    /*font-weight: 600;*/
+    font-size: 15px;
+    line-height:1.094vw;
+    color: rgba(255, 255, 255, 0.75);
+    /*opacity: 0.5;*/
+    margin-top: 0.365vw;
+    padding-left: 1.042vw;
+	text-align: center;
+}
+
+#setspawn .blockSpawn3 .desc {
+	width: 100%;
+    font-style: normal;
+    /*font-weight: 600;*/
+    font-size: 15px;
+    line-height:1.094vw;
+    color: rgba(255, 255, 255, 0.75);
+    /*opacity: 0.5;*/
+    margin-top: 0.365vw;
+    padding-left: 1.042vw;
+	text-align: center;
+}
+
+#setspawn .blockSpawn4 .desc {
+	width: 100%;
+    font-style: normal;
+    /*font-weight: 600;*/
+    font-size: 15px;
+    line-height:1.094vw;
+    color: rgba(255, 255, 255, 0.75);
+    /*opacity: 0.5;*/
+    margin-top: 0.365vw;
+    padding-left: 1.042vw;
+	text-align: center;
+}
+
+/*#setspawn .blockSpawn:hover .cover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+#setspawn .blockSpawn2:hover .cover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+#setspawn .blockSpawn3:hover .cover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+#setspawn .blockSpawn4:hover .cover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+#setspawn .blockSpawn:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+#setspawn .blockSpawn2:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+#setspawn .blockSpawn3:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+#setspawn .blockSpawn4:hover {
+	background: rgba(255, 255, 255, 0.25);
+}*/
+
+#setspawn .blockSpawn .cover {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(32, 32, 32, 0.87);
+}
+
+#setspawn .blockSpawn2 .cover {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(32, 32, 32, 0.87);
+}
+
+#setspawn .blockSpawn3 .cover {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(32, 32, 32, 0.87);
+}
+
+#setspawn .blockSpawn4 .cover {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(32, 32, 32, 0.87);
+}

@@ -1,0 +1,38 @@
+body #documentGov {
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../talrasha_image/talrasha_document/talrasha_gov_bg.png);
+    background-repeat: no-repeat;
+    width: 536px;
+    height: 611px;
+    top: 50%;
+    transform: translate(130%, -50%);
+
+    font-family: NEWYORKSIXTY;
+    text-transform: uppercase;
+}
+body #documentGov .fName{
+    margin-top: 88%;
+    margin-left: -22%;
+    font-size: 11px;
+    color: white;
+    transform: translate(30%, 60%);
+}
+body #documentGov .sName{
+    margin-top: 1.8%;
+    margin-left: 14.6%;
+    font-size: 11px;
+    color: white;
+}
+body #documentGov .pos{
+    margin-top: 6.8%;
+    margin-left: 14.6%;
+    font-size: 11px;
+    color: white;
+}
+body #documentGov .id{
+    margin-top: -10.8%;
+    margin-left: 46.1%;
+    font-size: 11px;
+    color: white;
+}

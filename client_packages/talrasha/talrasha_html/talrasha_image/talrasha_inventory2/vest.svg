@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 38" width="30" height="38">
+	<defs>
+		<image width="30" height="38" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAmCAYAAADTGStiAAAFe0lEQVRYR7WYWYwURRjHf1XdsxyywhzLIgFcEBNCOCRRAeMVMaB4EOIRDaCAPvhmQI0aMBINahCPxCg+6IMkRDmNBm+QCCRGIV4IKpcxIi7M9HAGYae6PtPH7M7uzA4zoPXU6f5/9a/v/qoVXZeTnoVIC1o74SdrBSXf4h/5pAxb6YWbuQ5rr0drFctbFAfx82+VwqOPpcvNLELsDnz3h/C1Yy5D1KVYta4mYm1vQaksvvN1iHf9FlDXYHLPBGoU9ygndtL34csmyP8ZgVIjcfXdWPmnNmLVC8V6CrntsfwgNHOw+ecAv3viMgukJ2EZifWW1UacmYuiFT/3YYRPj0BzB9Z7oTqx0zQVv7ATjv4RmSo1GRuY2nu9JmIn9QCoPL73fn3EgY/xN2CObI18nLwZ0cPqI+YYfn5NfcQ6/SQOX1LwvgkFE03jEJmGyS2qSePw4GojJrulPUa0mo71FpfKlweXTi/EtR/QdmRHO1Cn5ofPltXAscoH0H3QMg1IYr0lgIlwzcPQhRnY/LNViFODcPWDmIYlcPBUJwIncy9i+4Nqj8zOBxAHpY7ie+90OZiLm1mIkffA+7VyVOvUPBTH8fNvR4DMRYACcwoSBuxgEqp3RY2VPU0bcQrqPhEm1xrayUndFdUCL0ipcJWYOs5Xk1sMzQ1ofxYQbCAR1PqgznSvMRpsT4grXlHGNqyA1iyB75V8RMHb1plYpx6O8i+/Ejd9A6hrMebVoPTUFFSVQC6PILIf31uOk7kVkVFxPpdorFNP47KGtvxOaBqAlhkgZzo0rps+sOYFWL0OsnugXwuuO5vQohSKptbo1EKsXgm53zoo0iNAdN2UkRclDqbYVcXA5SXInSglXoBVa8D7JZQLuozYS86NtCglf+Mf+SxqDskhuM5cjFoK2ZNdiFkL+V24qatAT8bYVaDaO0rdh3DVPVGny6+FfhfjunOqEzckR2GdOxG2gX/uxMoZD3yFyW2qjTjK4YG4dlTnlKtLZ8E4+yG7N5KqReMQeGEKt2FMXVRdwYbdkDsYvW4ajiszMRWDK/Zx0EMj//x8HukESo/u6HSZRhIykoIXDAh+MbhUlE5xVLvJq8G5EeMshzPn7uMgb8Xuws+v6mqMjpKpU09h7fL2ASCRmoCvx4DtA7reXA5y9yRa9mK8jRFp3yTafQjrPR+XzP7NOP4UlBqGDSvVcZRqQ8k+TNuPcMI7Nz8n++I64xA7FAkbSyNa9UT4C99+Gph4XqiRI1sQLkRUD5AeCM0g/VHONvzsx3WRu+lJ4WRpJYuSVtCnUbYQtU2uBGlQBI1fy0ZMPhpHO624vgp78HMraiJ30tNRaiyGdzuX31i6ITkao6cqdOYxtHyP8TZU3jjTSNBlSlpa9wcotlbnDTh0uCIuqIqW8TUQh5PmTaAnnHXu0ukFKNmNnw9GpMqrLmKa+uDKoxi9DA4fqmoZo96EbDB5/BfEQKCNZV179yrbNjkErWZje78IB7q/dXRonH4cLd9h8l9UCR6NTj+BVWsrBkwoWCR2Xg7a3tk1Di9pbMfPra9C7MTEqyG3uzIuNTi6I+lXgkZ/dmIGNIE5XRUM/wfxoF5woNAxgHdz1tDHQS0vHY1KsUWNey4tm8lLYWEpZqIKx05ka/d5HEsFOG1XR8NgpdV3KG7i/q734DJkInM5vkxROOmZKDUckd+RYI6WhvJttUbTiDnzWve1O9OItvNBnwIbX19Kd1KF8LIgMhSl9kXdyU1NBD0FkZ/QEjfuTkJCQe06SxwALT1JnBgNEv3GKF1Wp1FcAbIZ423uaIuhydmEyUXX07I1sAe09a0+CjnH4NDpiuKJzFiE24vVr4M4GPCMvq1KSp3vJ4WjPi/+ovgXczFhtIx7eggAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Инвентарь персонаж">
+		<g id="Man">
+			<g id="Иконки">
+				<use id="vest" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+			</g>
+		</g>
+	</g>
+</svg>

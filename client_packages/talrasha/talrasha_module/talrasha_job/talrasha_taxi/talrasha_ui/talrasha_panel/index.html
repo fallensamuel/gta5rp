@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="app">
+            <div v-if="taxiPage === true">
+                <div v-if="taxiPrincipalPage === 'D'" class="taxiMenu center1">
+                    <div class="main">
+                        <div class="menu">
+                            <div class="title-menu">Меню</div>
+                            <a @click="taxiSecondPage = 'A'; taxiMenuPage.Menu1 = true; taxiMenuPage.Menu2 = false; taxiMenuPage.Menu3 = false; taxiMenuPage.Menu4 = false; taxiMenuPage.Menu5 = false;">
+                                <div class="item" v-bind:class="{ selected: taxiMenuPage.Menu1 }">Статистика</div>
+                            </a>
+                            <a @click="taxiSecondPage = 'B'; taxiMenuPage.Menu2 = true; taxiMenuPage.Menu1 = false; taxiMenuPage.Menu3 = false; taxiMenuPage.Menu4 = false; taxiMenuPage.Menu5 = false;">
+                                <div class="item" v-bind:class="{ selected: taxiMenuPage.Menu2 }">Мой заказ</div>
+                            </a>
+                            <a @click="taxiSecondPage = 'C'; taxiMenuPage.Menu3 = true; taxiMenuPage.Menu1 = false; taxiMenuPage.Menu2 = false; taxiMenuPage.Menu4 = false; taxiMenuPage.Menu5 = false;">
+                                <div class="item" v-bind:class="{ selected: taxiMenuPage.Menu3 }">
+                                    Вызовы
+                                    <div class="red">{{ taxiStats.Count }}</div>
+                                </div>
+                            </a>
+                            <a @click="taxiSecondPage = 'D'; taxiMenuPage.Menu4 = true; taxiMenuPage.Menu1 = false; taxiMenuPage.Menu2 = false; taxiMenuPage.Menu3 = false; taxiMenuPage.Menu5 = false;">
+                                <div class="item" v-bind:class="{ selected: taxiMenuPage.Menu4 }">Настройки</div>
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div v-if="taxiSecondPage === 'A'" class="">
+                                <table class="stats" style="padding-top: 24px;">
+                                    <tbody>
+									<div class="headerfix">Статистика</div>
+                                        <tr>
+                                            <td>
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                                                    <image id="Группа_2" data-name="Группа 2" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE/0lEQVRYhbVXW2xVRRRd8zjntqW0VWxD5WERYjG3EpJSDYJNIBojUaPxERCaqkSp4WFq+PAREj5EEhLph8b6IGmU8MOHEvXHxGAi8EMhJvUDrVAUaWtaW6Hve+6ZGbPn3N5Hz73tbdqurzNz9uy198yevfewaPQFEETBracANAOoA1CMEAwABmM4jAGEUDCGWSHGDJSSYNDg3EBbyawYAdAO4PjQ4vj3lreiIkrk7wNoBbAKgJu+0mgDzgrBmAeAg3MFITS0FmAJFjJKSt+ONRmpDRyHJwzOsMNNcLwU8YQTi+izbF3tY08C+C6buYHX5BWDUsJ6mg/ILqUDWcE4TO51T0sAb4VpjdXCDQcYh9Ymb/JJs8noSV10UjmWN5MBG0LT5IVhgSHZF84KATlDFmUb6KAWp9FaT1muEJoTjDXEZKpezDP3LhXZCwGKBaYz9ScN0MZACGfByAMwCMmhVeoorAFaaQjmQYfPaE64Z+UyKEXOpbRQQHPpQWudMoDzMnApoUl6nrDt8S349us2tH1+DBXli6ASXmutIAVd6TsCAyjWhRxAPO6Asfk5/0e3bsbRI+/Y77q69di8sT6RmGA54p5rOSkqJcW877vgTIcUzQa0pa4rUV//CD489l5y5dmffsYPP55Hum+MayifQzABTjlcCn/OXkciEdREo2hJI790uQNvH2rBxMQwfD8zvqR0EdceZJCmQvosTFB/cv1Oc4mhrnYdWj8+mpzq+PUKdu85mC4ShtbgjhuD78vQP8oHlUvL8dwz2+BGimBM7hsSranOIL/y21Xsenl/SC4dvh+H4xZAas1DeZ7iYs3q5Wj74jhKS0tRVlKIL0+egTLhW7Lm3iqcPNGSHF/r+gs7G/eBMR6STQcFI8VNTqma6FpLTnjzwB7saHgWbIr4ihV349RXH0EIYcfd3b14cecbUCr/gBaVy1cdDnYhNUmfv3deR2lJCR6oWWvnNj1Ui5s3e9H5R5cdV1ZW4PSpVhQVFdpxT08PXt97CIOD/+V1nY3NvAJiSfn9hx3Xs03FVJy7cBErllWi+r7V9s/WLZtw7vxFjIyM4pvTJ1BaGtSx/v4BPL+9Cf8ODGYPtiyQ0kHcGwerWf+EkW4MWomQFMWd0RqfffIBHt74oJ3zfR+3bg/hriV32vHQ0DB2NDajt6cHvu/NePbJrRcSnhcD58KH8rMXIfJGSIHdTe+i/XKHnZNSJslHx8axfdde3Pz7BpTy8ya3jsQ9OI4IUrGUMegsR4DEWbkOx2tNB9HZeS0573lx7Grcj+6ef0JrZoIxGtKJUBoApys3PlYMx/GmXUYXteHVAxgeHrPjhlf2oev6jZBcPiDyifEhK0lNqaGtM5iA0e70QcSAivJylBQvwtWuP0O/8wHlHDfCMDpCnbSGRGJLYAoApnJ39Ilt6O/vQ1/fNDIzgHY8Nq4hE8k3dfBMg+fRjs2lZTOTNSEtWDMiT/Ogg12orpC2X0/J5mTAcFIg2bXOvwlWowlVxREy4NJUYVv5che/WSOlLuRYOxnQElLIUn2AEAyc82nLcWg5SzhBz9Sw1+loEYXVKzvpoQigPpuEUgzxuILjyKCj5QmDKIukXqfgtiIGryki51za+jLNk+7I2G35qSirqgK9UiOe+AXAUgAV6S9km44FvXJJafDopM42IEzIcG5TMXkbvAmDZ1gW8lEAF6jCEzkA/A9P9uG5oWXoPgAAAABJRU5ErkJggg=="/>
+                                                </svg>
+                                            </td>
+                                            <td>Выполнено</td>
+                                            <td class="orders">{{ taxiStats.Routes }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                                                    <image id="Прямоугольник_6_копия" data-name="Прямоугольник 6 копия" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADcklEQVRYhcWXW0wUVxjHfzOzW4spiKbtLos3soJWbKmyGC8VowR7QaLBxDa+Nk03trWxaE1fTNPUS7w+ab0lRl9MTEwJa3jQQtIITRoQWRVSC2SprYmrhYpQIO7OTHNGWLIONGd3RX7JZud8Z875/+fMdy6jvFVYyjDlwHagCHiFiaEfaASOAJeFgubyeMX/98APQA7w0gSJM9y30NgCOIE6YWD9sPiLphhoVoGvJkF8hO3CgM8WfnH4hIH0ZOWmTk2zfimQ7kildU31eTRNZdWaCkCx1cugJis+P8/L9MxpZKSnk78w11Yvi1gHTPnbTfIX5rGzciuLC/Ljam63tXHw8Blagrdtrf6PhAxkuV1crjqLwzH+m9v04ad0dIZs8fGQfgWKorPts09i4uHwQ3Z88x2fb9tN8Oao4Knj+1BV+XwY/1GeQdOmsHLF27HgoSOnuFrbgKZFaLx+nYafA5bw1dprqKqGYURtfYyFtAGn0xE35ebmeDBMMKNODOMJH/v9dP89xN2/wijIp5VYir+1RcdA13U2lr9LRsbTfWqpbzEet5uenm7CD7oJ339E7+P+hCejtAGGR2H5ssJYecECLxUb36eosICoodPeLp98SRloudnGnNkzyZ2XExf3eFyUrHmHFct91P/SzMDAv7a245GQAUFtXT2h0F1mzJiOJ8sVV+d2vcbqVT4uVdWg63J5kJABRVFQFJX2zi6qA1e4Vv8rTyIR8t+Yb9UJMjOn8UfXn9zp6JLKh4SWYsMwyJs3hyzXq1a5te139h84xuYtfh739cXue3NRLoZhaz4m0gZKS4r58eJpLl44ydeVfgxz9PnaO0L09PTGykNDUTTN1sWYSBuIRHS83rnWdcnaYsrL1qKqKg6nTtl766zkHKE52AqmXA5I7wWRKJw7vZeiotHzy71799ENndmzsmOxzs4Qmz7yY0oakB4Bh2ZSuWsPwVutsVh2tjtO/Lc7Hfi/2C0tLkhoNxRLr2GYVGxYx7KlSyj7oMSKB2p+oqmpharqK7Y2z9XAswSbngoW+EqTPhElfyRTFP551IumqtYuKDvtbN2kMgJpaS9bC9DAwKCtThYxAn3JnowHB4dssQTpF7OgKdVeUqBRGDg6iQaOCgMBYM8kiAvNwMjXcR1wQ+yowOsT+IUsDgoNwJfACYD/AEdeBYswkH6sAAAAAElFTkSuQmCC"/>
+                                                </svg>
+                                            </td>
+                                            <td>Доход</td>
+                                            <td class="pay" v-bind:style="{ fontSize: taxiCSSstyle.payFontStyle + 'em' }">{{ taxiStats.MoneyString }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div v-if="taxiSecondPage === 'B'" class="">
+                                <div v-if="taxiOrder.true === true">
+                                    <div class="headerfix">Мой заказ</div>
+                                    <div class="info_about">
+                                        <div class="bold">Сумма поездки: {{ taxiOrder.Price }}$</div><br>
+                                        <div class="bold">Время поездки: {{ taxiOrder.TimeOfRouteString }}</div><br>
+										<br>
+                                    </div>
+                                    <button @click="EndOrder();" class="buttonOk" style="width: 145px;position: absolute;margin: auto;left: 56%;">Отменить заказ</button>
+                                </div>
+                                <div v-else-if="taxiOrder.true === false">
+                                    <div class="headerfix">Заказов нет</div>
+                                </div>
+                            </div>
+                            <div v-if="taxiSecondPage === 'C'" class="">
+                                <div class="headerfix">Заказы</div>
+                                <div class="info">
+                                    <svg @click="updateList();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M 2 2 L 4.9394531 4.9394531 C 3.1262684 6.7482143 2 9.2427079 2 12 C 2 17.514 6.486 22 12 22 C 17.514 22 22 17.514 22 12 C 22 6.486 17.514 2 12 2 L 12 4 C 16.411 4 20 7.589 20 12 C 20 16.411 16.411 20 12 20 C 7.589 20 4 16.411 4 12 C 4 9.7940092 4.9004767 7.7972757 6.3496094 6.3496094 L 9 9 L 9 2 L 2 2 z"></path>
+                                    </svg>
+                                </div>
+                                <div class="scroll">
+                                    <div class="" v-for="(data, index) in taxi" :key="data.id">
+                                        <div @click="deleteOrder(data.Name, data, index);" class="talrasha">Заблокировать</div>
+                                        <table class="order">
+                                            <tbody style="position: relative; right: 7%">
+                                                <tr>
+                                                    <td>Расстояние: {{ data.Distance }}</td>
+                                                </tr>
+                                                <tr class="centertext">
+                                                    <td @click="taxiSecondPage = 'B';taxiMenuPage.Menu2 = true; taxiMenuPage.Menu1 = false; taxiMenuPage.Menu3 = false; select(data.Name, data, index);" class="accept"><button>Принять</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div v-if="taxiSecondPage === 'D'" class="">
+                                <div class="headerfix">Настройки</div>
+                                <div class="endJob">
+                                    <div class="b">Хотите завершить рабочий день?</div>
+                                    <button @click="EndJob()">Завершить</button>
+                                </div>
+                                <div class="endJob" style="margin-top: 1em;">
+                                    <div class="b">Сбрасывает черный список.</div>
+                                    <button @click="resetOrders();">Сбросить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="vue.js"></script>
+    </body>
+</html>

@@ -1,0 +1,320 @@
+.bankMain{
+    width: calc(100vw);
+    height: calc(100vh);
+    top: calc(0vh);
+    position: relative;
+    left: calc(0vw);
+    font-family: TalRashaTTRegular;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 99999999;
+}
+
+.bankMain .talrashabgatm {
+	width: calc(1920px * var(--scale-coefficient));
+	height: calc(1080px * var(--scale-coefficient));
+	background: url(../img/hud/talrasha_bg_shadow.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0.01%, rgba(0, 0, 0, 0.6) 0.02%, rgba(0, 0, 0, 0.8) 100%);
+	z-index: -1;
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../fonts/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../fonts/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+
+.bankMain .menuBox{
+    width: 100%;
+    height: calc( 100vh - 10px );
+}
+
+.bankMain .headBank{
+    width: calc(1800px * var(--scale-coefficient));
+    height: calc(156px * var(--scale-coefficient));
+    left: 52%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: calc(0px * var(--scale-coefficient));
+}
+
+
+.bankMain .headBank .menuName{
+    font-size: calc(22px * var(--scale-coefficient));
+    color: rgba(255, 255, 255, 0.35);
+    position: relative;
+	display: flex;
+    top: 65%;
+    left: 25%;
+	width: calc(240px * var(--scale-coefficient));
+}
+
+.bankMain .headBank .menuName:hover{
+	color: #FFFFFF;
+}
+
+.bankMain .headBank .menuName .talrashabalance{
+    font-size: calc(22px * var(--scale-coefficient));
+    color: #FFFFFF;
+}
+
+.bankMain .headBank .headBLineClear{
+    background-color: #FFFFFF;
+    height: 5px;
+    clear: both;
+}
+
+.bankMain .menuBox .activeMenu{
+    float: right;
+}
+.bankMain .menuBox .activeMenu{
+    margin-left: 35px;
+    margin-top: 55px;
+    width:  calc( ((100vw - 1280px)/(1920 - 1280) * (1280 - 900) + 900px) - ((100vw - 1280px)/(1920 - 1280) * (160 - 100) + 100px) - 35px );
+}
+
+.activeMenu .iconPlayer, .activeMenu .cardInfo{
+    float: left;
+}
+
+  
+
+.bankMain .buttonsBlock{
+    width: 100%;
+}
+
+.bankMain .buttonsBlock .leftBtn, .bankMain .infoMoney .balanceInfo{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.activeMenu .buttonsBlock .leftBtn .btn, 
+.activeMenu .balanceInfo .btn
+{
+    border-radius: calc(10px * var(--scale-coefficient));
+    width: calc(359px * var(--scale-coefficient));
+    height: calc(289px * var(--scale-coefficient));
+	background: rgba(255, 255, 255, 0.1);
+    font-size: calc(20px * var(--scale-coefficient));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: calc(28px * var(--scale-coefficient));
+	color: #FFFFFF;
+	margin: calc(14px * var(--scale-coefficient)) calc(14px * var(--scale-coefficient));
+}
+
+.activeMenu .leftBtn .btn:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+}
+
+.activeMenu .balanceInfo .btntalrasha
+{
+    font-size: calc(20px * var(--scale-coefficient));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    margin-bottom: calc(28px * var(--scale-coefficient));
+	color: #FFFFFF;
+	margin: calc(14px * var(--scale-coefficient)) calc(14px * var(--scale-coefficient));
+}
+
+.activeMenu .balanceInfo .btntalrasha:hover
+{
+	background: rgba(255, 255, 255, 0.25);
+}
+  
+.bankMain .activeMenu .rightBtn{
+    position: absolute;
+    right: 0;
+    bottom: calc(90px * var(--scale-coefficient));
+}
+
+.activeMenu .rightBtn .btn{
+    color: #FFFFFF;
+    font-size: calc(20px * var(--scale-coefficient));
+    border-radius: calc(10px * var(--scale-coefficient)) 0 0 calc(10px * var(--scale-coefficient));
+	background: rgba(255, 255, 255, 0.1);
+    width: calc(532px * var(--scale-coefficient));
+    height: calc(124px * var(--scale-coefficient));
+    display: flex;
+    align-items: center;
+    padding-left: calc(45px * var(--scale-coefficient));
+    border-right: unset;
+    box-sizing: border-box;
+}
+
+.activeMenu .rightBtn .btn:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+}
+
+.activeMenu .rightBtn .btn:nth-child(2) {
+    margin-top: calc(18px * var(--scale-coefficient));
+}
+
+.bankMain .infoMoney .balanceInfo, 
+.bankMain .withdrawMoney .balanceInfo,
+.bankMain .transferMoney .balanceInfo
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bankMain .withdrawOther .balanceInfo
+{
+    position: absolute;
+    top: 34.7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bankMain .infoMoney .balanceInfo div,
+.bankMain .transferMoney .balanceInfo div,
+.bankMain .withdrawOther .balanceInfo div
+{
+    margin: 0 auto;
+    text-align: center;
+}
+.bankMain .infoMoney .balanceInfo .balanceInfoHead{
+    margin-bottom: calc(45px * var(--scale-coefficient))
+}
+
+.bankMain .infoMoney .balanceInfo .balanceInfoHead, 
+.bankMain .transferMoney .balanceInfo .balanceInfoHead,
+.bankMain .withdrawMoney .balanceInfo .balanceInfoHead,
+.bankMain .withdrawOther .balanceInfo .balanceInfoHead
+{
+    border-radius: calc(10px * var(--scale-coefficient));
+    width: calc(645px * var(--scale-coefficient));
+    height: calc(120px * var(--scale-coefficient));
+    background: rgba(255, 255, 255, 0.1);
+    font-size: calc(22px * var(--scale-coefficient));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+	color: #FFFFFF;
+}
+
+  
+ .bankMain .withdrawMoney .balanceInfo .balanceInfoHelp,
+ .bankMain .withdrawOther .balanceInfo .balanceInfoHelp,
+ .bankMain .transferMoney .balanceInfo .balanceInfoHelp
+ {
+    font-size: calc(24px * var(--scale-coefficient));
+    text-align: center;
+    margin-top: calc(17px * var(--scale-coefficient));
+    margin-bottom: calc(40px * var(--scale-coefficient));
+    font-weight: 200;
+	color: #FFFFFF
+ }
+
+.bankMain .withdrawOther .balanceInfo .OtherWithdHelp,
+.bankMain .transferMoney .balanceInfo .OtherWithdHelp{
+    font-size: calc(24px * var(--scale-coefficient));
+    text-align: center;
+    margin-top: calc(40px * var(--scale-coefficient));
+    margin-bottom: calc(40px * var(--scale-coefficient));
+    font-weight: 200;
+	color: #FFFFFF;
+}
+
+
+.bankMain .infoMoney .balanceInfo .balanceInfoInAccount, 
+.bankMain .infoMoney .balanceInfo .balanceInfoSum
+{
+    width: calc( (100vw - 1280px)/(1920 - 1280) * (550 - 400) + 400px);
+    padding:  0 15px;
+    font-size: calc( (100vw - 1280px)/(1920 - 1280) * (48 - 35) + 35px);
+    color: #FFFFFF;
+}
+
+
+.bankMain .withdrawMoney .balanceInfo .rowWithdraw{
+	display: flex;
+    flex-wrap: wrap;
+	width: calc(890px * var(--scale-coefficient));
+} 
+
+.bankMain .withdrawMoney .balanceInfoHead,
+.bankMain .withdrawMoney
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bankMain .withdrawMoney .right{
+    margin-left: calc(20px * var(--scale-coefficient));
+}
+  
+
+.bankMain .withdrawMoney .btn{
+    border-radius:  calc(10px * var(--scale-coefficient));
+    width: calc(267px * var(--scale-coefficient));
+    height: calc(267px * var(--scale-coefficient));
+    border: none;
+    margin-bottom: calc(10px * var(--scale-coefficient));
+    font-size: calc(20px * var(--scale-coefficient));
+}
+
+.bankMain .withdrawMoney .btn:hover{
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+}
+
+.withdrawOther input,
+.transferMoney input{
+    width: calc(380px * var(--scale-coefficient));
+    height: calc(55px * var(--scale-coefficient));
+    background: rgba(255, 255, 255, 0.1);
+    font-size: calc(16px * var(--scale-coefficient));
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: calc(23px * var(--scale-coefficient));
+	color: #FFFFFF;
+	border: rgba(255, 255, 255, 0.1);
+}
+
+.withdrawOther input:hover{
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    outline: 0;
+    box-shadow: 0 0 9px rgb(255 255 255 / 25%);
+}
+
+.withdrawOther input:focus{
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    outline: 0;
+    box-shadow: 0 0 9px rgb(255 255 255 / 25%);
+}
+
+.bankMain .withdrawOther .withdrawBtn,
+.bankMain .transferMoney .sendMoneyBtn{
+    width: calc(190px * var(--scale-coefficient));
+    height: calc(52px * var(--scale-coefficient));
+    border: unset;
+	font-size: calc(16px * var(--scale-coefficient));
+}
+
+  

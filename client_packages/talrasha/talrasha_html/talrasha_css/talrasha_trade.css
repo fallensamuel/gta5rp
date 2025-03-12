@@ -1,0 +1,241 @@
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+#trade .trade-container {
+    color: #fff;
+    font-family: Montserrat;
+    position: absolute;
+    right: 22vh;
+    text-transform: uppercase;
+    top: 18vh;
+}
+
+#trade .trade-container p {
+    color: #fff;
+}
+
+#trade .trade-container .block {
+    height: 35vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#trade .trade-container .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#trade .trade-container .buttons button {
+    padding: 0.5vh;
+    margin: 0;
+    text-transform: uppercase;
+	font-family: TalRashaTTRegular;
+}
+
+#trade .trade-container .buttons .chat-header {
+    font-weight: bold;
+    margin: 0;
+    padding: 1vh 0;
+    text-align: center;
+}
+
+#trade .trade-container .items {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    opacity: 0.9;
+    margin: 1vh auto;
+    margin-top: 0.5vh;
+}
+
+#trade .trade-container .items .column {
+    background: #222;
+    /*border-bottom: 1px solid #5c5c5d;
+      border-right: 1px solid #5c5c5d;*/
+    display: flex;
+}
+
+#trade .trade-container .items .filled {
+    background: #000;
+}
+
+#trade .trade-container .items .item {
+    height: 3vh;
+    width: 3vh;
+}
+
+#trade .trade-container .container .header {
+    background: #000;
+    margin: 0;
+    padding: 1vh;
+    text-align: center;
+	font-family: TalRashaTTRegular;
+}
+
+#trade .trade-container .container .header .name {
+    color: #06ca5a;
+	font-family: TalRashaTTRegular;
+}
+
+#trade .trade-container .item {
+    background-image: url("../talrasha_image/talrasha_item/1.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4vh;
+    margin: auto;
+    width: 4vh;
+}
+
+#trade .trade-container .item_name {
+    background: #000;
+    border-right: 2px solid #196;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5vh;
+    position: absolute;
+}
+
+#trade .trade-container .myItems {}
+
+#trade .trade-container .recipientItems {}
+
+#trade .trade-container .trade_chat {
+    background: #000;
+    padding: 1vh 0;
+}
+
+#trade .trade-container .trade_chat input[type="text"] {
+    background: #222;
+    border: none;
+    color: #fff;
+    padding: 0.5vh;
+    margin: 0 2%;
+    width: 96%;
+}
+
+#trade .trade-container .trade_chat input[type="text"]:focus {
+    outline: none;
+}
+
+#trade .trade-container .trade_chat input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+#trade .trade-container .trade_chat .bg {
+    background: #111;
+}
+
+#trade .trade-container .trade_chat .message {
+    font-weight: bold;
+    padding: 2% 3%;
+    text-transform: none;
+    word-break: break-word;
+}
+
+#trade .trade-container .trade_chat .messages {
+    height: 10vh;
+    margin-bottom: 1vh;
+}
+
+#trade .trade-container .trade_items {
+    padding-bottom: 1vh;
+}
+
+#trade .trade-container .trade_items .table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: auto;
+}
+
+#trade .trade-container .trade_items .column {
+    width: 7.8vh;
+    height: 7.8vh;
+    border-radius: calc(10px * var(--scale-coefficient));
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.45) 0%, rgba(151, 151, 151, 0.45) 100%);
+    display: grid;
+    border: 1px solid transparent;
+    margin: 3px;
+}
+
+#trade .trade-container .trade_items .header {
+    font-size: 1.4vh;
+    font-weight: bold;
+    padding: 0.5vh;
+    text-align: center;
+	font-family: TalRashaTTRegular;
+}
+
+#trade .trade-container .trade_items .items {
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: auto;
+    margin-top: 1vh;
+}
+
+#trade .trade-container ::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    border-color: #196;
+    background-color: #196;
+}
+
+#trade .trade-container .name_Item {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  bottom: -50px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: TalRashaTTRegular;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 12px;
+  pointer-events: none;
+  text-transform: none;
+}
+
+#trade .trade-container .talrashakg {
+  position: relative;
+  top: -33px;
+  right: -9px;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: TalRashaTTRegular;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  pointer-events: none;
+  text-transform: none;
+}
+
+#trade .trade-container .talrashavalues {
+  position: relative;
+  top: -36px;
+  right: -8px;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: TalRashaTTRegular;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  pointer-events: none;
+  text-transform: none;
+}

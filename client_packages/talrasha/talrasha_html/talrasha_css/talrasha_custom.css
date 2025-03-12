@@ -1,0 +1,856 @@
+#castomMenu *, #castomMenu *:before, #castomMenu *:after {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+
+#castomMenu .talrashabgcastom {
+	background: url(../talrasha_image/talrasha_selector_character/talrasha_bg_shadow.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.45) 100%);
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	display: none;
+}
+
+#castomMenu .customizer-wrapper {
+	height: 100vh;
+	width: 100vw;
+	font-family: TalRashaTTRegular;
+	/*display: flex;*/
+	display: none;
+	overflow: hidden;
+}
+
+	#castomMenu .customizer-wrapper .customizer {
+		transform-origin: left top;
+	}
+
+		#castomMenu .customizer-wrapper .customizer .container {
+			margin-top: 50px;
+			margin-left: 50px;
+			min-width: 386px;
+			width: 386px;
+			max-width: 400px;
+			max-height: 910px;
+			background: rgba(255, 255, 255, 0.1);
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+			position: relative;
+		}
+
+			#castomMenu .customizer-wrapper .customizer .container > *:not(.menu) {
+				display: flex;
+				height: fit-content;
+				overflow: hidden;
+				overflow-y: auto;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				width: 100%;
+				min-height: fit-content;
+			}
+
+			#castomMenu .customizer-wrapper .customizer .container .menu {
+				min-height: fit-content;
+			}
+
+				#castomMenu .customizer-wrapper .customizer .container .menu .items {
+					display: flex;
+					flex-wrap: nowrap;
+					justify-content: space-between;
+					align-items: center;
+					list-style: none;
+					margin: 0;
+					padding: 15px 26px 15px;
+					background: rgba(255, 255, 255, 0.1);
+					min-height: fit-content;
+				}
+
+					#castomMenu .customizer-wrapper .customizer .container .menu .items .item {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						cursor: pointer;
+					}
+
+						#castomMenu .customizer-wrapper .customizer .container .menu .items .item .icon {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							height: 40px;
+						}
+
+							#castomMenu .customizer-wrapper .customizer .container .menu .items .item .icon svg {
+								height: 100%;
+								width: 100%;
+							}
+
+								#castomMenu .customizer-wrapper .customizer .container .menu .items .item .icon svg path {
+									fill: #8f8f8f;
+									transition: 0.15s linear;
+								}
+
+						#castomMenu .customizer-wrapper .customizer .container .menu .items .item:hover .icon svg path {
+							fill: #b5b5b5;
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .menu .items .item.active .icon svg path {
+							fill: #b5b5b5;
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .menu .items .item.character .icon {
+							height: 40px;
+						}
+
+			#castomMenu .customizer-wrapper .customizer .container .container-body {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				align-items: center;
+				padding: 30px 66px;
+				max-height: 100%;
+			}
+
+				#castomMenu .customizer-wrapper .customizer .container .container-body .header {
+					font-size: 20px;
+					line-height: 1;
+					font-weight: 500;
+					color: rgba(255, 255, 255, 0.75);
+					text-align: center;
+					position: relative;
+					margin-bottom: 25px;
+					width: 100%;
+				}
+
+				#castomMenu .customizer-wrapper .customizer .container .container-body .content {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+				}
+
+					#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms {
+						display: flex;
+						flex-direction: column;
+						flex-wrap: nowrap;
+						width: 100%;
+					}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms .form-group {
+							display: flex;
+							flex-wrap: nowrap;
+							justify-content: center;
+							align-items: center;
+							width: 100%;
+							position: relative;
+							margin: 15px 0;
+						}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms .form-group:first-child {
+								margin-top: 0;
+							}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms .form-group:last-child {
+								margin-bottom: 0;
+							}
+							
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms .form-group input:hover {
+								background-color: rgba(255, 255, 255, 0.25);
+								border-color: rgba(255, 255, 255, 0.25);
+								outline: 0;
+								box-shadow: 0 0 9px rgb(255 255 255 / 25%);
+							}
+							
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms .form-group input {
+								width: 100%;
+								display: flex;
+								align-items: center;
+								padding: 0 20px;
+								color: #ffffff;
+								outline: none;
+								background: rgba(255, 255, 255, 0.1);
+								border: rgba(255, 255, 255, 0.1);
+								height: 50px;
+								font-family: TalRashaTTRegular;
+								font-size: 16px;
+								line-height: 1;
+								transition: 0.15s linear;
+							}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms .form-group input::placeholder {
+									color: #FFFFFF;
+									opacity: 0.5;
+								}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms .form-group input:focus {
+									background-color: rgba(255, 255, 255, 0.25);
+									border-color: rgba(255, 255, 255, 0.25);
+									outline: 0;
+									box-shadow: 0 0 9px rgb(255 255 255 / 25%);
+								}
+
+									#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms .form-group input:focus + .input-title {
+										visibility: visible;
+										opacity: 1;
+									}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .forms .form-group .input-title {
+								visibility: hidden;
+								opacity: 0;
+								position: absolute;
+								top: -8px;
+								left: 14px;
+								padding: 0 6px;
+								font-size: 16px;
+								line-height: 1;
+								background-color: #303030;
+								color: #FEB333;
+								transition: 0.15s linear;
+							}
+
+					#castomMenu .customizer-wrapper .customizer .container .container-body .content .list {
+						display: flex;
+						flex-direction: column;
+						flex-wrap: nowrap;
+						padding: 0;
+						margin: 0;
+						list-style: none;
+						width: 100%;
+						overflow: hidden;
+						margin-top: 30px;
+					}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item {
+							display: flex;
+							flex-wrap: nowrap;
+							font-size: 16px;
+							text-transform: none;
+							line-height: 1;
+							color: rgba(255, 255, 255, 0.5);
+							transition: 0.15s linear;
+							cursor: pointer;
+							position: relative;
+						}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item input[type=radio] {
+								display: none;
+							}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item label {
+								width: 100%;
+								cursor: pointer;
+								height: 50px;
+								display: flex;
+								align-items: center;
+								padding: 0 20px;
+							}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item label::after {
+									content: '';
+									position: absolute;
+									border: 1px solid rgba(255, 255, 255, 0.5);
+									height: 20px;
+									width: 20px;
+									border-radius: 18px;
+									opacity: 0.5;
+									right: 20px;
+									top: 50%;
+									transform: translateY(-50%);
+									transition: 0.15s linear;
+								}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item input[type=radio]:checked + label {
+								color: #ffffff;
+							}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item input[type=radio]:checked + label::before {
+									content: '';
+									position: absolute;
+									height: 16px;
+									width: 16px;
+									background-color: #FFFFFF;
+									opacity: 0.5;
+									border-radius: 18px;
+									right: 22px;
+									top: 50%;
+									transform: translateY(-50%);
+									transition: 0.15s linear;
+								}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item:hover {
+								background: rgba(255, 255, 255, 0.1);
+								color: #FFFFFF;
+							}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item:hover input[type=radio]:checked + label {
+									color: #FFFFFF;
+								}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item:hover label::after {
+									border-color: #FFFFFF;
+								}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item:hover input[type=radio]:checked + label::before {
+									background-color: #FFFFFF;
+								}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .list .item:last-child {
+								border-bottom: none;
+							}
+
+					#castomMenu .customizer-wrapper .customizer .container .container-body .content .parents {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin: 0 -50px;
+						width: calc(314px * var(--scale-coefficient));
+						height: calc(170px * var(--scale-coefficient));
+						margin-bottom: 30px;
+						position: relative;
+						overflow: hidden;
+					}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .content .parents .parent {
+							position: absolute;
+							bottom: 0;
+							min-width: 200px;
+							width: 200px;
+							min-height: 200px;
+							height: 200px;
+							background-size: contain;
+							background-repeat: no-repeat;
+						}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .parents .parent.parent-1 {
+								position: absolute;
+								left: 0;
+								background-image: url(../talrasha_image/talrasha_customization/talrasha_parent/talrasha_female_0.png);
+								background-size: 80%;
+								background-position: 100% 100%;
+							}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .parents .parent.parent-2 {
+								position: absolute;
+								right: 0;
+								background-size: 80%;
+								background-position: 100% 100%;
+								background-image: url(../talrasha_image/talrasha_customization/talrasha_parent/talrasha_male_0.png);
+							}
+
+					#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers {
+						display: flex;
+						flex-direction: column;
+						flex-wrap: nowrap;
+						max-height: 100%;
+						padding-right: 40px;
+						margin-right: -40px;
+						margin-left: -40px;
+						padding-left: 40px;
+					}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers::-webkit-scrollbar {
+							-webkit-appearance: none;
+							background: rgba(255, 255, 255, .5);
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers::-webkit-scrollbar-track {
+							background-color: transparent;
+							border: 1px solid #959595;
+							border-radius: 2.5px;
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers::-webkit-scrollbar-thumb {
+							width: calc(3px * var(--scale-coefficient));
+							background: rgba(255, 255, 255, .9);
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row {
+							display: flex;
+							flex-wrap: nowrap;
+							align-items: center;
+							margin: 15px 0;
+							width: 100%;
+							min-height: fit-content;
+						}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row:first-child {
+								margin-top: 0;
+							}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row:last-child {
+								margin-bottom: 0;
+							}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper {
+								display: flex;
+								flex-direction: column;
+								flex-wrap: nowrap;
+								width: 100%;
+								margin: 0 15px;
+							}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper:first-child {
+									margin-left: 0;
+								}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper:last-child {
+									margin-right: 0;
+								}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .title {
+									font-size: 16px;
+									line-height: 1;
+									font-weight: 500;
+									margin-bottom: 10px;
+									color: rgba(255, 255, 255, 0.75);
+									text-align: center;
+								}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher {
+									position: relative;
+									width: 100%;
+									height: 50px;
+									background: rgba(255, 255, 255, 0.1);
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									padding: 0 20px;
+									user-select: none;
+								}
+
+									#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .value {
+										color: rgba(255, 255, 255, 0.75);
+										font-size: 16px;
+										line-height: 1;
+									}
+
+									#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow {
+										position: absolute;
+										display: flex;
+										align-items: center;
+										justify-content: center;
+										top: 50%;
+										transform: translateY(-50%);
+										height: 35px;
+										width: 20px;
+										cursor: pointer;
+									}
+
+										#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow::after {
+											content: '';
+											position: absolute;
+											top: 50%;
+											transform: translateY(-50%);
+											height: 130%;
+											width: 300%;
+										}
+
+										#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow:hover .icon svg path {
+											fill: #FFFFFF;
+										}
+
+										#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow:active .icon svg path {
+											fill: #FFFFFF;
+										}
+
+										#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow.left {
+											left: 12px;
+										}
+
+											#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow.left::after {
+												left: 0;
+											}
+
+										#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow.right {
+											right: 12px;
+										}
+
+											#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow.right::after {
+												right: 0;
+											}
+
+										#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow .icon {
+											display: flex;
+											align-items: center;
+											justify-content: center;
+											height: 20px;
+											width: 11.5px;
+											fill: #FFFFFF;
+										}
+
+											#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow .icon svg {
+												height: 100%;
+												width: 100%;
+											}
+
+												#castomMenu .customizer-wrapper .customizer .container .container-body .content .switchers .row .switcher-wrapper .switcher .arrow .icon svg path {
+													fill: rgba(255, 255, 255, 0.5);
+													transition: 0.15s linear;
+												}
+
+				#castomMenu .customizer-wrapper .customizer .container .container-body .buttons {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					width: 100%;
+					min-height: fit-content;
+					margin-top: 45px;
+				}
+
+					#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row {
+						display: flex;
+						flex-wrap: nowrap;
+						justify-content: space-between;
+						width: 100%;
+						margin: 10px 0;
+					}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row:first-child {
+							margin-top: 0;
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row:last-child {
+							margin-bottom: 0;
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row .button {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							width: 100%;
+							font-size: 16px;
+							line-height: 1;
+							font-weight: 500;
+							height: 50px;
+							border: 1px solid transparent;
+							background-color: transparent;
+							cursor: pointer;
+							padding: 0 25px;
+							transition: 0.15s linear;
+							margin: 0 15px;
+						}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row .button:first-child {
+								margin-left: 0;
+							}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row .button:last-child {
+								margin-right: 0;
+							}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row .button.accept {
+								background: rgba(255, 255, 255, 0.1);
+								color: rgba(255, 255, 255, 0.5);
+							}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row .button.accept:hover {
+									color: #FFFFFF;
+									background-color: rgba(255, 255, 255, 0.25);
+									box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+								}
+
+							#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row .button.decline {
+								background: rgba(255, 255, 255, 0.1);
+								color: rgba(255, 255, 255, 0.5);
+							}
+
+								#castomMenu .customizer-wrapper .customizer .container .container-body .buttons .row .button.decline:hover {
+									color: #FFFFFF;
+									background-color: rgba(255, 255, 255, 0.25);
+									box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+								}
+
+			#castomMenu .customizer-wrapper .customizer .container .outer-container {
+				position: absolute;
+				left: 399px;
+				top: 425px;
+				background-color: #303030;
+				border-top-right-radius: 12px;
+				border-bottom-right-radius: 12px;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+				z-index: -1;
+			}
+
+				#castomMenu .customizer-wrapper .customizer .container .outer-container .skills {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					list-style: none;
+					margin: 0;
+					padding: 30px 50px;
+				}
+
+					#castomMenu .customizer-wrapper .customizer .container .outer-container .skills .skill {
+						display: flex;
+						flex-wrap: nowrap;
+						align-items: center;
+						text-transform: none;
+						justify-content: space-between;
+						margin: 15px 0;
+					}
+
+						#castomMenu .customizer-wrapper .customizer .container .outer-container .skills .skill:first-child {
+							margin-top: 0;
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .outer-container .skills .skill:last-child {
+							margin-bottom: 0;
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .outer-container .skills .skill .name {
+							font-size: 16px;
+							line-height: 1;
+							color: #ffffff;
+							margin-right: 50px;
+						}
+
+						#castomMenu .customizer-wrapper .customizer .container .outer-container .skills .skill .progress-bar {
+							display: flex;
+							align-items: center;
+							min-width: 200px;
+							width: 200px;
+							min-height: 5px;
+							height: 5px;
+							background-color: #959595;
+						}
+
+							#castomMenu .customizer-wrapper .customizer .container .outer-container .skills .skill .progress-bar .progress {
+								display: flex;
+								height: 100%;
+								background-color: #FEB333;
+							}
+							
+#castomMenu .specifications-polzunok-container * {
+    box-sizing: border-box;
+    outline: none;
+	position: relative;
+}
+
+#castomMenu .specifications-polzunok-container .ui-slider {
+    position: relative;
+    height: calc(2px * var(--scale-coefficient));
+    width: calc(193px * var(--scale-coefficient));
+    border-radius: calc(2px * var(--scale-coefficient));
+    background: rgba(255, 255, 255, 0.4);
+	margin-left: auto;
+    margin-right: auto;
+	bottom: calc(8px * var(--scale-coefficient));
+}
+#castomMenu .specifications-polzunok-container .ui-slider .ui-slider-handle {
+    position: absolute;
+    text-align: center;
+    width: calc(15px * var(--scale-coefficient));
+    height: calc(15px * var(--scale-coefficient));
+    background: url(../talrasha_image/talrasha_customization/talrasha_circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: calc(18px * var(--scale-coefficient));
+    line-height: calc(18px * var(--scale-coefficient));
+    cursor: pointer;
+    border-radius: calc(10px * var(--scale-coefficient));
+    top: calc(-6px * var(--scale-coefficient));
+    z-index: 2;
+    color: #000;
+    transform: translate(calc(-5px * var(--scale-coefficient)), 0);
+}
+
+#castomMenu .specifications-polzunok-container .ui-slider .ui-slider-handle:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 14px rgb(255 255 255 / 25%);
+}
+
+#castomMenu .specifications-polzunok-container .ui-slider .ui-slider-handle:focus {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 14px rgb(255 255 255 / 25%);
+}
+
+#castomMenu .specifications-polzunok-container .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    height: calc(2px * var(--scale-coefficient));
+    display: block;
+    border: 0;
+    border-radius: calc(2px * var(--scale-coefficient));
+}
+#castomMenu .specifications-polzunok-container .ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}				
+				
+#castomMenu .parents-polzunok-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+#castomMenu .parents-polzunok-container .title {
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: rgb( 255, 255, 255 );
+    font-size: calc(14px * var(--scale-coefficient));
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    top: calc(7px * var(--scale-coefficient));
+}
+
+
+
+
+#castomMenu .parents-polzunok-container * {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+    height: calc(37px * var(--scale-coefficient));
+    bottom: calc(8px * var(--scale-coefficient));
+}
+
+#castomMenu .parents-polzunok-container .ui-slider {
+    position: relative;
+    height: calc(2px * var(--scale-coefficient));
+    width: calc(195px * var(--scale-coefficient));
+    border-radius: calc(4px * var(--scale-coefficient));
+    background: rgba(255, 255, 255, 0.4);
+    margin-left: auto;
+    margin-right: auto;
+}
+#castomMenu .parents-polzunok-container .ui-slider .ui-slider-handle {
+    position: absolute;
+    text-align: center;
+    width: calc(15px * var(--scale-coefficient));
+    height: calc(15px * var(--scale-coefficient));
+    background: url(../talrasha_image/talrasha_customization/talrasha_circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: calc(18px * var(--scale-coefficient));
+    line-height: calc(18px * var(--scale-coefficient));
+    cursor: pointer;
+    border-radius: calc(10px * var(--scale-coefficient));
+    top: calc(-6px * var(--scale-coefficient));
+    z-index: 2;
+    color: #000;
+    transform: translate(calc(-5px * var(--scale-coefficient)), 0);
+	outline: none;
+}
+
+#castomMenu .parents-polzunok-container .ui-slider .ui-slider-handle:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 14px rgb(255 255 255 / 25%);
+}
+
+#castomMenu .parents-polzunok-container .ui-slider .ui-slider-handle:focus {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 14px rgb(255 255 255 / 25%);
+}
+
+#castomMenu .parents-polzunok-container .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    height: calc(2px * var(--scale-coefficient));
+    display: block;
+    border: 0;
+    border-radius: calc(2px * var(--scale-coefficient));
+}
+#castomMenu .parents-polzunok-container .ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}	
+
+#castomMenu .customizer-wrapper .customizer .rotation {
+	width: calc(396px * var(--scale-coefficient));
+    height: calc(50px * var(--scale-coefficient));
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    display: block;
+    position: relative;
+    margin-top: calc(20px * var(--scale-coefficient));
+    margin-left: calc(46px * var(--scale-coefficient));
+}
+
+#castomMenu .customizer-wrapper .customizer .rotation .title  {			
+	margin-left: calc(30px * var(--scale-coefficient));
+    color: rgba(255, 255, 255, 0.75);
+    font-size: calc(17px * var(--scale-coefficient));
+    line-height: calc(50px * var(--scale-coefficient));
+    width: fit-content;
+}
+
+
+#castomMenu .rotation-polzunok-container {
+	position: relative;
+    display: inline-block;
+    left: calc(10px * var(--scale-coefficient));
+	bottom: calc(1px * var(--scale-coefficient));
+}
+
+#castomMenu .rotation-polzunok-container .ui-slider {
+    position: relative;
+    height: calc(4px * var(--scale-coefficient));
+    width: calc(195px * var(--scale-coefficient));
+    border-radius: calc(4px * var(--scale-coefficient));
+    background: rgba(255, 255, 255, 0.4);
+}
+#castomMenu .rotation-polzunok-container .ui-slider .ui-slider-handle {
+    position: absolute;
+    text-align: center;
+    width: calc(15px * var(--scale-coefficient));
+    height: calc(15px * var(--scale-coefficient));
+    background: url(../talrasha_image/talrasha_customization/talrasha_circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: calc(18px * var(--scale-coefficient));
+    line-height: calc(18px * var(--scale-coefficient));
+    cursor: pointer;
+    border-radius: calc(10px * var(--scale-coefficient));
+    top: calc(-6px * var(--scale-coefficient));
+    z-index: 2;
+    color: #000;
+    transform: translate(calc(-5px * var(--scale-coefficient)), 0);
+	outline: none;
+}
+
+#castomMenu .rotation-polzunok-container .ui-slider .ui-slider-handle:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 14px rgb(255 255 255 / 25%);
+}
+
+#castomMenu .rotation-polzunok-container .ui-slider .ui-slider-handle:focus {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 14px rgb(255 255 255 / 25%);
+}
+
+#castomMenu .rotation-polzunok-container .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    height: calc(2px * var(--scale-coefficient));
+    display: block;
+    border: 0;
+    border-radius: calc(2px * var(--scale-coefficient));
+}
+#castomMenu .rotation-polzunok-container .ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}	

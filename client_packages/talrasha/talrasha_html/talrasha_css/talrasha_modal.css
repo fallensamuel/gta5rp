@@ -1,0 +1,303 @@
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+#modal_upd .modalbgshadow{
+	background: url(../talrasha_image/talrasha_selector_character/talrasha_bg_shadow.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0.01%, rgba(0, 0, 0, 0.6) 0.02%, rgba(0, 0, 0, 0.8) 100%);
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+#modal_upd * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: none;
+  font-family: TalRashaTTRegular;
+}
+
+#modal_upd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#modal_upd .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3.42593vh;
+}
+
+#modal_upd .head .header {
+    color: #ffffff;
+    font-size: 1.48148vh;
+    font-weight: bold;
+}
+
+#modal_upd .closemodal {
+  cursor: pointer;
+}
+
+#modal_upd .closemodal img {
+  width: 1.38889vh;
+}
+
+#modal_upd .content {
+    width: 38.88889vh;
+    height: auto;
+    padding: 4.16667vh 3.05556vh;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+#modal_upd .label {
+  width: auto;
+  height: 4.62963vh;
+  background: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2.5vh;
+  margin-bottom: 1.38889vh;
+}
+
+#modal_upd .label .name {
+  font-size: 1.2963vh;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#modal_upd .input_group label {
+  font-size: 1.2963vh;
+  color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  right: 2.12963vh;
+}
+
+#modal_upd .input_group {
+  width: 100%;
+  height: 4.62963vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.24074vh;
+}
+
+#modal_upd .input_group input::-webkit-outer-spin-button,
+#modal_upd .input_group input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#modal_upd .input_group input {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1.2963vh;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  padding-left: 2.5vh;
+}
+
+#modal_upd .input_group input:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+#modal_upd .input_group input:focus {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+#modal_upd .input_group input::-webkit-input-placeholder {
+  font-size: 1.2963vh;
+  color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  right: 2.12963vh;
+}
+
+#modal_upd .input_group input:-ms-input-placeholder {
+  font-size: 1.2963vh;
+  color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  right: 2.12963vh;
+}
+
+#modal_upd .input_group input::-ms-input-placeholder {
+  font-size: 1.2963vh;
+  color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  right: 2.12963vh;
+}
+
+#modal_upd .input_group input::placeholder {
+  font-size: 1.2963vh;
+  color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  right: 2.12963vh;
+}
+
+#modal_upd .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#modal_upd .actions .btn,
+#modal_upd .actions .btn_close {
+  cursor: pointer;
+  height: 4.62963vh;
+  width: 14.81481vh;
+  background: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2963vh;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#modal_upd .actions .btn:hover,
+#modal_upd .actions .btn_close:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+#modal_upd .area_input {
+  width: 100%;
+  height: 12.33333vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.24074vh;
+}
+
+#modal_upd .area_input textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2963vh;
+  font-weight: bold;
+  color: #ffffff;
+  padding-left: 0.5vh;
+  padding-right: 0.5vh;
+  resize: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  outline: none;
+}
+
+#modal_upd .area_input textarea::-webkit-input-placeholder,
+#modal_upd .area_input textarea::-ms-input-placeholder,
+#modal_upd .area_input textarea::placeholder {
+  font-size: 1.2963vh;
+  color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  right: 2.12963vh;
+}
+
+#modal_upd .area_input input {
+  width: 100%;
+  height: 4.62963vh;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1.2963vh;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  padding-left: 0.5vh;
+  padding-right: 0.5vh;
+}
+
+#modal_upd .area_input input::-webkit-input-placeholder,
+#modal_upd .area_input input::-ms-input-placeholder,
+#modal_upd .area_input input::placeholder {
+  font-size: 1.2963vh;
+  color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  right: 2.12963vh;
+}
+
+#modal_upd .area_input input::-webkit-outer-spin-button,
+#modal_upd .area_input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#modal_upd .label_upd {
+  width: 100%;
+  height: 4.62963vh;
+  background: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5vh;
+  margin-bottom: 1.38889vh;
+}
+
+#modal_upd .label_big {
+  width: 100%;
+  height: 12.33333vh;
+  background: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0.5vh;
+  margin-bottom: 1.38889vh;
+}
+
+#modal_upd .label_upd .name,
+#modal_upd .label_big .name {
+  font-size: 1.2963vh;
+  color: rgba(255, 255, 255, 0.75);
+  word-break: break-word;
+}

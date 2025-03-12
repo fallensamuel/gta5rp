@@ -1,0 +1,49 @@
+[v-cloak] {
+    display: none;
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+body {
+    color: #fff;
+    font-family: TalRashaTTRegular;
+}
+
+.modal {
+    top: 25%;
+    right: 1%;
+    position: absolute;
+}
+
+.content {
+    background: #000;
+    border-radius: 5px;
+    width: 200px;
+    height: 250px;
+    opacity: 0.8;
+    padding-top: 1px;
+}
+
+.header {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    margin-top: 3vh;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;  
+}
+
+.text {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}

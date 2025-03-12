@@ -1,0 +1,139 @@
+@font-face {
+	font-family: GothamPro-Medium;
+	src: url(../fonts/GothamPro-Medium.ttf);
+}
+
+.chatLeft {
+	margin-left: 2vh;
+	margin-top: 2vh;
+    color: #fff;
+    font-size: 2vh;
+    font-family: 'Chalet-LondonNineteenSixty';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 65.5vh;
+}
+
+/*.chatLeft hr {
+	opacity: 0.2;
+	border-color: #aaa;
+	width: 60%;
+	margin: 0 0 0 auto;
+}*/
+.chatLeft input[type="text"] {
+    background-color: rgba(27, 30, 34, 0.5);
+    border: none;
+    color: #fff;
+    height: 48px;
+    padding: 1vh;
+    width: 665px;
+    font-family: GothamPro-Medium;
+    font-size: 16px;
+    line-height: 8px;
+	border-top-left-radius: 4px 4px;
+    border-bottom-left-radius: 4px 4px;
+}
+
+input::-webkit-input-placeholder { color: #fff; }
+
+.chatLeft input[type="text"]:focus {
+    outline: none;
+}
+
+.chatLeft .chat-bottom {
+    margin-top: 2vh;
+    
+}
+.chatLeft .inp{
+    display: inline-flex;
+}
+.chatLeft .chat-content {
+    transition: 1s;
+    height: calc(16 * 14px);
+    overflow-y: hidden;
+    text-align: left;
+    font-size: 16px;
+}
+
+.chatLeft .chat-content div {
+    padding: 3px;
+    word-break: break-word;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.chatLeft .tag {
+    background: #040d1c;
+    color: #aaa;
+    font-size: 13px;
+    position: relative;
+    /* width: 85px; */
+    width: 42px;
+    /* text-align: right; */
+    text-align: center;
+    text-transform: uppercase;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: rgba(27, 30, 34, 0.5);
+	border-top-right-radius: 4px 4px;
+    border-bottom-right-radius: 4px 4px;
+}
+
+.chatLeft .tagleft {
+    background: #040d1c;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    width: 85px;
+    /* text-align: right; */
+    text-align: center;
+    text-transform: uppercase;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+	padding-left: 5px;
+    align-items: center;
+	background-color: rgba(27, 30, 34, 0.5);
+	border-top-left-radius: 4px 4px;
+    border-bottom-left-radius: 4px 4px;
+}
+
+#chat .tag img{
+    width: 14px;
+    height: 16px;
+}
+
+
+
+.chatLeft .userId {
+    font-family: 'Chalet-ParisNineteenSixty';
+}
+
+.chatLeft .line{
+	margin-left: -10px;
+    margin-top: 10px;
+    display: inline-flex;
+    width: 114%;
+    height: auto;
+}
+.chatLeft .btns{
+    display: block;
+}
+.chatLeft .line .btnX{
+    font-size: 14px;
+    background: rgba(27, 30, 34, 0.5);
+    margin-left: 10px;
+    height: 30px;
+    padding: 5px 41px;
+    display: flex;
+    text-align: center;
+    border-radius: 4px;
+    align-items: center;
+    color: #fff;
+}
+
+#chat .line .btn-active{
+    background-image: linear-gradient(0deg, rgb(42,129,4) 0%, rgb(106,227,34) 100%);
+}

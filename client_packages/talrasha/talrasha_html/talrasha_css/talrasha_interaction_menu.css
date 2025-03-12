@@ -1,0 +1,36 @@
+#interactionMenu {
+    color: #fff;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-kerning: auto;
+    position: absolute;
+}
+
+#interactionMenu .icon {
+    background: rgba(32, 15, 15, 0.467);
+    padding: 0.5vh;
+    border-radius: 12px;
+}
+
+#interactionMenu .icon img {
+    height: 3vh;
+    width: 3vh;
+}
+
+#interactionMenu .interaction_item {
+    background: rgba(71, 28, 28, 0.467);
+    border-right: 2px solid rgba(71, 28, 28, 0.467);
+    display: flex;
+    margin-bottom: 0.5vh;
+    width: 20vh;
+    border-radius: 12px;
+}
+
+#interactionMenu .interaction_item:hover {
+    background: linear-gradient(to right, #0007 -40%, rgba(153, 68, 72, 0.667));
+    border-right: 2px solid rgb(221, 0, 48);
+}
+
+#interactionMenu .text {
+    padding: 1.3vh 1vh;
+}

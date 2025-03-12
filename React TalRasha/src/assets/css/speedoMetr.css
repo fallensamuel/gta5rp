@@ -1,0 +1,343 @@
+@font-face {
+    font-family: Archangelsk;
+    src: url(../fonts/Archangelsk.ttf);
+}
+@font-face {
+    font-family: Kelson;
+    src: url(../fonts/Kelson.ttf);
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../fonts/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../fonts/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+.speedometer{
+    width: 29.55vh;
+    right: 1.2vh;
+    position: absolute;
+    bottom: 7vh;
+}
+.speedometer .text {
+    position: absolute;
+    right: 16.5vh;
+    bottom: 1.5vh;
+}
+.speedometer .text .speed {
+    font-family: TalRashaTT !important;
+    color: #777777;
+    font-size: 35px;
+    width: 6.018518518518519vh;
+    text-align: center;
+    position: relative;
+    left: 2.8851851851851852vh;
+    bottom: 0.4703703703703704vh;
+	line-height: 41px;
+	font-feature-settings: 'liga' off;
+}
+.cls-1 {
+    opacity: 0.2;
+}
+.cls-2 {
+    fill: #000000;
+}
+.cls-3 {
+    fill: url(#radial-gradient-blackwhite);
+}
+.cls-9 {
+    fill: #777777;
+}
+.cls-10 {
+    stroke: #777777;
+    stroke-miterlimit: 10;
+    fill: transparent !important;
+}
+.cls-11 {
+    stroke: #777777;
+    stroke-miterlimit: 10;
+    fill: transparent;
+}
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8 {
+    fill: #777777;
+}
+.cls-12 {
+    fill: #777777;
+    font-size: 11px;
+    font-family: TalRashaTTRegular;
+    font-weight: 500;
+}
+.cls-14 {
+    fill: #777777;
+}
+
+.cls-4,
+.cls-5,
+.cls-7,
+.cls-8 {
+    isolation: isolate;
+    font-family: TalRashaTTRegular;
+}
+.cls-4 {
+    font-size: 24px;
+}
+.cls-5 {
+    font-size: 36px;
+    font-family: TalRashaTT !important;
+    font-weight: 600;
+}
+
+.cls-7 {
+    font-size: 18px;
+}
+
+.cls-8 {
+    font-size: 14px;
+}
+.speedometer .text .kmh {
+    font-family: TalRashaTTRegular;
+    position: absolute;
+    left: 8.9vh;
+    bottom: 0.9vh;
+    color: #777777;
+}
+.speedometer .text .kmh .km {
+    font-size: 12px;
+	line-height: 14px;
+}
+.speedometer .text .kmh .count {
+    font-size: 12px;
+}
+.speedometer img {
+    position: absolute;
+    right: 7vh;
+    bottom: -6vh;
+    width: 17.5vh;
+    height: 2.777777777777778vh;
+}
+
+.speedometer .imgtalrasha img {
+    position: absolute;
+    right: 6vh;
+    bottom: -9vh;
+    width: 94px;
+    height: 94px;
+}
+
+.speedometer .speedometertalrasha img{
+	position: absolute;
+    right: calc(-13px * var(--scale-coefficient));
+    bottom: calc(-76px * var(--scale-coefficient));
+    width: calc(355px * var(--scale-coefficient));
+    height: calc(212px * var(--scale-coefficient));
+}
+
+.speedometer .activElement {
+    opacity: 1;
+}
+.speedometer .disabledElement {
+    
+}
+/* Colors */
+    /* Black & White */
+.speedometer.blackwhite {
+    animation: speedometerToWhite 0.5s;
+    animation-fill-mode: forwards;
+}
+.speedometer.blackwhite svg g .cls-2 {
+    fill: #000000 !important;
+}
+.speedometer.blackwhite svg g .cls-3 {
+    fill: url(#radial-gradient-blackwhite) !important;
+}
+
+.speedometer.blackwhite svg g .cls-9 {
+	fill: #33D430;
+	
+	/*animation: speedometerToWhite 0.5s;
+    animation-fill-mode: forwards;*/
+}
+.speedometer.blackwhite svg g .cls-10 {
+    animation: speedometerStrokeToWhite 0.5s;
+    animation-fill-mode: forwards;
+}
+.speedometer.blackwhite svg g .cls-11 {
+    animation: speedometerStrokeToWhite 0.5s;
+    animation-fill-mode: forwards;
+}
+.speedometer.blackwhite svg g .cls-4, 
+.speedometer.blackwhite svg g .cls-5, 
+.speedometer.blackwhite svg g .cls-6, 
+.speedometer.blackwhite svg g .cls-7{
+    animation: speedometerToWhite 0.5s;
+    animation-fill-mode: forwards;
+}
+.speedometer.blackwhite svg g .cls-12 {
+    animation: speedometerToWhite 1s;
+    animation-fill-mode: forwards;
+}
+
+.speedometer.blackwhite .text .speed,
+.speedometer.blackwhite .text .kmh {
+    animation: speedometerToWhite 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.speedometer.blackwhite svg g .cls-4, 
+.speedometer.blackwhite svg g .cls-7{
+    animation: speedometerToWhite 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.speedometer.blackwhite svg g .cls-8 {
+	fill: #33D430;
+}
+
+.speedometer.blackwhite svg g .cls-14 {
+    fill: white;
+}
+.speedometer.blackwhite .text {
+    animation: speedometerTextToWhite 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.speedometer.blackwhite.animationEnd svg g .cls-9 {
+    fill: #D32727;
+}
+.speedometer.blackwhite.animationEnd svg g .cls-10 {
+    stroke: white;
+}
+.speedometer.blackwhite.animationEnd svg g .cls-11 {
+    fill: transparent;
+    stroke: white;
+}
+.speedometer.blackwhite.animationEnd svg g .cls-4, 
+.speedometer.blackwhite.animationEnd svg g .cls-5, 
+.speedometer.blackwhite.animationEnd svg g .cls-6, 
+.speedometer.blackwhite.animationEnd svg g .cls-7 {
+    fill: white;
+}
+
+.speedometer.blackwhite.animationEnd svg g .cls-8 {
+	fill: #33D430;
+}
+.speedometer.blackwhite.animationEnd svg g .cls-12 {
+    fill: white;
+}
+
+.speedometer.blackwhite.animationEnd .text .speed,
+.speedometer.blackwhite.animationEnd .text .kmh {
+    color: white;
+}
+
+
+@keyframes speedometerToWhiteAnimation {
+    100% {
+        fill: white;
+        color: white;
+    }
+}
+@keyframes speedometerStrokeToWhiteAnimation {
+    100% {
+        stroke: white;
+    }
+}
+@keyframes speedometerTextToWhiteAnimation {
+    100% {
+        text-shadow: 0 0 0.6481481481481481vh rgba(255, 255, 255, 0.95);
+    }
+}
+@keyframes speedometersvgTextToWhite {
+    100% {
+        text-shadow: 0 0 0.6481481481481481vh rgba(255, 255, 255, 0.5);
+    }
+}
+@keyframes speedometerBorderToWhiteAnimation {
+    100% {
+        border-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 0.462962962962963vh white;
+    }
+}
+
+.speedometer svg g #High_Beam.active,
+.speedometer svg g #Parking_Light.active,
+.speedometer svg g #Low_Beam.active,
+.speedometer svg g #Safety_Belt.active,
+.speedometer svg g #Oil.active,
+.speedometer svg g #Doors.active,
+.speedometer svg g #Battery.active,
+.speedometer svg g #Engine.active,
+.speedometer svg g #Right_Arrow.active,
+.speedometer svg g #Left_Arrow.active {
+    opacity: 1;
+}
+.speedometer svg g #High_Beam.active .cls-10 {
+    stroke: #0692c5;
+}
+.speedometer svg g #Parking_Light.active .cls-10 {
+    stroke: #0b6aba;
+}
+.speedometer svg g #Low_Beam.active .cls-10 {
+    stroke: #006811;
+}
+.speedometer svg g #Safety_Belt.active .cls-10 {
+    stroke: red;
+}
+.speedometer svg g #Oil.active .cls-9,
+.speedometer svg g #Doors.active .cls-9 {
+    fill: #33D430 !important;
+}
+.speedometer svg g #Battery.active .cls-11,
+.speedometer svg g #Battery.active .cls-9 {
+    stroke: red !important;
+}
+.speedometer svg g #Engine.active .cls-9 {
+    stroke: #ffc600 !important;
+    fill: #ffc600 !important;
+}
+.speedometer svg g #Right_Arrow.active .cls-14,
+.speedometer svg g #Left_Arrow.active .cls-14 {
+    fill: #00d63a;
+}
+
+.speedometer .fuelBar {
+    transform: rotate(-90deg);
+    position: inherit;
+    bottom: 9.722222222222222vh;
+    right: -5.092592592592593vh;
+    background-color: white;
+
+    width: 9.259259259259259vh;
+    height: 0.462962962962963vh;
+}
+.speedometer .fuelValue {
+    background-color: red;
+    width: 55%;
+    height: 0.462962962962963vh;
+}
+
+.speedometer .talrashasvgkey {
+    position: relative;
+    top: calc(232px * var(--scale-coefficient));
+    left: calc(-60px * var(--scale-coefficient));
+}
+
+.speedometer .talrashasvgengine {
+    position: relative;
+    top: calc(232px * var(--scale-coefficient));
+    left: calc(-50px * var(--scale-coefficient));
+}
+
+.speedometer .talrashasvgfuel {
+    position: relative;
+    top: calc(232px * var(--scale-coefficient));
+    left: calc(-70px * var(--scale-coefficient));
+}

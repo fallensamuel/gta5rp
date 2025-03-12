@@ -1,0 +1,87 @@
+  @keyframes bg-animation {
+    0% {
+      width: 10%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @font-face {
+	font-family: 'Proxima Nova Cn Lt';
+	src: url('ProximaNovaCond-LightIt.eot');
+	src: local('Proxima Nova Condensed Light Italic'), local('ProximaNovaCond-LightIt'),
+		url('ProximaNovaCond-LightIt.eot?#iefix') format('embedded-opentype'),
+		url('ProximaNovaCond-LightIt.woff') format('woff'),
+		url('ProximaNovaCond-LightIt.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+.textpidr{
+    position: relative;
+    color: white;
+    font-size: 2.292vw;
+    top: 45%;
+    left: 30%;
+    font-family: proxima nova cn lt;
+    overflow: hidden;
+}
+
+.playersOnline {
+    font-size: 1.7vh;
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+    width: 80vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0.521vw;
+}
+
+.playersOnline table {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.playersOnline td {
+	font-size: 0.833vw;
+    padding: 1vh;
+}
+
+.playersOnline thead {
+    background: rgb(73, 158, 228);
+    background: linear-gradient(90deg, rgba(73, 101, 228, 0.715) 0%, rgba(74, 179, 240, 0.71) 100%);
+}
+
+.playersOnline tbody tr {
+    background: linear-gradient(to right, rgba(73, 101, 228, 0.715) 0%, rgba(74, 179, 240, 0.71) 100%);
+  transition: opacity 0.5s ease-out;
+    border-left: 0.104vw solid #000;
+}
+
+.playersOnline tbody tr:hover {
+    border-left: 0.104vw solid #196;
+    color: #ddd;
+}
+
+.playersOnline .body {
+    height: 70vh;
+    position: relative;
+    width: 100%;
+}
+
+.playersOnline .content {
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    word-break: break-word;
+}
+
+.playersOnline .opacity {
+    background: rgb(73,158,228);
+background: linear-gradient(90deg, rgba(73,101,228,0.7147233893557423) 10%, rgba(74,179,240,0.71) 100%);
+    height: 70vh;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+}

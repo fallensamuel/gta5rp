@@ -1,0 +1,868 @@
+[v-cloak] {
+    display: none;
+}
+
+/* импорт шрифтов */
+@font-face {
+    font-family: 'SF UI Display light';
+    src: url('../talrasha_font/sf-ui-display-light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display Regular';
+    src: url('../talrasha_font/sf_ui_Display_Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Адаптив */
+@media (max-width: 1300px) {
+    .ipad_size{
+        zoom: 80%
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+    .ipad_size{
+        zoom: 100%
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1650px) {
+    .ipad_size {
+        zoom: 100%
+    }
+}
+
+@media (min-width: 1651px) and (max-width: 2560px) {
+    .ipad_size {
+        zoom: 140%
+    }
+}
+
+@media (min-width: 2560px) and (max-width: 3820px) {
+    .ipad_size {
+        zoom: 280%
+    }
+}
+
+#ipad ul {
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+#ipad .content_ipad {
+	font-family: 'SF UI Display light';
+	font-size: 16px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Main ipad */
+#ipad .main_ipad {
+    background: url('../talrasha_image/talrasha_ipad/ipad_main.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 45%;
+    left: 65%;
+    transform: translate(-50%, 50%);
+}
+
+#ipad .headermain {
+	padding-bottom: 18px
+}
+
+#ipad .header {
+}
+
+#ipad .img_other {
+  width: 63px;
+  height: 11px;
+  display: block;
+  margin-top: 45px;
+  margin-left: 830px;
+}
+
+#ipad .main_block {}
+
+#ipad .ipad_time {
+    font-family: 'SF UI Display light', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-left: 85px;   
+}
+
+#ipad .ipad_day {
+    font-family: 'SF UI Display light', sans-serif;
+    color: #fff;
+    display: block; 
+    margin-left: 85px;  
+}
+
+#ipad .icon_item {
+ position: absolute;
+ margin-top: -80px;
+ margin-left: 300px;   
+}
+
+#ipad .item {
+ display: inline-block;
+ opacity: 1;
+ margin-right: 40px;   
+}
+
+#ipad .item:hover {
+ opacity: 0.9; 
+}
+
+#ipad .item_name {
+  font-family: 'SF UI Display Regular';
+  display: block;
+  text-align: center;
+  margin-left: -3px;
+  color: #fff;  
+}
+
+#ipad .footer {
+ position: fixed;
+ margin-top: 370px;
+ margin-left: 300px;
+}
+
+#ipad .elips_one {  
+ display: inline-block; 
+ width: 13px;
+ height: 13px;
+ border-radius: 50%;
+ background-color: #fff;
+ margin-left: 155px;
+ margin-right: 2px;
+ margin-top: -80px;
+}
+
+#ipad .elips_two {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color:#ec99b7;
+  margin-top: -80px;
+}
+
+#ipad .menu_footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;   
+}
+
+#ipad .menu_item {
+    margin-top: 5px;
+    width: 340px;
+    height: 75px;
+    background-color:rgba(236,153,183, 0.7);
+    border-radius: 20px;
+}
+
+#ipad .item_footer {
+ display: inline-block;
+ margin-top: 15px;
+ margin-left: 15px;   
+}
+
+/* Goverment ipad */
+#ipad .main_ipad_gov {
+    background: url('../talrasha_image/talrasha_ipad/ipad_gov.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 45%;
+    left: 65%;
+    transform: translate(-50%, 50%);
+}
+
+#ipad .time_gov {
+ font-family: 'SF UI Display Regular', sans-serif;
+ font-size: 11px;   
+ position: absolute;   
+ margin-top: 0px;
+ margin-left: 60px;   
+}
+
+#ipad .a_gov_main {
+ font-family: 'SF UI Display light', sans-serif;
+ font-weight: 600;   
+ text-decoration: none;
+ color: #9a9a9a;
+ margin-top: 10px;
+ margin-left: 120px;  
+}
+
+#ipad .a_gov_main:hover {
+ color: #000000;   
+}
+
+#ipad .text_a_gov_main {
+ margin-left: 10px;   
+}
+
+#ipad .title_faction {
+  margin-left: 120px;  
+}
+
+#ipad .text_faction {
+ font-family: 'SF UI Display Regular', sans-serif;
+ font-weight: 700;   
+ font-size: 28px;
+}
+
+#ipad .name_player {
+    font-family: 'SF UI Display Regular', sans-serif;
+    margin-left: 620px;
+    margin-top: -45px;       
+}
+#ipad .text_name_gov {
+ color: #000000;
+ font-size: 18px;
+ display: block;
+}
+
+#ipad .text_gov_dol {
+ color: #000000; 
+ display: inline-block;
+ text-align: center;
+ /* margin-left: 43px;   */
+}
+
+/*#ipad .img_block {*/
+/* position: fixed;*/
+/*}*/
+
+#ipad .icon_gov {
+  width: 63px;
+  height: 63px;
+  position: fixed;
+  /*position: relative;*/
+  margin-left: 750px;
+  margin-top: -45px;
+}
+
+#ipad .menu_faction {
+ display: flex;
+ align-content: center;
+ flex-wrap: wrap;
+ width: 800px;
+ height: 350px;
+ margin-left: 120px;
+ margin-top: 50px;
+}
+
+#ipad .menu_item_gov {
+ display: inline-block;
+ background: none;
+ border: 2px solid #000000;
+ width: 129px;
+ height: 129px;
+ border-radius: 15px;
+ opacity: 1;
+ margin-top: 45px;
+ margin-right: 55px;
+ padding: 1px;
+}
+
+#ipad .menu_item_gov:hover {
+  opacity: 0.8;  
+} 
+
+#ipad .img_gov_menu {
+ width: 60px;
+ height: 60px;
+ display: block;   
+ margin: 12px auto;   
+}
+
+#ipad .img_text_gov {
+ font-family: 'SF UI Display Regular', sans-serif;   
+ display: block;
+ text-align: center;  
+}
+
+#ipad .gov_search{
+ background: #ebe9e9;
+ width: 700px;
+ height: 40px;
+ margin-left: 110px;
+ margin-top: 30px;   
+}
+
+#ipad .img_search {
+ display: inline-block;   
+ margin-top: 10px;
+ margin-left: 10px;   
+}
+
+#ipad .input_search {
+ font-family: 'SF UI Display Regular', sans-serif;   
+ outline: none;
+ border: none;
+ background: none;
+ width: 500px;
+ font-size: 18px;   
+}
+
+#ipad .gov_list {
+    font-family: 'SF UI Display Regular', sans-serif;
+    width: 800px;
+    height: 350px;
+    margin-left: 30px;
+    margin-top: 20px;    
+}
+
+#ipad .ul_gov_lic {
+ display: flex;
+ align-items: center;
+}
+
+#ipad .li_gov_lic {
+    width: 460px;
+    list-style-type: none;
+    margin-top: 10px;
+    /*margin-right: 75px;*/
+    /*margin-left: -10px;*/
+    white-space: nowrap;
+    text-align: center;
+}
+#ipad .li_gov_lic_two {
+    width: 100px;
+    list-style-type: none;
+    margin-top: 10px;
+    /*margin-right: 75px;*/
+    /*margin-left: -10px;*/
+    white-space: nowrap;
+    text-align: center;
+}
+
+#ipad .li_gov_lic_list {
+    width: 470px;
+    list-style-type: none;
+    /*margin-top: 10px;*/
+    /*margin-right: 85px;*/
+    /*margin-left: -10px;*/
+    white-space: nowrap;
+    text-align: center;
+}
+
+#ipad .li_gov_lic_list_two {
+    width: 110px;
+    list-style-type: none;
+    /*margin-top: 10px;*/
+    /*margin-right: 85px;*/
+    /*margin-left: -10px;*/
+    white-space: nowrap;
+    text-align: center;
+}
+
+#ipad .online {
+ display: inline-block;   
+ width: 12px;
+ height: 12px;
+ border-radius:50%;
+ background: #00ff55;   
+}
+
+#ipad .offline {
+ display: inline-block;
+ width: 12px;
+ height: 12px;
+ border-radius:50%;
+ background: #950238;
+}
+
+#ipad .text_storage {
+ font-family: 'SF UI Display Regular', sans-serif;
+ font-weight: bold;   
+ display: block;  
+ margin-top: 15px;
+ margin-left: 70px;
+ font-size: 14px;
+ color: #949393; 
+}
+
+#ipad .text_balance {
+    font-family: 'SF UI Display Regular', sans-serif;
+    font-weight: bold;   
+    display: inline-block;  
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-right: 260px;
+    font-size: 18px;
+    color: #000; 
+}
+
+#ipad .searchInfo {
+  display: block;
+  font-family: 'SF UI Display Regular', sans-serif;
+  font-size: 20px;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+
+#ipad .text_searh_info {
+    display: inline-block;
+ color:#949393; 
+ font-weight: 700; 
+}
+
+#ipad .text_search_gov {
+ margin-top: 15px;
+ display: block;   
+}
+
+#ipad .img_search_info {
+ position: absolute;
+ margin-left: 670px;
+ margin-top: -370px;   
+}
+
+#ipad .balance_btn {
+ outline: none;
+ width: 150px;
+ height: 35px;
+ background: none;
+ border: none;
+ font-size: 18px;
+}
+
+#ipad .balance_btn:hover {
+ background: #000;
+ color:#fff;
+}
+
+#ipad .btn_price_search {
+    font-family: 'SF UI Display Regular', sans-serif;
+    display: block;
+    margin-top: 150px;
+    margin-left: 220px;
+}
+
+#ipad .text_price {
+  width: 370px;
+  height: 30px;  
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 70px;  
+}
+
+#ipad .btn_price {
+  font-size: 18px;
+  outline: none;
+  background-color:#949393;
+  border: none;
+  width: 250px;
+  height: 35px;
+  color: #fff; 
+  margin-right: 20px;  
+}
+
+#ipad .btn_price:hover {
+  background-color: #000;  
+}
+
+#ipad .searh_text_dan {
+ display: block; 
+ margin-left: 190px;
+ font-size: 20px;
+ margin-bottom: 20px;  
+}
+
+#ipad .input_search_price {
+ display: block;  
+ background: none;
+ border: 2px solid #000;
+ outline: none;  
+ width: 250px;
+ height: 35px;
+ font-size: 18px;
+ margin-left: 135px;
+ margin-top: 20px;
+ text-align: center;
+ color: #000000;
+}
+
+#ipad input::placeholder {
+	color: fieldtext;
+}
+
+#ipad .name_input {
+    
+ display: block;
+ margin-top: 20px;   
+ margin-left: 220px;
+ font-size: 18px;
+ font-weight: 700;   
+}
+
+#ipad .btn_scan {
+ width: 220px;
+ height: 35px;
+ font-size: 18px;
+ display: block;
+ margin-top: 20px;
+ margin-left: 155px;
+ border: none;
+ outline: none;
+ background: #000;
+ color: #fff;
+ border-radius: 3px;   
+}
+
+#ipad .btn_scan:hover {
+  background: rgb(163, 41, 41);  
+}
+
+#ipad .list_full {
+ margin-top: 50px;
+ margin-left: 120px;
+}
+
+#ipad .img_avatar {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    display: inline-block;
+}
+
+#ipad .text_list_full {
+ font-family: 'SF UI Display Regular', sans-serif;
+ position: absolute;
+ margin-left: 10px;
+ font-size: 18px;
+ font-weight: 700;
+}
+
+#ipad .info_menu_list {
+ display: flex;
+ align-items: center;
+ margin-left: 80px;
+ margin-top: -60px;
+}
+
+#ipad .list_menu_info {
+ display: inline-block;
+ list-style-type: none;
+ white-space: nowrap;
+ width: 130px;
+}
+#ipad .list_menu_info_f {
+ display: inline-block;
+ list-style-type: none;
+ white-space: nowrap;
+ width: 135px;
+}
+
+#ipad .btn_menu_list {
+ font-family: 'SF UI Display Regular', sans-serif;
+ display: flex;
+ align-items: center;
+ margin-left: 150px;
+}
+
+#ipad .btn_menu {
+    outline: none;
+    width: 160px;
+    height: 35px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin-left: 50px;
+    fill: #000;
+}
+#ipad .btn_call {
+    outline: none;
+    width: 160px;
+    height: 35px;
+    background: none;
+    border: none;
+    font-size: 14;
+}
+#ipad .btn_call:hover {
+    background: #000;
+    color: #fff;
+}
+
+#ipad .img_arrow {
+    width: 15px;
+    margin-right: 5px;
+}
+
+#ipad .btn_menu:hover {
+ background: #000;
+ color: #fff;
+ fill: #fff;
+}
+
+#ipad .btn_menu_set {
+  outline: none;
+  border: none;
+  background: #e4e4e4;
+  color: #000;
+  width: 250px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+#ipad .btn_menu_set:hover {
+ color: #fff;
+ background: #af5252;
+}
+#ipad .btn_menu_active {
+ color: #fff;
+ background: #af5252;
+}
+
+#ipad .list_rank {
+ /*width: 250px;*/
+ /*height: 380px;*/
+ margin-left: 40px;
+}
+
+#ipad .ul_list_set {
+ /*width: 210px;*/
+ /*height: 35px;*/
+ display: flex;
+ align-items: center;
+ color: #000000;
+}
+
+#ipad .li_set_rank {
+ font-family: 'SF UI Display Regular', sans-serif;
+ font-weight: 700;
+ list-style-type: none;
+ white-space: nowrap;
+ width: 50px;
+}
+
+#ipad .main_container_set {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    margin-left: 370px;
+    margin-top: -355px;
+}
+
+#ipad .ul_list_setting {
+    width: 210px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background: none;
+    margin-left: 40px;
+	color: #000000;
+}
+
+#ipad .ul_list_setting:hover {
+ background: #727272;
+ color: #fff;
+}
+
+#ipad .settings_set {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#ipad .text_set {
+  font-size: 18px;
+  display: inline-block;
+}
+
+#ipad .select_list {
+    height: 380px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*border-radius: 10px;*/
+}
+
+#ipad .select_list::-webkit-scrollbar {
+    width: 4px;
+    /*border-radius: 10px;*/
+    background-color: #f9f9fa;
+}
+#ipad .select_list::-webkit-scrollbar-thumb {
+    /*border-radius: 10px;*/
+    background-color: #050505;
+}
+
+#ipad .text-fast-enter {
+    color: rgba(159, 156, 156, 0.5);
+    margin-right: 5px;
+}
+#ipad .switch {
+    position: absolute;
+    display: inline-block;
+    width: 36px;
+    height: 16px;
+    margin-top: 3px;
+}
+
+#ipad .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#ipad .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+#ipad .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 3px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+}
+
+#ipad input:checked+.slider {
+    background-color: #3aa33c;
+}
+
+#ipad input:focus+.slider {
+    box-shadow: 0 0 1px #3aa33c;
+}
+
+#ipad input:checked+.slider:before {
+    transform: translateX(19px);
+}
+
+#ipad .slider.round {
+    border-radius: 34px;
+}
+
+#ipad .slider.round:before {
+    border-radius: 50%;
+}
+
+#ipad .list_logs_char {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#ipad .list_logs_characters {
+    display: inline-block;
+    list-style-type: none;
+    white-space: nowrap;
+    width: 130px;
+    margin-left: 100px;
+}
+/* Скролл таблица */
+#ipad .scroll-table-body {
+    height: 350px;
+    overflow-x: auto;
+    /*overflow-y: hidden;*/
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+#ipad .scroll-table table {
+    width: 100%;
+    border: none;
+    table-layout: fixed;
+    /*margin-bottom: 20px;*/
+}
+#ipad .scroll-table thead th {
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    padding: 5px 20px;
+    background: #d8d8d8;
+    font-size: 14px;
+}
+#ipad .scroll-table thead tr th:first-child {
+    border-radius: 3px;
+}
+#ipad .scroll-table thead tr th:last-child {
+    border-radius: 3px;
+}
+#ipad .scroll-table tbody td {
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+#ipad .scroll-table tbody tr:nth-child(even){
+    background: #f3f3f3;
+}
+
+#ipad .scroll-table tbody tr td:first-child {
+    /*border-radius: 8px 0 0 8px;*/
+}
+#ipad .scroll-table tbody tr td:last-child {
+    /*border-radius: 0 8px 8px 0;*/
+}
+
+/* Стили для скролла */
+#ipad ::-webkit-scrollbar {
+    width: 6px;
+}
+#ipad ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+#ipad ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+}
+/* Анимации */
+/*@keyframes exampleipad {
+    from {bottom: -50%;}
+    to {bottom: 50%;}
+}
+@keyframes example2ipad {
+    from {bottom: 50%;}
+    to {bottom: -50%;}
+}*/
+
+#ipad .AnimateOn {
+    animation-name: exampleipad !important;
+    animation-duration: 2s !important;
+    animation-fill-mode: forwards !important;
+}
+#ipad .AnimateOff {
+    animation-name: example2ipad !important;
+    animation-duration: 2s !important;
+    animation-fill-mode: forwards !important;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="talrasha_css/talrasha_modal_window.css">
+</head>
+<body>
+    <div id="modal">
+     <div class="modal" v-cloak="v-cloak" v-show="isShow">
+        <div class="content">            
+          <p class="header">Информация о {{info}} №{{id}}</p>
+          <span class="text">Контролирует: {{name}}</span>
+        </div>
+     </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.9"></script>
+    <script src="talrasha_source/talrasha_modal_window.js"></script>
+</body>
+</html>

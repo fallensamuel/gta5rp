@@ -1,0 +1,123 @@
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+#shop {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: calc(1289px * var(--scale-coefficient));
+     height: calc(819px * var(--scale-coefficient));
+     font-family: TalRashaTTRegular;
+     font-weight: 400;
+     font-style: normal;
+     z-index: 999999999;
+}
+
+#shop .talrashabgshop247 {
+	position: absolute;
+	width: calc(1922px * var(--scale-coefficient));
+	height: calc(1082px * var(--scale-coefficient));
+	left: calc(-316px * var(--scale-coefficient));
+	top: calc(-132px * var(--scale-coefficient));
+	background: url(../talrasha_image/talrasha_selector_character/talrasha_bg_shadow.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0.01%, rgba(0, 0, 0, 0.6) 0.02%, rgba(0, 0, 0, 0.8) 100%);
+	z-index: -1;
+}
+
+ #shop .header {
+     width: 100%;
+     height: calc(96px * var(--scale-coefficient));
+     display: flex;
+     align-items: center;
+}
+ #shop .header .category {
+     width: calc(1023px * var(--scale-coefficient));
+     height: calc(54px * var(--scale-coefficient));
+     display: flex;
+	 padding-left: 50px;
+}
+ #shop .header .category .item {
+     width: calc(240px * var(--scale-coefficient));
+     height: calc(54px * var(--scale-coefficient));
+     color: rgba(255, 255, 255, 0.35);
+     font-size: calc(22px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+	 margin-right: 150px;
+}
+#shop .header .category .item:hover {
+	color: #FFFFFF;
+}
+ #shop .header .category .close-shop {
+     width: calc(54px * var(--scale-coefficient));
+     height: calc(54px * var(--scale-coefficient));
+     position: relative;
+	 color: rgba(255, 255, 255, 0.35);
+	 left: calc(26px * var(--scale-coefficient));
+     top: calc(14px * var(--scale-coefficient));
+	 font-size: calc(22px * var(--scale-coefficient));
+}
+
+ #shop .header .category .close-shop:hover {
+	 color: #FFFFFF;
+ }
+
+ #shop .content_container {
+     padding: calc(61px * var(--scale-coefficient));
+     padding-right: 0;
+     padding-bottom: calc(95px * var(--scale-coefficient));
+}
+ #shop .content_container .content {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: calc(33px * var(--scale-coefficient));
+     height: calc(567px * var(--scale-coefficient));
+     overflow-x: hidden;
+     overflow-y: auto;
+     padding-right: calc(36px * var(--scale-coefficient));
+     margin-right: calc(22px * var(--scale-coefficient));
+}
+ #shop .content_container .content .item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: calc(10px * var(--scale-coefficient));
+     width: calc(267px * var(--scale-coefficient));
+     height: calc(267px * var(--scale-coefficient));
+     color: #FFFFFF;
+     font-size: calc(20px * var(--scale-coefficient));
+}
+
+ #shop .content_container .content .item:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%); 
+ }
+#shop .content_container .content .item .img-container {
+     height: calc(200px * var(--scale-coefficient));
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ #shop .content_container .content .item .price {
+     font-weight: 600;
+     text-align: center;
+}
+
+ #shop .content_container .content .item .name {
+     font-weight: 500;
+     text-align: center;
+	 opacity: .7;
+}
+
+ #shop .content_container .content .item img {
+     max-height: calc(200px * var(--scale-coefficient));
+     max-width: 100%;
+ }

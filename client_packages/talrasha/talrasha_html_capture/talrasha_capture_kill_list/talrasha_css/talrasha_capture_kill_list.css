@@ -1,0 +1,49 @@
+[v-cloak] {
+    display: none;
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+body {
+ color: #7a7a7a;
+ font-family: TalRashaTTRegular;
+ user-select: none;
+}
+
+#killList {
+    position: absolute;
+    top: 20%;
+    right: 1%;
+    font-family: TalRashaTTRegular;
+}
+.log {
+    display: block;
+    margin-top: 17px;
+}
+
+.killer {
+    background: #282828;
+    padding: 10px;
+}
+
+.img-list {
+    background: #282828;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 5px; 
+}
+
+.death {
+    background: #282828;
+    padding: 10px;
+}

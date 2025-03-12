@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'OldOakAP';
+    src: url('../talrasha_font/OldOakAP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+body {
+ color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: TalRashaTTRegular;
+ margin: 20px auto;
+ user-select: none;
+}
+
+.notify {
+    background: #282828;
+    padding: 10px 20px;
+    text-align: center; 
+    font-size: 18px;
+}
+
+.hud_faction {
+  display: block;
+  background: #282828;
+  width: 95px; 
+  height: 85px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'OldOakAP';
+}
+.hud_faction2 {
+    display: block;
+    background: #282828;
+    width: 95px; 
+    height: 85px;
+    margin-top: -95px;
+    margin-left: 325px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'OldOakAP';
+  }
+
+.hud_time {
+    display: block;
+    margin-left: 100px;
+    margin-top: -95px;
+    background: #282828;
+    width: 220px;
+    height: 35px;
+    padding-top: 5px;
+    text-align: center; 
+    font-size: 24px;   
+}
+
+.hud_count_deff {
+    display: block;
+    margin-left: 100px;
+    margin-top: 5px;
+    background: #282828;
+    width: 35px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hud_img {
+    display: block;
+    background: #282828;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    padding: 15px;
+    margin-top: -50px;
+    margin-left: 160px;   
+}
+
+.hud_count_battle {
+    display: block;
+    margin-left: 265px;
+    margin-top: -50px;
+    background: #282828;
+    width: 35px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+

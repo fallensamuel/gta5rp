@@ -1,0 +1,417 @@
+@font-face {
+	font-family: TalRashaGirloy;
+	src: url(../talrasha_font/talrasha_gilroy/talrasha_gilroy.ttf)
+}
+
+@font-face {
+	font-family: TalRashaGeometria;
+	src: url(../talrasha_font/talrasha_geometria/Geometria.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+.talrashabgselectchar {
+	position: absolute;
+	width: calc(1920px * var(--scale-coefficient));
+	height: calc(1080px * var(--scale-coefficient));
+	left: calc(-259px * var(--scale-coefficient));
+	top: calc(-183px * var(--scale-coefficient));
+	background: url(../talrasha_image/talrasha_selector_character/talrasha_bg_login.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0.01%, rgba(0, 0, 0, 0.6) 0.02%, rgba(0, 0, 0, 0.8) 100%);
+	z-index: -1;
+}
+#selectorCharacters {
+    font-family: TalRashaTTRegular;
+    font-style: normal;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(1402px * var(--scale-coefficient));
+    height: calc(714px * var(--scale-coefficient));
+	/*background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(5px);*/
+    display: flex;
+}
+
+#selectorCharacters .user-blocks {
+    width: calc(999px * var(--scale-coefficient));
+    height: 100%;
+	background: rgba(170, 170, 170, 0.1);
+}
+
+#selectorCharacters .user-blocks .header {
+    width: 100%;
+        display: flex;
+}
+
+#selectorCharacters .user-blocks .header .logo-img {
+    width: calc(79px * var(--scale-coefficient));
+    height: calc(85px * var(--scale-coefficient));
+    margin-left: calc(17px * var(--scale-coefficient));
+    margin-top: calc(29px * var(--scale-coefficient));
+}
+
+#selectorCharacters .user-blocks .header .headers {
+    margin-top: calc(45px * var(--scale-coefficient));
+    margin-left: calc(35px * var(--scale-coefficient));
+}
+
+#selectorCharacters .user-blocks .header span {
+font-weight: 500;
+font-size: calc(21px * var(--scale-coefficient));
+line-height: calc(28px * var(--scale-coefficient));
+
+color: rgba(255, 255, 255, 0.5);
+margin-right: calc(31px * var(--scale-coefficient));
+
+}
+
+#selectorCharacters .user-blocks .header span.active {
+    font-weight: 500;
+font-size: calc(21px * var(--scale-coefficient));
+line-height: calc(28px * var(--scale-coefficient));
+
+color: #FFFFFF;
+
+text-shadow: 0px calc(4px * var(--scale-coefficient)) calc(4px * var(--scale-coefficient)) rgba(0, 0, 0, 0.25);
+
+}
+
+#selectorCharacters .selected-char-block {
+    width: calc(403px * var(--scale-coefficient));
+    height: 100%;
+	background: rgba(170, 170, 170, 0.2);
+    box-sizing: border-box;
+    position: relative;
+}
+
+#selectorCharacters .users {
+    display: flex;
+    margin-top:  calc(66px * var(--scale-coefficient));
+}
+
+#selectorCharacters .users .user {
+    width:  calc(240px * var(--scale-coefficient));
+    height:  calc(378px * var(--scale-coefficient));
+
+    box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+		background: rgba(170, 170, 170, 0.2);
+}
+
+#selectorCharacters .users .user .bg {
+        width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -100;
+}
+
+#selectorCharacters .users .user.active .bg {
+  backdrop-filter: drop-shadow(4px 4px 10px white);
+  
+    }
+
+#selectorCharacters .users .user.active {
+		background: rgba(255, 255, 255, 0.25);
+    }
+	
+#selectorCharacters .users .user .man {
+     width:  calc(200px * var(--scale-coefficient));
+    height:  calc(378px * var(--scale-coefficient));
+        position: absolute;
+        z-index: 10;
+        left: calc(12px * var(--scale-coefficient));
+        top: calc(4px * var(--scale-coefficient));
+
+    }
+
+#selectorCharacters .users .user .girl {
+     width:  calc(152px * var(--scale-coefficient));
+    height:  calc(330px * var(--scale-coefficient));
+        position: absolute;
+        z-index: 10;
+        left: calc(35px * var(--scale-coefficient));
+        top: calc(44px * var(--scale-coefficient));
+
+    }    
+
+#selectorCharacters .users .cont:first-child {
+    margin-left: calc(90px * var(--scale-coefficient));
+}
+
+#selectorCharacters .users .user:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+#selectorCharacters .users .cont{
+    margin-left: calc(62px * var(--scale-coefficient));
+}
+
+#selectorCharacters .users .user.red .bg {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.45) 0%, rgba(151, 151, 151, 0.45) 100%);
+}
+
+#selectorCharacters .users .user.lock .bg {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.45) 0%, rgba(151, 151, 151, 0.45) 100%);
+}
+
+#selectorCharacters .users .user.blue .bg {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.45) 0%, rgba(151, 151, 151, 0.45) 100%);
+}
+
+#selectorCharacters .users .user .user-info {
+        position: absolute;
+    z-index: 100;
+    bottom: calc(39px * var(--scale-coefficient));
+    left: calc(32px * var(--scale-coefficient));
+     font-weight: 300;
+
+}
+
+#selectorCharacters .users .user .user-info .id {
+font-size: calc(20px * var(--scale-coefficient));
+line-height: calc(23px * var(--scale-coefficient));
+
+color: #FFFFFF;
+
+    }
+
+    #selectorCharacters .users .user .user-info .name {
+  
+font-size: calc(20px * var(--scale-coefficient));
+line-height: calc(23px * var(--scale-coefficient));
+
+    font-weight: 500;
+
+    }
+
+    #selectorCharacters .users .user.red .user-info .name {
+        color: #FFFFFF;
+        text-shadow: 0px 0px  calc(25px * var(--scale-coefficient)) rgba(255, 2, 2, 0.5);
+    }
+
+     #selectorCharacters .users .user.blue .user-info .name {
+        color: #FFFFFF;
+
+        text-shadow: 0px 0px  calc(25px * var(--scale-coefficient)) rgba(0, 71, 255, 0.5);
+    }
+
+    #selectorCharacters .users .user .user-info .player {
+font-size: calc(18px * var(--scale-coefficient));
+line-height: calc(23px * var(--scale-coefficient));
+/* identical to box height */
+
+
+color: rgba(255, 255, 255, 0.5);
+    }
+
+#selectorCharacters .users .user.lock {
+    text-align: center;
+}
+
+#selectorCharacters .users .user.lock svg {
+       width: calc(70px * var(--scale-coefficient));
+    height: calc(70px * var(--scale-coefficient));
+    margin-top: calc(97px * var(--scale-coefficient));
+}
+
+#selectorCharacters .users .user.lock .info {
+font-weight: 500;
+font-size:  calc(21px * var(--scale-coefficient));
+line-height:  calc(28px * var(--scale-coefficient));
+color: #FFFFFF;
+margin-top: calc(5px * var(--scale-coefficient));
+
+    }
+
+    #selectorCharacters .users .user.lock .info-bottom {
+        font-weight: 500;
+font-size:  calc(18px * var(--scale-coefficient));
+line-height:  calc(21px * var(--scale-coefficient));
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+opacity: 0.5;
+margin-top: calc(5px * var(--scale-coefficient));
+    }
+
+    #selectorCharacters .main-info {
+font-size: calc(21px * var(--scale-coefficient));
+line-height: calc(28px * var(--scale-coefficient));
+    margin-top: calc(86px * var(--scale-coefficient));
+    margin-left: calc(90px * var(--scale-coefficient));
+    }
+
+    #selectorCharacters .main-info .first-line {
+        margin-bottom: calc(7px * var(--scale-coefficient));
+    }
+
+    #selectorCharacters .main-info span{
+  margin-right: calc(49px * var(--scale-coefficient));
+    }
+
+    #selectorCharacters .main-info .bsvg {
+        width: calc(18px * var(--scale-coefficient));
+    height: calc(18px * var(--scale-coefficient));
+    position: relative;
+        top: calc(2px * var(--scale-coefficient));
+
+    }
+
+    #selectorCharacters .main-info .timesvg {
+        width: calc(24px * var(--scale-coefficient));
+    height: calc(24px * var(--scale-coefficient));
+        position: relative;
+        top: calc(2px * var(--scale-coefficient));
+
+    }
+
+    #selectorCharacters .selected-char-block .lastEnter {
+        font-size: calc(21px * var(--scale-coefficient));
+line-height: calc(28px * var(--scale-coefficient));
+
+color: rgba(255, 255, 255, 0.75);
+    margin-top: calc(46px * var(--scale-coefficient));
+    margin-left: calc(34px * var(--scale-coefficient));
+    }
+
+    #selectorCharacters .selected-char-block .lastEnter-text {
+       font-size: calc(21px * var(--scale-coefficient));
+line-height:  calc(28px * var(--scale-coefficient));
+
+color: #FFFFFF;
+
+margin-left: calc(34px * var(--scale-coefficient));
+    }
+
+     #selectorCharacters .selected-char-block .name {
+        font-size: calc(21px * var(--scale-coefficient));
+line-height: calc(42px * var(--scale-coefficient));
+text-align: left;
+
+color: #FFFFFF;
+
+text-shadow: 0px calc(4px * var(--scale-coefficient)) calc(4px * var(--scale-coefficient)) rgba(0, 0, 0, 0.25);
+margin-left: calc(45px * var(--scale-coefficient));
+    margin-top: calc(50px * var(--scale-coefficient));
+
+     }
+
+      #selectorCharacters .selected-char-block .info-block.first {
+        margin-top: calc(66px * var(--scale-coefficient));
+      }
+
+       #selectorCharacters .selected-char-block .info-block {
+        margin-top: calc(9px * var(--scale-coefficient));
+        font-weight: 500;
+            display: flex;
+                margin-left: calc(20px * var(--scale-coefficient));
+       }
+
+       #selectorCharacters .selected-char-block .info-block .label {
+font-size: calc(16px * var(--scale-coefficient));
+line-height: calc(28px * var(--scale-coefficient));
+margin: calc(0px * var(--scale-coefficient)) calc(14px * var(--scale-coefficient));
+color: rgba(255, 255, 255, 0.75);
+
+text-shadow: 0px calc(4px * var(--scale-coefficient)) calc(4px * var(--scale-coefficient)) rgba(0, 0, 0, 0.25);
+       }
+
+       #selectorCharacters .selected-char-block .info-block .info-container {
+        margin-left: calc(14px * var(--scale-coefficient));
+		display: flex;
+		text-align: right;
+       }
+
+       #selectorCharacters .selected-char-block .info-block .info {
+font-size: calc(16px * var(--scale-coefficient));
+line-height: calc(28px * var(--scale-coefficient));
+color: #FFFFFF;
+position: absolute;
+text-align: right;
+padding-left: 120px;
+       }
+
+     #selectorCharacters .selected-char-block .svg_one {
+         width: calc(26px * var(--scale-coefficient));
+     height: calc(31px * var(--scale-coefficient));
+         margin-top: calc(1px * var(--scale-coefficient));
+     }
+
+      #selectorCharacters .selected-char-block .svg_two {
+         width: calc(27px * var(--scale-coefficient));
+     height: calc(26px * var(--scale-coefficient));
+         margin-top: calc(4px * var(--scale-coefficient));
+     }
+
+     #selectorCharacters .selected-char-block .svg_three {
+         width: calc(28px * var(--scale-coefficient));
+     height: calc(28px * var(--scale-coefficient));
+         margin-top: calc(1px * var(--scale-coefficient));
+     }
+
+#selectorCharacters .selected-char-block .bottom:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+ #selectorCharacters .selected-char-block .bottom {
+    width: 100%;
+    height: calc(91px * var(--scale-coefficient));
+	background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: 0;
+    font-size: calc(25px * var(--scale-coefficient));
+    line-height: calc(42px * var(--scale-coefficient));
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        text-align: center;
+    }
+
+     #selectorCharacters .selected-char-block .bottom svg {
+          width: calc(20px * var(--scale-coefficient));
+     height: calc(11px * var(--scale-coefficient));
+
+     }
+
+     #selectorCharacters .selected-char-block .bottom .right {
+            position: absolute;
+    top: 0;
+    right: 0;
+
+     }
+
+     #selectorCharacters .selected-char-block .bottom .left {
+            position: absolute;
+    bottom: 0;
+    left: 0;
+
+     }
+
+     #selectorCharacters .selected-char-block .lvl {
+        position: absolute;
+        right:  calc(15px * var(--scale-coefficient));
+        top: calc(151px * var(--scale-coefficient));
+        font-size: calc(21px * var(--scale-coefficient));
+line-height: calc(28px * var(--scale-coefficient));
+text-align: center;
+
+color: rgba(255, 255, 255, 0.75);
+text-align: center;
+     }
+
+     #selectorCharacters .selected-char-block .lvl .label {
+            color: #FFFFFF;
+     }

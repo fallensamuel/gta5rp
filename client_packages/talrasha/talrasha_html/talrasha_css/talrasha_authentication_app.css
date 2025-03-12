@@ -1,0 +1,915 @@
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+#authenticationApp {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+#authenticationApp .talrashaauthda {
+	position: relative;
+	width: 151px;
+	height: 28px;
+	font-family: TalRashaTTBold;
+	font-weight: bold;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+#authenticationApp .talrashabglogin {
+	position: absolute;
+	width: calc(1920px * var(--scale-coefficient));
+	height: calc(1080px * var(--scale-coefficient));
+	background: url(../talrasha_image/talrasha_authentication/talrasha_bg_login.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.45) 100%);
+	background-size: cover;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+
+#authenticationApp .talrashabgreg {
+	position: absolute;
+	width: calc(1920px * var(--scale-coefficient));
+	height: calc(1080px * var(--scale-coefficient));
+	background: url(../talrasha_image/talrasha_authentication/talrasha_bg_reg.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.45) 100%);
+	background-size: cover;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+
+#authenticationApp .talrashabg1 {
+	position: absolute;
+	width: 148px;
+	height: 35px;
+	left: calc(1002px * var(--scale-coefficient));
+	top: calc(287px * var(--scale-coefficient));
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+}
+
+#authenticationApp .talrashabg1:hover {
+	background: rgba(255, 255, 255, 0.25);
+	color: #FFFFFF;
+}
+
+#authenticationApp .talrashabg1 b:hover {
+	color: #FFFFFF;
+}
+#authenticationApp .authentication {
+	position: relative;
+	height: 100%;
+	/*background: url(../talrasha_image/talrasha_authentication/talrasha_bg.png) no-repeat;
+	background-size: cover;*/
+	padding: 286px 0 0 770px;
+}
+
+@font-face {
+	font-family: ParisNineteenSixty;
+	src: url(../talrasha_font/Chalet-ParisNineteenSixty.otf)
+}
+
+@font-face {
+	font-family: TalRashaGirloy;
+	src: url(../talrasha_font/talrasha_gilroy/talrasha_gilroy.ttf)
+}
+
+@font-face {
+	font-family: TalRashaGeometria;
+	src: url(../talrasha_font/talrasha_geometria/Geometria.ttf)
+}
+
+#alphaTest {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+#alphaTest .box {
+	border-radius: .462962962962963vh;
+	background-color: rgba(8, 7, 20, .822);
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 .5em 1em rgba(0, 0, 0, .6);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .3);
+	width: 90.44444444444444vh;
+	height: 60.09259259259259vh;
+	border-radius: 100px 200px;
+	font-family: ParisNineteenSixty;
+	color: #fff
+}
+
+#alphaTest .box h1 {
+	font-size: 24px;
+	padding-top: 2.222222222222222vh;
+	text-align: center
+}
+
+#alphaTest .box h2 {
+	font-size: 1.296296296296296vh;
+	font-weight: 700;
+	margin-left: 2.592592592592593vh;
+	margin-right: 2.592592592592593vh
+}
+
+#alphaTest .box p {
+	font-size: 18px;
+	margin-left: 2.592592592592593vh;
+	margin-right: 2.592592592592593vh
+}
+
+#alphaTest .box p.bold {
+	font-weight: 700;
+	text-align: right;
+	margin-top: 7vh
+}
+
+#authenticationApp .welcome h1 {
+	font-size: 70px;
+	font-weight: 100;
+	letter-spacing: 13px;
+	margin-top: -9px
+}
+
+#authenticationApp .welcome h2 {
+	font-size: 24px;
+	font-weight: 100;
+	letter-spacing: 3px;
+	margin-top: -35px
+}
+
+#authenticationApp .welcome h3 {
+	font-family: OpenSans;
+	font-size: 22px;
+	font-weight: 100;
+	margin-top: -55px
+}
+
+#authenticationApp .right-background-box {
+	width: 260px;
+	position: absolute;
+	border-radius: 40px;
+	animation: left-to-right 1.6s alternate;
+	right: 180px;
+	z-index: -1
+}
+
+#authenticationApp .right-block {
+	width: 406px
+}
+
+@keyframes left-hide {
+	from {
+		-webkit-transform: translateX(0);
+		opacity: 1
+	}
+	to {
+		-webkit-transform: translateX(-500%);
+		opacity: 0
+	}
+}
+
+@keyframes right-hide {
+	from {
+		-webkit-transform: translateX(0);
+		opacity: 1
+	}
+	to {
+		-webkit-transform: translateX(500%);
+		opacity: 0
+	}
+}
+
+.socseti {
+	position: relative;
+	top: 500;
+	right: 170;
+	bottom: 0;
+	left: 0;
+	width: 87px;
+	height: 87px;
+	object-fit: contain
+}
+
+.socseti:hover {
+	box-shadow: 0 0 15px 10px rgba(80, 81, 112, .74)
+}
+
+.logotip {
+	position: absolute;
+	top: -100px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 510.5px;
+	height: 274px;
+	float: left;
+	margin: 0 2px 2px 2px;
+	object-fit: contain
+}
+
+.auth {
+	position: absolute;
+	top: -70px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 497px;
+	height: 274px;
+	float: left;
+	object-fit: contain
+}
+
+#authenticationApp .block a {
+	text-align: center
+}
+
+#authenticationApp .google-description a {
+	font-size: 11px
+}
+
+#authenticationApp .login {
+	width: 403px
+}
+
+#authenticationApp .login input {
+	width: 380px;
+	height: 55px;
+	padding: 0 0 4 57px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: TalRashaGeometria;
+	background: rgba(255, 255, 255, 0.1);
+	border: rgba(255, 255, 255, 0.1);
+}
+
+#authenticationApp .login input:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    outline: 0;
+    box-shadow: 0 0 9px rgba(255, 255, 255, 0.25);
+}
+
+#authenticationApp .registration input:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    outline: 0;
+    box-shadow: 0 0 9px rgba(255, 255, 255, 0.25);
+}
+
+#authenticationApp .recovery input:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    outline: 0;
+    box-shadow: 0 0 9px rgba(255, 255, 255, 0.25);
+}
+
+#authenticationApp .login input:focus {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+	outline: 0;
+    box-shadow: 0 0 9px rgba(255, 255, 255, 0.25);
+}
+
+#authenticationApp .registration input:focus {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+	outline: 0;
+    box-shadow: 0 0 9px rgba(255, 255, 255, 0.25);
+}
+
+#authenticationApp .recovery input:focus {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+	outline: 0;
+    box-shadow: 0 0 9px rgba(255, 255, 255, 0.25);
+}
+	
+#authenticationApp .login input::placeholder {
+	font-family: TalRashaGeometria;
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFFFFF;
+	opacity: 0.5;
+}
+
+#authenticationApp .registration input {
+	width: 380px;
+	height: 55px;
+	padding: 0 0 4 57px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: TalRashaGeometria;
+	background: rgba(255, 255, 255, 0.1);
+	border: rgba(255, 255, 255, 0.1);
+}
+
+#authenticationApp .login input:valid {
+	transition: .7s;
+	/*border: 1px solid #573782;*/
+	/*color: rgba(255, 255, 255, 0.25);*/
+}
+
+#authenticationApp .login input:valid>.fast-enter a {
+	transition: .7s
+}
+
+#authenticationApp .registration input:valid {
+	transition: .7s
+}
+
+#authenticationApp .enter-real-info input {
+	text-align: left
+}
+
+#authenticationApp .enter-real-info input:valid {
+	text-align: left
+}
+
+#authenticationApp .registration input::placeholder {
+	font-weight: 100;
+	color: #FFFFFF;
+	opacity: 0.5;
+}
+
+#authenticationApp .sex-selector {
+	padding-top: 20px
+}
+
+#authenticationApp .sex-block {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 14px;
+	color: #8c8c8c
+}
+
+#authenticationApp .sex-block:hover {
+	color: #4a4a4a
+}
+
+#authenticationApp .sex-block-active {
+	color: #7fa2e8;
+	font-weight: 700
+}
+
+#authenticationApp .sex-block-active:hover {
+	color: #7fa2e8
+}
+
+#authenticationApp .enter-info {
+	width: 406px;
+	padding: 28px 0 0 0
+}
+
+#authenticationApp .registration>.enter-info {
+	padding: 28px 0 0 0
+}
+
+#authenticationApp .registration>.enter-info a {
+	font-size: 13px;
+	text-transform: uppercase;
+	position: absolute
+}
+
+#authenticationApp .button {
+	font-size: 16px;
+	font-family: TalRashaTTRegular;
+	color: rgba(255, 255, 255, 0.5);
+	width: 209.65px;
+	height: 50px;
+	font-weight: 500;
+	justify-content: center;
+	margin: 17 135px 18px 90;
+	border: none;
+	display: flex;
+	align-items: center
+}
+
+#authenticationApp .button:hover {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+#authenticationApp .buttonauth {
+	font-size: 16px;
+	font-family: TalRashaTTRegular;
+	color: rgba(255, 255, 255, 0.5);
+	width: 209.65px;
+	height: 50px;
+	font-weight: 500;
+	justify-content: center;
+	margin: 0 135px 18px 0;
+	border: none;
+	display: flex;
+	align-items: center
+}
+
+#authenticationApp .buttonauth:hover {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+#authenticationApp .cant-enter a {
+	font-size: 16px;
+	font-family: TalRashaTTRegular;
+	color: rgba(255, 255, 255, 0.5);
+	position: relative;
+    top: -50px;
+	left: 259px;
+	
+}
+
+#authenticationApp .cant-enter a:hover {
+	color: #FFFFFF;
+	background: rgba(255, 255, 255, 0.25);
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: -10;
+}
+
+#authenticationApp .fast-enter {
+	padding: 0;
+	margin: 0;
+	height: 0;
+	margin-bottom: 43px;
+	opacity: 0.5;
+	padding-left: 23px;
+}
+
+#authenticationApp .fast-enter a {
+	font-weight: normal;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-right: 5px;
+	margin-left: 33px;
+	font-family: TalRashaGeometria;
+}
+
+#authenticationApp .switch {
+	position: absolute;
+	display: inline-block;
+	width: 18.38px;
+	height: 18.38px;
+}
+
+#authenticationApp .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0
+}
+
+#authenticationApp .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 1.5px solid #FFFFFF;
+	transition: .4s
+}
+
+
+#authenticationApp input {
+	margin: 0 0 28px 0
+}
+
+#authenticationApp input:checked+.slider {
+	background-color: #FFFFFF;
+}
+
+#authenticationApp input:focus+.slider {
+	box-shadow: 0 0 1px #7fa2e8
+}
+
+#authenticationApp input:checked+.slider:before {
+	transform: translateX(19px)
+}
+
+#authenticationApp .slider.round {
+	border-radius: 18px;
+}
+
+#authenticationApp .slider.round:before {
+	border-radius: 50%
+}
+
+#authenticationApp .select {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: stretch;
+	flex-wrap: wrap;
+	font-weight: 500;
+	padding: 0 0 18px 0;
+	font-size: 20px;
+	font-family: Roboto, sans-serif;
+	color: #fff
+}
+
+#authenticationApp .select_margin {
+	margin: 0 0 18px 0
+}
+
+#authenticationApp .select-block a {
+	color: #fff;
+	font-size: 20px
+}
+
+#authenticationApp .select-block b {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+	font-weight: normal;
+	left: 263px;
+	font-family: TalRashaGirloy;
+	position: relative;
+	top: -10px;
+}
+
+#authenticationApp .select-block b:hover {
+	color: #FFFFFF;
+	background: rgba(255, 255, 255, 0.25);
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: -10;
+}
+
+#authenticationApp .select-block-active a {
+	color: #6B6B6B;
+}
+
+#authenticationApp .select-block b {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+	font-weight: normal;
+	left: 263px;
+	font-family: TalRashaGirloy;
+	position: relative;
+	top: -10px;
+}
+
+#authenticationApp .select-block-active c {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+	font-weight: 500;
+	font-family: TalRashaTTRegular;
+	position: relative;
+    left: 175px;
+}
+
+#authenticationApp .select-block-active c:hover {
+	color: #FFFFFF;
+	background: rgba(255, 255, 255, 0.25);
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: -10;
+}
+
+#authenticationApp .recovery {
+	position: relative;
+	height: 500px;
+	padding-top: 45px;
+}
+
+.confirmEmail,
+.google,
+.pincode,
+.recovery-result {
+	text-align: center;
+	position: relative;
+	height: 500px
+}
+
+#authenticationApp .box-header {
+	margin: 0 0 18px 0
+}
+
+#authenticationApp .box-header a {
+	font-size: 20px;
+	font-family: Roboto, sans-serif;
+	color: #fff;
+	font-weight: 700
+}
+
+#authenticationApp .recovery input {
+	width: 380px;
+    height: 55px;
+    padding: 0 0 4 57px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: TalRashaGeometria;
+    background: rgba(255, 255, 255, 0.1);
+    border: rgba(255, 255, 255, 0.1);
+}
+
+#authenticationApp .recovery .button {
+	margin-top: 25px;
+	margin-bottom: 25px
+}
+
+#authenticationApp .recovery input::placeholder {
+	font-family: TalRashaGeometria;
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFFFFF;
+	opacity: 0.5;
+}
+
+#authenticationApp .result-info {
+	padding-top: 155px
+}
+
+#authenticationApp .result-info a {
+	font-size: 17px;
+	font-weight: 700;
+	color: #b1b4b5
+}
+
+#authenticationApp .centred-img {
+	position: absolute;
+	margin-top: -65px;
+	left: 50%;
+	transform: translateX(-50%)
+}
+
+#authenticationApp .send-button {
+    width: 209.65px;
+    height: 50px;
+    font-weight: 500;
+    justify-content: center;
+    margin: 0 135px 18px 90px;
+    border: none;
+    display: flex;
+    align-items: center;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#authenticationApp .send-button:hover {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+#authenticationApp .send-button a {
+	font-size: 16px;
+	font-family: TalRashaTTRegular;
+}
+
+#authenticationApp .send-button:hover {
+	transition: .2s
+}
+
+#authenticationApp .send-description {
+	text-align: justify
+}
+
+#authenticationApp .send-description a {
+	font-size: 13px;
+	color: #737474
+}
+
+#authenticationApp .input-description a {
+	font-size: 13px;
+	color: #737474
+}
+
+#authenticationApp .exit-button {
+    width: 209.65px;
+    height: 50px;
+    font-weight: 500;
+    justify-content: center;
+    margin: 0 135px 18px 90px;
+	color: rgba(255, 255, 255, 0.5);
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+#authenticationApp .exit-button:hover {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+#authenticationApp .exit-button a {
+	font-size: 16px;
+	font-family: TalRashaTTRegular;
+}
+
+#authenticationApp .exit-button a:hover {
+	color: #1f1e1e
+}
+
+#authenticationApp .google-description {
+	padding-top: 20px;
+	text-align: justify
+}
+
+#authenticationApp .google-description a {
+	font-size: 13px;
+	color: #737474
+}
+
+#authenticationApp .google-description input {
+	width: 265px;
+	height: 40px;
+	border: 2px solid #c7cccd;
+	text-align: center;
+	color: #313131;
+	font-weight: 700;
+	margin-top: 20px
+}
+
+#authenticationApp .google-description input::placeholder {
+	color: #c7cccd;
+	font-weight: 100
+}
+
+#authenticationApp .error-text {
+	padding-top: 10px
+}
+
+#authenticationApp .error-text a {
+	font-size: 13px;
+	color: red
+}
+
+#authenticationApp .pincode input {
+	width: 265px;
+	height: 40px;
+	border-radius: 20px;
+	border: 2px solid #c7cccd;
+	text-align: center;
+	color: #313131;
+	font-weight: 700;
+	margin-top: 20px
+}
+
+.confirmEmail input {
+	width: 265px;
+	height: 40px;
+	border: 1px solid #fff;
+	text-align: center;
+	color: #fff;
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 20px;
+	background: rgba(49, 67, 92, .3)
+}
+
+#authenticationApp .pincode input::placeholder,
+.confirmEmail input::placeholder {
+	color: #c7cccd;
+	font-weight: 100
+}
+
+#authenticationApp .pincode .button,
+.confirmEmail input::placeholder {
+	margin-top: 11px
+}
+
+.eye-icon {
+	display: flex
+}
+
+.eye-icon:before {
+	/*content: "";
+	display: block;
+	position: absolute;
+	height: 40px;
+	width: 2px;
+	margin: 4px 0 0 2px;
+	background: #573782;
+	box-shadow: 0 0 30px rgba(12, 255, 167, .5)*/
+}
+
+.eye-icon .eye {
+	display: block;
+	position: relative;
+	height: 24px;
+	width: 24px;
+	margin: 13px 0 0 -42px;
+	background: url(../talrasha_image/talrasha_authentication/talrasha_shape.svg) center center no-repeat
+}
+
+.talrashauser-icon {
+	display: flex
+}
+
+.talrashauser-icon:before {
+	/*content: "";
+	display: block;
+	position: absolute;
+	height: 40px;
+	width: 2px;
+	margin: 4px 0 0 2px;
+	background: #573782;
+	box-shadow: 0 0 30px rgba(12, 255, 167, .5)*/
+}
+
+.talrashauser-icon .talrashauser {
+	display: block;
+	position: relative;
+	height: 24px;
+	width: 24px;
+	margin: 13px 0 0 -362px;
+	background: url(../talrasha_image/talrasha_authentication/talrasha_user.png) center center no-repeat
+}
+
+.talrashakey-icon {
+	display: flex
+}
+
+.talrashakey-icon:before {
+	/*content: "";
+	display: block;
+	position: absolute;
+	height: 40px;
+	width: 2px;
+	margin: 4px 0 0 2px;
+	background: #573782;
+	box-shadow: 0 0 30px rgba(12, 255, 167, .5)*/
+}
+
+.talrashakey-icon .talrashakey {
+	display: block;
+	position: relative;
+	height: 24px;
+	width: 24px;
+	margin: 13px 0 0 -362px;
+	background: url(../talrasha_image/talrasha_authentication/talrasha_key.png) center center no-repeat
+}
+
+.talrashamail-icon {
+	display: flex
+}
+
+.talrashamail-icon:before {
+	/*content: "";
+	display: block;
+	position: absolute;
+	height: 40px;
+	width: 2px;
+	margin: 4px 0 0 2px;
+	background: #573782;
+	box-shadow: 0 0 30px rgba(12, 255, 167, .5)*/
+}
+
+.talrashamail-icon .talrashamail {
+	display: block;
+	position: relative;
+	height: 24px;
+	width: 24px;
+	margin: 13px 0 0 -362px;
+	background: url(../talrasha_image/talrasha_authentication/talrasha_mail.png) center center no-repeat
+}
+
+.login-icon {
+	display: flex
+}
+
+.login-icon:before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 37px;
+	width: 2px;
+	margin: 12px 0 0 2px;
+	background: #0cffa7;
+	box-shadow: 0 0 30px rgba(12, 255, 167, .5)
+}
+
+.login-icon:after {
+	content: "";
+	display: block;
+	position: relative;
+	height: 24px;
+	width: 24px;
+	margin: 20px 0 0 -42px;
+	background: url(../talrasha_image/talrasha_authentication/talrasha_path.svg) center center no-repeat
+}
+
+.logo-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 105px;
+	width: 200px;
+	right: 50px;
+	font-family: Roboto, sans-serif;
+	color: #fff;
+	line-height: 30px
+}
+
+.logo-icon img {
+	width: 95%
+}

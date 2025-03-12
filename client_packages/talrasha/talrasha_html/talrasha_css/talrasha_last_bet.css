@@ -1,0 +1,50 @@
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+#last-bets {
+	position: absolute;
+    right: 0.9vw;
+    bottom: 14vw;
+    display: flex;
+	flex-direction: column;
+    color: white;
+}
+
+#last-bets .key {
+	height: 49px;
+    width: 153px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+	color: white;
+	border-radius: 10px;
+	font-family: TalRashaTTRegular;
+	font-size: 0.8vw;
+	font-weight: bold;
+	margin-right: 0.8vw;
+	margin: calc(5px * var(--scale-coefficient));
+	padding-right: 16px;
+}
+
+/*#last-bets .key:last-child {
+	margin-right: 0;
+}*/
+
+#last-bets .key.red {
+	background: linear-gradient(to right, transparent 5%, rgba(155, 0, 0, 0.9));
+}
+
+#last-bets .key.black {
+	background: linear-gradient(to right, transparent 5%, rgba(0, 0, 0, 0.9));
+}
+
+#last-bets .key.green {
+	background: linear-gradient(to right, transparent 5%, rgba(0, 155, 0, 0.9));
+}

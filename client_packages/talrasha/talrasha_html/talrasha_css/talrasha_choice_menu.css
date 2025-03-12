@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+.choiceMenu {
+    position: absolute;
+    width: 50vh;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.choiceMenu .center .menu {
+    color: rgb(255, 255, 255);
+    opacity: 0.70;
+    display: flex;
+    border-radius: 1.11111vh;
+    text-align: center;
+    /* background: linear-gradient(322.53deg, rgba(96, 127, 239, 0.5) -1.41%, rgba(27, 38, 67, 0.05) 74.45%); */
+    /* box-shadow: 0px 0px 15px 5px #4e5463bd; */
+    margin-bottom: 50px;
+}
+
+.choiceMenu .center .menu .prop {
+    padding-bottom: 2vh;
+    width: 100%;
+}
+
+.choiceMenu .center .menu .prop .header {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 44px;
+    font-size: 1.875em;
+    background:linear-gradient(89.79deg, rgba(255, 6, 6, 0.219) -2.2%, rgba(255, 0, 0, 0.301) 53.72%);
+    height: 44px;
+    font-weight: 600;
+    border-top-left-radius:     10px 10px;
+    border-top-right-radius:    10px 10px;
+    z-index: 999;
+    /* margin-top: 42px; */
+}
+
+.choiceMenu .center .menu .prop .text {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 45px;
+}
+
+.choiceMenu .center .button_base {
+    margin-top: 3px;
+    color: rgb(255, 255, 255);
+    width: 49%;
+    height: 51px;
+    transition: 0.3s;
+    background: linear-gradient(322.53deg, rgb(104, 34, 34) -1.41%, rgba(166, 49, 49, 0.05) 74.45%);
+    box-shadow: 0px 0px 3px 1px #fffdff60;
+    border-radius: 10px;
+}
+
+.choiceMenu .center .button_base.agree {
+    float: left;
+    line-height: 51px;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    width: 170px;
+}
+
+.choiceMenu .center .button_base.cancel {
+    float: right;
+    line-height: 51px;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: 600;
+    margin-right: 25px;
+    width: 170px;
+}
+
+.choiceMenu .center .button_base.agree:hover,
+.choiceMenu .center .button_base.cancel:hover {
+    /* opacity: 0.80; */
+    /* background-color: #000000; */
+    background: linear-gradient(322.53deg, rgb(139, 44, 44) -1.41%, rgba(110, 31, 31, 0.05) 74.45%);
+    box-shadow: 0px 0px 5px 1px #fffdff60;
+}
+
+.choiceMenu.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.choiceMenu_help {
+    color: rgb(14, 247, 255);
+    opacity: 0.70; 
+    display: flex;
+    border-radius: 1.11111vh;
+    text-align: center;
+    background: linear-gradient(322.53deg, rgba(70, 8, 99, 0.5) -1.41%, rgb(251, 255, 0) 74.45%);
+    box-shadow: 0px 0px 15px 5px #1eff00bd;
+    margin: 50px;
+}

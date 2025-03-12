@@ -1,0 +1,285 @@
+.selectMenuTalRasha {
+  position: absolute;	
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Acrom",sans-serif;
+}
+
+.selectMenuTalRasha .menu_shop {
+  width: 45.27778vh;
+  height: 100%;
+  background: url(../talrasha_image/talrasha_selector_character/talrasha_bg_shadow.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0.01%, rgba(0, 0, 0, 0.6) 0.02%, rgba(0, 0, 0, 0.8) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.talrashabgselectmenu {
+	position: absolute;
+	width: calc(1920px * var(--scale-coefficient));
+	height: calc(1080px * var(--scale-coefficient));
+	left: calc(-1380px * var(--scale-coefficient));
+	top: calc(-270px * var(--scale-coefficient));
+	background: url(../talrasha_image/talrasha_selector_character/talrasha_bg_shadow.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0.01%, rgba(0, 0, 0, 0.6) 0.02%, rgba(0, 0, 0, 0.8) 100%);
+	z-index: -1;
+}
+
+.selectMenuTalRasha input[type="text"] {
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: 'Chalet-LondonNineteenSixty';
+    font-size: 1.5vh;
+    text-align: right;
+}
+
+.selectMenuTalRasha table {
+    color: #fff;
+    font-size: 1.6vh;
+    width: 100%;
+}
+
+.selectMenuTalRasha .menu_shop .header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.85185vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.selectMenuTalRasha .menu_shop .header .info img {
+  width: 6.01852vh;
+  margin-left: 4.07407vh;
+  margin-right: 2.68519vh;
+}
+
+.selectMenuTalRasha .menu_shop .header .skinShopclose {
+  margin-right: 4.53704vh;
+  cursor: pointer;
+}
+
+.selectMenuTalRasha .menu_shop .header .skinShopclose img {
+  width: 1.66667vh;
+}
+
+.selectMenuTalRasha .menu_shop .header .skinShopclose img:hover{
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+.selectMenuTalRasha .body {
+    height: 24vh;
+    position: relative;
+    width: 100%;
+	/*overflow-x: hidden;
+    overflow-y: scroll*/
+}
+
+.selectMenuTalRasha .body td {
+    padding: 1vh 1vh;
+}
+
+.selectMenuTalRasha .color-td {
+    display: flex;
+    position: absolute;
+    right: 0vh;
+}
+
+.selectMenuTalRasha .color-td div {
+    background: #000;
+    border-radius: 4px;
+    height: 2vh;
+    margin: 0 0.5vh;
+    width: 2vh;
+}
+
+.selectMenuTalRasha .content {
+	width: 45.3vh;
+}
+
+.selectMenuTalRasha .content table {
+    max-height: 70vh;
+    padding-right: 4vh;
+    overflow: auto;
+    position: relative;
+}
+
+.selectMenuTalRasha .content tr {
+    width: 100%;
+    height: 5.333333vh;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;*/
+    /*padding-left: 8.29259vh;*/
+	text-align: center;
+    font-size: 1.48148vh;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    margin-bottom: 1.66667vh;
+    z-index: 99999;
+}
+.selectMenuTalRasha::-webkit-scrollbar {
+     -webkit-appearance: none;
+      background: rgba(255, 255, 255, .5);
+}
+.selectMenuTalRasha::-webkit-scrollbar-thumb {
+     width: calc(3px * var(--scale-coefficient));
+     background: rgba(255, 255, 255, .9);
+}
+.selectMenuTalRasha .content tr:hover{
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+.selectMenuTalRasha .selected:hover{
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+.selectMenuTalRasha .hand-navigation {
+    height: 4vh;
+    position: relative;
+    background: #0007;
+    margin-top: 0.2vh;
+}
+
+.selectMenuTalRasha .hand-navigation img {
+    height: 1.56vh;
+    left: 50%;
+    position: absolute;
+    padding: 3px;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.selectMenuTalRasha .hand-navigation img:last-child {
+    transform: translateX(-50%) rotate(-180deg);
+    margin-top: 1.6vh;
+}
+
+.selectMenuTalRasha .header {
+  width: 100%;
+  height: 13.88889vh;
+  background: rgba(255, 255, 255, 0.1);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+	margin-bottom: 3.72222vh;
+}
+
+.selectMenuTalRasha .family-preview {
+    background: url(../talrasha_image/talrasha_customization/family-background.png);
+    height: 228px;
+    margin-bottom: 0.4vh;
+    position: relative;
+}
+
+.selectMenuTalRasha .family-preview img {
+    position: absolute;
+    height: 228px;
+    bottom: 0;
+}
+
+.selectMenuTalRasha .family-preview img:first-child {
+    /*Mother*/
+    height: 208px;
+    padding-left: 20px;
+    z-index: 1;
+}
+
+.selectMenuTalRasha .family-preview img:last-child {
+    /*Father*/
+    height: 217px;
+    padding-left: 160px;
+}
+
+.selectMenuTalRasha .name {
+    text-transform: uppercase;
+	color: #ffffff;
+	font-size: 1.85185vh;
+	font-weight: bold;
+}
+
+.selectMenuTalRasha .count {
+    text-transform: uppercase;
+	color: #ffffff;
+	font-size: 1.85185vh;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.selectMenuTalRasha .opacity {
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+}
+
+.selectMenuTalRasha .promptHelp {
+    background-color: #0007;
+    font-size: 1.6vh;
+    color: #fff;
+    margin-top: 0.2vh;
+    padding: 1.5vh;
+}
+
+.selectMenuTalRasha .promptHelp img {
+    bottom: 0.5vh;
+    float: right;
+    position: relative;
+}
+
+.selectMenuTalRasha .selected {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #fff;
+}
+
+.selectMenuTalRasha .selected input[type="text"] {
+    border-bottom: 1px solid #000;
+    color: #fff;
+    text-align: center;
+}
+
+.selectMenuTalRasha .union-img {
+    width: 100%;
+}

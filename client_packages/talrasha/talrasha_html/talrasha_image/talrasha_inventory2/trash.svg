@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 27" width="24" height="27">
+	<defs>
+		<image width="24" height="27" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAACRElEQVRIS72WS6hOURSAvw955B1FiTDyGFxJBjIyUCQlJQwMxISEKGJiws1EImKCEhNEIQoZiBJKkURhoLyK8sxzabnn9/jvf+69596y60zOXnt967HXWlvaWRExGZgJ9K4T/QxcVG+0pcK2NiNiCLAKuAc8rpMdDUwE9qovy/S0BxgLLFG3NFIQEfn/iPqwFBARs4ARQNQJfQWGAgOAF8BHoEch8x3oAwwD3gHpQc+682n8MyNidgkgBb4A7wtIKq8ZkXvfgLdAX6BXAwNbAO0luav7/w8QEenquCIcXTE8w3Zf/ZBKfnsQEVOAOUAmML9uFSk/ijOZq3Pq9XpAEzAP2A28AbpXBKRR/YG1wNlaAf7twShgKbBPfV5R+S/xiBgErAGOqg/qPRhY0I+rdzsJ+FWYwH71WT0gY7cJuKxe6SSgFuYdaib7T5ILFzdk31FPdxIwHZgBNKvZCVoBVmZ1qoc7Cciu0KQ2187/U2gRsSj7j5o3qfKKiIXAcHVnGSAtmKRuq6y95RYtA36oB8oA04rhkjHMgVJpRUTWwFP1WBlgArAA2KW+rqS9xYPNwC31fBkg58Jy4JD6pAogIrJlbwQuqNfKAP2A9cAp9XZFQK1QT6h3ygDZ4LLYrqqXKwIaet9qHkTEOuCRerIiIFt9XtM96quGHhTVvAL4pB6sCMjnzVxgu/qpLUDOhCllL4kyaEQsBsaoW/+WaRSiwcBqIN28BHSkHsYDU4Ez6s02AUWYRgLzgezvHVn52shX3tV64Z/d7uCtkbCv7AAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Инвентарь персонаж">
+		<g id="Мусор">
+			<use id="trash" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+		</g>
+	</g>
+</svg>

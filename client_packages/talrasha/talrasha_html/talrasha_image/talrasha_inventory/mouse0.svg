@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 25" width="17" height="25">
+	<defs>
+		<image width="17" height="25" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAZCAYAAADXPsWXAAACuElEQVQ4T82UX2jVdRjGP885Gxubs3IYas1qTVhuyz8wg4rBuqiLhGAymiFDFEO7KLwykCBBQixSxO4EKRJxq7ELuzAhTe3GgYPpNjmJ+GeCjG0u88/cOb/zxHedrbPfhrq73rvf+3vf5/v+ed5HzGK2NwJNEM2HRBXoOjAMnAP2SxrPT1P+h+1K4Bf8KMO9E/3c+gyW9bxIsmwbsALYDLwCbJF0YjJ3CsT2KuACo0fOcmPDC8CzqGicurFFwDuSToUk203Az8AmSYeDbwLE9gJgiMEvurm9O4AJFad59VSa4vp2EslQRbOkK7n4WuAisEZSVw4k285YfwOpmuen2iupT/Pyr39S8FwtuA3olfTl5H/bnwOtkpbLflBBerSbVG050ch/Iyp9a5yXOrtUuPBt2z8AlyV9FZthD7BXjtK7eHBuJ1cbk3kBpmRNhsrf+pSct9L2MaA/v5JcW8FfKDs6wt3jH3Htg+nLVnFEdeomhUtOQvLNsHJJqVglB4GlsjPHGW1/nxvrZzJGRQ+pGwsVvifpdDzAdpjRatk+yr2TLQx8MhMkGhqi5s4AsDVHtjjHdgDPhHa+JXt/O/f/ABXFWkpkKG3oBd0FMrFXAmtXAx2ys+04KkOjzTBYCEuy/J1KouEELs9S9sYIuAQoiIFEwB5gcWinA0hL+nC2O3qcz/ZuoDaA/AQkJAU6z8lsfw1U/b9AOoFI0ro59fLv4YbBVod2AnWLJcUo+2RI2/uBygDyDfC6pHefnDY9YoKoUBJA6oAfJQXNmJPZPg+0TYrSmdypf/y0KLbXAt8ByyZBXgP6Jo5J6n4aINsGWiQdy9fYVuB7oHG2i81TtIoJLYajkj4N/rjahw0dAn4H9gGXJP1luzRsIXfNgQoH8lVuGkhOrYK67wRqgLG8h4KuBP3cKylUMmX/AP17LaG2hLtXAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Инвентарь персонаж">
+		<g id="Помощь">
+			<g id="1">
+				<use id="mouse1" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="11" viewBox="0 0 63 11">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        font-size: 10.182px;
+        font-family: "SF UI Display";
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fdfbfb"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Группа_15" data-name="Группа 15" class="cls-1">
+    <image id="picto-batterie" x="38" width="25" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAALCAYAAACK9ybzAAAA1klEQVQ4ja3TP0rDQRDF8U/CT9FCLLXwzxEEc4AUYhO0SKG1VWzSCBYKeoRUQi5goY0eIWeIaJMqkMJaLCwsjAxuQEglzrfbXXbevtk3NT9coYkvzPb+wycu8BI1KtyjhR6WEgSCdQzRwFO8+hUdnGIN07krf+caJ1jBYTh5xhYOklwER3grbVPHQvmLTN4xxh5u6snFfzPBBrrV3FEe20XosSp9y3a0WpI6wFmI7KCPh8R03ZXELsciInyLdpmTxQSBYBPH2I2BnE33OfaTXAQfuMQIvgFGwCKvyfJwLwAAAABJRU5ErkJggg=="/>
+    <text id="_100_" data-name="100%" class="cls-2" transform="translate(13.154 7.857) scale(0.808 0.786)">100%</text>
+    <image id="_7f16998597933d30c827a66aeb54fee5" data-name="7f16998597933d30c827a66aeb54fee5" y="2" width="9" height="6" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAYAAAARx7TFAAAAgElEQVQImU3OsQrBcRSG4ecvciMWm2Q3KBv3wAVwH8rC6kJYLKLMFoMb0XGkn5CvzvC9vXW+KiNgijmaKKCBO9bYFGmHPma4ocITLaxwKNIEVwwxwAN17LFFW3mXEd2MOGfEOCM6GTH69N57zkf63iIjMiOW/7xWVv/lhAuOP4YXso1SRbSbsPAAAAAASUVORK5CYII="/>
+  </g>
+</svg>

@@ -1,0 +1,140 @@
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+#joblist * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-transform: none;
+}
+
+#joblist {
+	display: none;
+	height: 100%;
+	width: 100%;
+	font-family: TalRashaTTRegular;
+    -webkit-user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	z-index: 999999;
+}
+
+#joblist.active {
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+#joblist .exit_btn {
+	position: absolute;
+	right: 3.24074vh;
+	top: 3.51852vh;
+	width: 4.62963vh;
+	height: 4.62963vh;
+	border-radius: .92593vh;
+	background: #03A3F5;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center
+}
+
+#joblist .exit_btn img {
+	width: 2.59259vh
+}
+
+#joblist .list_main,
+#joblist .list_job {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+#joblist .btn_slider {
+	position: absolute;
+	cursor: pointer;
+	width: 4.62963vh;
+	height: 4.62963vh;
+	border-radius: .92593vh;
+	background: #03A3F5;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+#joblist .btn_slider.right {
+	right: 3.24074vh
+}
+
+#joblist .btn_slider.left {
+	left: 3.24074vh
+}
+
+#joblist .btn_slider.left img {
+	transform: rotate(180deg)
+}
+
+#joblist .btn_slider img {
+	width: 2.59259vh
+}
+
+#joblist .blockSpawn {
+	cursor: pointer;
+	width: 29.16667vh;
+	height: 51.94444vh;
+	margin: 0 .74074vh;
+	background: #fff;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #ffffff
+}
+
+#joblist .blockSpawn .icon {
+	width: 6.01852vh;
+	margin-bottom: 2.22222vh;
+	position: relative;
+	z-index: 2
+}
+
+#joblist .blockSpawn .title {
+	font-size: 1.66667vh;
+	font-weight: 900;
+	text-align: center;
+	position: relative;
+	z-index: 2
+}
+
+#joblist .blockSpawn .desc {
+	text-align: center;
+	font-size: 1.2963vh;
+	margin-top: 1.2037vh;
+	position: relative;
+	z-index: 2
+}
+
+#joblist .blockSpawn:hover .cover {
+	background: rgba(70, 70, 70, 0.87);
+}
+
+#joblist .blockSpawn .cover {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(32, 32, 32, 0.87)
+}

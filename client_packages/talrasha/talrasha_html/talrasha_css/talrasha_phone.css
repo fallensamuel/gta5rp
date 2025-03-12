@@ -1,0 +1,1365 @@
+#phone {
+     background-image: url(../talrasha_image/talrasha_phone/back.png);
+     background-repeat: no-repeat;
+     width: calc(302px * var(--scale-coefficient));
+     height: calc(613px * var(--scale-coefficient));
+     background-size: cover;
+     position: absolute;
+     right: calc(11px * var(--scale-coefficient));
+     bottom: calc(19px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'SF UI Display';
+     font-weight: 200;
+     font-style: normal;
+     color: white;
+     z-index: 9999999999999;
+     animation-name: example;
+     /*animation-duration: 1s;*/
+     animation-fill-mode: forwards;
+}
+ @keyframes example {
+     from {
+         bottom: -27em;
+    }
+     to {
+         bottom: calc(19px * var(--scale-coefficient));
+    }
+}
+ @keyframes example2 {
+     from {
+         bottom: 0vh;
+    }
+     to {
+        /* bottom: -30em;
+         */
+         bottom: -90vh;
+    }
+}
+ #phone.Animate {
+     animation-name: example2 !important;
+     /*animation-duration: 2s !important;*/
+     animation-fill-mode: forwards !important;
+}
+ #phone .head {
+     border-radius: calc(10px * var(--scale-coefficient));
+     background-color: rgb( 48, 48, 48 );
+     width: calc(82px * var(--scale-coefficient));
+     height: calc(26px * var(--scale-coefficient));
+     z-index: 10;
+     position: absolute;
+     top: calc(2px * var(--scale-coefficient));
+     margin-left: calc(3px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ #phone .icons {
+     height: calc(23px * var(--scale-coefficient));
+     width: 100%;
+     position: absolute;
+     top: calc(10px * var(--scale-coefficient));
+     display: flex;
+     align-items: center;
+     z-index: 99999999;
+     font-size: calc(9px * var(--scale-coefficient));
+}
+ #phone .icons span {
+     margin-left: calc(48px * var(--scale-coefficient));
+     margin-top: calc(3px * var(--scale-coefficient));
+}
+ #phone .icons .icons-container {
+     position: absolute;
+     top: calc(8px * var(--scale-coefficient));
+     right: calc(39px * var(--scale-coefficient));
+     border-bottom: calc(2px * var(--scale-coefficient)) solid rgba(255, 255, 255, .3);
+     height: 60%;
+}
+ #phone .icons .icons-container img:nth-child(1) {
+     width: calc(11px * var(--scale-coefficient));
+     height: calc(7px * var(--scale-coefficient));
+     margin-right: calc(3px * var(--scale-coefficient));
+}
+ #phone .icons .icons-container img:nth-child(2) {
+     width: calc(11px * var(--scale-coefficient));
+     height: calc(9px * var(--scale-coefficient));
+     margin-right: calc(3px * var(--scale-coefficient));
+}
+ #phone .icons .icons-container img:nth-child(3) {
+     width: calc(19px * var(--scale-coefficient));
+     height: calc(9px * var(--scale-coefficient));
+}
+ #phone .icons.black {
+     filter: invert(1);
+}
+ #phone .head .line {
+     width: calc(25px * var(--scale-coefficient));
+     height: calc(6px * var(--scale-coefficient));
+     background-color: rgb( 116, 116, 116 );
+     border-radius: calc(25px * var(--scale-coefficient));
+}
+ #phone .call-screen {
+     background-image: url(../talrasha_image/talrasha_phone/callback.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     height: calc(597px * var(--scale-coefficient));
+     width: calc(280px * var(--scale-coefficient));
+     padding-top: calc(100px * var(--scale-coefficient));
+     box-sizing: border-box;
+     padding-left: calc(60px * var(--scale-coefficient));
+     padding-bottom: calc(21px * var(--scale-coefficient));
+     padding-right: calc(60px * var(--scale-coefficient));
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-weight: 400;
+}
+ #phone .call-screen .name {
+     font-size: calc(25px * var(--scale-coefficient));
+}
+ #phone .call-screen .text {
+     font-size: calc(16px * var(--scale-coefficient));
+     color: rgb(149, 157, 160);
+     margin-top: calc(15px * var(--scale-coefficient));
+}
+ #phone .call-screen .bottm-buttons {
+     position: absolute;
+     bottom: calc(118px * var(--scale-coefficient));
+     display: flex;
+}
+ #phone .call-screen .bottm-buttons .accept {
+     border-radius: 50%;
+     background-color: rgb(76, 216, 102);
+     width: calc(58px * var(--scale-coefficient));
+     height: calc(58px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ #phone .call-screen .bottm-buttons .accept img {
+     height: calc(23px * var(--scale-coefficient));
+     width: calc(23px * var(--scale-coefficient));
+     pointer-events: none;
+}
+ #phone .call-screen .bottm-buttons .bottom-container {
+     display: flex;
+     flex-direction: column;
+    /* justify-content: center;
+     */
+     align-items: center;
+}
+ #phone .call-screen .bottm-buttons .bottom-container span {
+     font-size: calc(12px * var(--scale-coefficient));
+     color: rgb(119,119,119);
+     margin-top: calc(14px * var(--scale-coefficient));
+     font-weight: 700;
+}
+ #phone .call-screen .bottm-buttons .bottom-container:last-child {
+     margin-left: calc(58px * var(--scale-coefficient));
+}
+ #phone .call-screen .bottm-buttons .reject {
+     border-radius: 50%;
+     background-color: rgb( 250, 58, 47 );
+     width: calc(58px * var(--scale-coefficient));
+     height: calc(58px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ #phone .call-screen .bottm-buttons .reject img {
+     width: calc(26px * var(--scale-coefficient));
+     height: calc(10px * var(--scale-coefficient));
+     pointer-events: none;
+}
+ #phone .call-screen .bottom-line {
+     position: absolute;
+     bottom: calc(7px * var(--scale-coefficient));
+     width: calc(82px * var(--scale-coefficient));
+     height: calc(5px * var(--scale-coefficient));
+     background-color: white;
+     border-radius: calc(5px * var(--scale-coefficient));
+}
+ #phone .content {
+     background-image: url(../talrasha_image/talrasha_phone/phone.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     height: calc(610px * var(--scale-coefficient));
+     width: calc(299px * var(--scale-coefficient));
+     background-position: calc(2px * var(--scale-coefficient));
+     padding-top: calc(52px * var(--scale-coefficient));
+     box-sizing: border-box;
+     padding-left: calc(35px * var(--scale-coefficient));
+     padding-bottom: calc(21px * var(--scale-coefficient));
+     padding-right: calc(35px * var(--scale-coefficient));
+}
+ #phone .content .lockContainer {
+     width: 100%;
+     height: calc(19px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+}
+ #phone .content .lockContainer .lock {
+     height: calc(19px * var(--scale-coefficient));
+     width: calc(17px * var(--scale-coefficient));
+}
+ #phone .content .timeAndDate-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+ #phone .content .timeAndDate-container .time {
+     font-size: calc(65px * var(--scale-coefficient));
+}
+ #phone .content .timeAndDate-container .date {
+     font-size: calc(12px * var(--scale-coefficient));
+}
+ #phone .content .menu-items {
+     display: grid;
+     grid-template-columns: repeat(4, calc(43px * var(--scale-coefficient)));
+     grid-gap: calc(19px * var(--scale-coefficient));
+}
+ #phone .content .menu-items .item {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+ #phone .content .menu-items .item span {
+     font-size: calc(10px * var(--scale-coefficient));
+     margin-top: calc(3px * var(--scale-coefficient));
+}
+ #phone .content .menu-items .item .icon {
+     border-radius: calc(10px * var(--scale-coefficient));
+     width: calc(43px * var(--scale-coefficient));
+     height: calc(43px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ #phone .content .menu-items .item:nth-child(1) .icon {
+     background-image: -moz-linear-gradient( 90deg, rgb( 218, 58, 89 ) 0%, rgb( 219, 69, 94 ) 49.536%, rgb( 221, 79, 98 ) 99.072%);
+     background-image: -webkit-linear-gradient( 90deg, rgb( 218, 58, 89 ) 0%, rgb( 219, 69, 94 ) 49.536%, rgb( 221, 79, 98 ) 99.072%);
+}
+ #phone .content .menu-items .item .icon img {
+     pointer-events: none;
+}
+ #phone .content .menu-items .item:nth-child(1) .icon img {
+     width: calc(31px * var(--scale-coefficient));
+     height: calc(29px * var(--scale-coefficient));
+}
+ #phone .content .menu-items .item:nth-child(2) .icon {
+     background-image: -moz-linear-gradient( 90deg, rgb( 70, 186, 47 ) 0%, rgb( 86, 204, 63 ) 49.536%, rgb( 72, 205, 46 ) 99.072%);
+     background-image: -webkit-linear-gradient( 90deg, rgb( 70, 186, 47 ) 0%, rgb( 86, 204, 63 ) 49.536%, rgb( 72, 205, 46 ) 99.072%);
+}
+ #phone .content .menu-items .item:nth-child(2) .icon img {
+     width: calc(27px * var(--scale-coefficient));
+     height: calc(27px * var(--scale-coefficient));
+}
+ #phone .content .menu-items .item:nth-child(3) .icon {
+	background-color: white;
+}
+ #phone .content .menu-items .item:nth-child(3) .icon img {
+     width: calc(44px * var(--scale-coefficient));
+     height: calc(47px * var(--scale-coefficient));
+}
+ #phone .content .menu-items .item:nth-child(4) .icon {
+     background-color: white;
+}
+ #phone .content .menu-items .item:nth-child(4) .icon img {
+     width: calc(44px * var(--scale-coefficient));
+     height: calc(47px * var(--scale-coefficient));
+}
+ #phone .content .menu-items .item:nth-child(5) .icon {
+     background-image: -moz-linear-gradient( 90deg, rgb( 223, 197, 67 ) 0%, rgb( 240, 216, 98 ) 49.536%, rgb( 245, 218, 84 ) 99.072%);
+     background-image: -webkit-linear-gradient( 90deg, rgb( 223, 197, 67 ) 0%, rgb( 240, 216, 98 ) 49.536%, rgb( 245, 218, 84 ) 99.072%);
+}
+ #phone .content .menu-items .item:nth-child(5) .icon img {
+     width: calc(20px * var(--scale-coefficient));
+     height: calc(29px * var(--scale-coefficient));
+}
+ #phone .content .menu-items .item:nth-child(6) .icon {
+     background-image: -moz-linear-gradient( 90deg, rgb( 70, 186, 47 ) 0%, rgb( 86, 204, 63 ) 49.536%, rgb( 72, 205, 46 ) 99.072%);
+     background-image: -webkit-linear-gradient( 90deg, rgb( 70, 186, 47 ) 0%, rgb( 86, 204, 63 ) 49.536%, rgb( 72, 205, 46 ) 99.072%);
+}
+ #phone .content .menu-items .item:nth-child(6) .icon img {
+     width: calc(27px * var(--scale-coefficient));
+     height: calc(27px * var(--scale-coefficient));
+}
+ #phone .content .menu-items .item:nth-child(7) .icon {
+     background-image: -moz-linear-gradient( 90deg, rgb( 150, 150, 154 ) 0%, rgb( 184, 184, 189 ) 49.536%, rgb( 224, 224, 229 ) 99.072%);
+     background-image: -webkit-linear-gradient( 90deg, rgb( 150, 150, 154 ) 0%, rgb( 184, 184, 189 ) 49.536%, rgb( 224, 224, 229 ) 99.072%);
+}
+ #phone .content .menu-items .item:nth-child(7) .icon img {
+     width: calc(36px * var(--scale-coefficient));
+     height: calc(32px * var(--scale-coefficient));
+}
+ #phone .content .menu-items .item:nth-child(8) .icon {
+     background-image: -moz-linear-gradient( 90deg, rgb( 217, 109, 50 ) 0%, rgb( 219, 127, 76 ) 49.536%, rgb( 255, 151, 94 ) 99.072%);
+     background-image: -webkit-linear-gradient( 90deg, rgb( 217, 109, 50 ) 0%, rgb( 219, 127, 76 ) 49.536%, rgb( 255, 151, 94 ) 99.072%);
+}
+ #phone .content .menu-items .item:nth-child(8) .icon img {
+     width: calc(29px * var(--scale-coefficient));
+     height: calc(28px * var(--scale-coefficient));
+}
+ #phone .content .bottom-items-container {
+     position: absolute;
+     bottom: calc(21px * var(--scale-coefficient));
+     width: calc(255px * var(--scale-coefficient));
+     left: calc(23px * var(--scale-coefficient));
+     height: calc(74px * var(--scale-coefficient));
+}
+ #phone .content .bottom-items-container .circles {
+     width: 100%;
+     height: calc(8px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+}
+ #phone .content .bottom-items-container .circles .circle {
+     background-color: rgba( 255, 255, 255, .6 );
+     width: calc(5px * var(--scale-coefficient));
+     height: calc(5px * var(--scale-coefficient));
+     border-radius: 50%;
+     margin-right: calc(6px * var(--scale-coefficient));
+}
+ #phone .content .bottom-items-container .circles .circle.active {
+     background-color: rgba( 255, 255, 255, 1 );
+}
+ #phone .content .bottom-items {
+     border-radius: calc(25px * var(--scale-coefficient));
+     background-color: rgba( 255, 255, 255, .4 );
+     display: flex;
+     width: 100%;
+     height: calc(66px * var(--scale-coefficient));
+}
+ #phone .content .bottom-items .icon {
+     border-radius: calc(10px * var(--scale-coefficient));
+     width: calc(43px * var(--scale-coefficient));
+     height: calc(43px * var(--scale-coefficient));
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ #phone .content .bottom-items .icon img {
+     pointer-events: none;
+}
+ #phone .content .bottom-items .icon:nth-child(1) {
+     background-image: -moz-linear-gradient( 90deg, rgb( 19, 195, 50 ) 0%, rgb( 55, 220, 82 ) 49.536%, rgb( 88, 243, 115 ) 100%);
+     background-image: -webkit-linear-gradient( 90deg, rgb( 19, 195, 50 ) 0%, rgb( 55, 220, 82 ) 49.536%, rgb( 88, 243, 115 ) 100%);
+}
+ #phone .content .bottom-items .icon:nth-child(1) img {
+     width: calc(28px * var(--scale-coefficient));
+     height: calc(28px * var(--scale-coefficient));
+}
+ #phone .content .bottom-items .icon:nth-child(2) {
+     background-image: -moz-linear-gradient( 90deg, rgb( 22, 195, 50 ) 0%, rgb( 47, 234, 82 ) 49.536%, rgb( 86, 242, 113 ) 100%);
+     background-image: -webkit-linear-gradient( 90deg, rgb( 22, 195, 50 ) 0%, rgb( 47, 234, 82 ) 49.536%, rgb( 86, 242, 113 ) 100%);
+}
+ #phone .content .bottom-items .icon:nth-child(2) img {
+     width: calc(32px * var(--scale-coefficient));
+     height: calc(29px * var(--scale-coefficient));
+}
+ #phone .content .bottom-items .icon:nth-child(3) {
+     background-color: rgb( 255, 255, 255 );
+}
+ #phone .content .bottom-items .icon:nth-child(3) img {
+     width: calc(37px * var(--scale-coefficient));
+     height: calc(38px * var(--scale-coefficient));
+}
+ #phone .content .bottom-items .icon:nth-child(4) {
+     background-image: -moz-linear-gradient( 90deg, rgb( 150, 150, 154 ) 0%, rgb( 184, 184, 189 ) 49.536%, rgb( 224, 224, 229 ) 99.072%);
+     background-image: -webkit-linear-gradient( 90deg, rgb( 150, 150, 154 ) 0%, rgb( 184, 184, 189 ) 49.536%, rgb( 224, 224, 229 ) 99.072%);
+}
+ #phone .content .bottom-items .icon:nth-child(4) img {
+     width: calc(30px * var(--scale-coefficient));
+     height: calc(23px * var(--scale-coefficient));
+}
+ #phone .post .header {
+     height: calc(108px * var(--scale-coefficient));
+     width: 100%;
+}
+ #phone .post .header img {
+     height: calc(40px * var(--scale-coefficient));
+     width: calc(98px * var(--scale-coefficient));
+     margin-top: calc(53px * var(--scale-coefficient));
+     margin-left: calc(15px * var(--scale-coefficient));
+}
+ #phone .post .header .cancel {
+     font-size: calc(10px * var(--scale-coefficient));
+     position: absolute;
+     right: calc(16px * var(--scale-coefficient));
+     font-weight: 400;
+     top: calc(48px * var(--scale-coefficient));
+}
+ #phone .post .post-content {
+     height: fit-content;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: black;
+}
+ #phone .post .post-content svg{
+     margin-top: calc(44px * var(--scale-coefficient));
+     width: calc(48px * var(--scale-coefficient));
+     height: calc(52px * var(--scale-coefficient));
+}
+ #phone .post .post-content svg image{
+     width: calc(48px * var(--scale-coefficient));
+     height: calc(52px * var(--scale-coefficient));
+}
+ #phone .post .post-content .label {
+     font-size: calc(14px * var(--scale-coefficient));
+     margin-top: calc(20px * var(--scale-coefficient));
+     font-weight: 700;
+}
+ #phone .post .post-content input {
+     border: none;
+     font-family: 'SF UI Display';
+     margin-top: calc(22px * var(--scale-coefficient));
+     width: calc(227px * var(--scale-coefficient));
+     height: calc(40px * var(--scale-coefficient));
+     border-radius: calc(3px * var(--scale-coefficient));
+     padding-left: calc(11px * var(--scale-coefficient));
+     padding-right: calc(11px * var(--scale-coefficient));
+     background-color: rgb(229, 229, 229);
+}
+ #phone .post .post-content .price {
+     width: calc(83px * var(--scale-coefficient));
+     font-size: calc(11px * var(--scale-coefficient));
+     font-weight: 600;
+     text-align: center;
+     margin-top: calc(13px * var(--scale-coefficient));
+}
+ #phone .post .post-content .pay-button {
+     margin-top: calc(17px * var(--scale-coefficient));
+     width: calc(127px * var(--scale-coefficient));
+     height: calc(33px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: calc(11px * var(--scale-coefficient));
+     font-weight: 500;
+     background-color: rgb(229, 229, 229);
+     border-radius: calc(4px * var(--scale-coefficient));
+}
+ #phone .post {
+     background-image: url(../talrasha_image/talrasha_phone/post.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     height: calc(597px * var(--scale-coefficient));
+     width: calc(280px * var(--scale-coefficient));
+}
+ #phone .bank {
+     background-image: url(../talrasha_image/talrasha_phone/bank.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     height: calc(597px * var(--scale-coefficient));
+     width: calc(280px * var(--scale-coefficient));
+}
+ #phone .bank .header {
+     height: calc(137px * var(--scale-coefficient));
+     width: 100%;
+     padding-top: calc(50px * var(--scale-coefficient));
+     padding-left: calc(25px * var(--scale-coefficient));
+     box-sizing: border-box;
+     padding-right: calc(25px * var(--scale-coefficient));
+}
+ #phone .bank .header .name {
+     position: absolute;
+     font-size: calc(12px * var(--scale-coefficient));
+     top: calc(25px * var(--scale-coefficient));
+     left: 50%;
+    /* margin-right: -50%;
+     */
+     font-weight: 500;
+     transform: translate(-50%, 0);
+}
+ #phone .bank .bank-content {
+     width: 100%;
+     height: calc(431px * var(--scale-coefficient));
+     padding-left: calc(27px * var(--scale-coefficient));
+     padding-right: calc(27px * var(--scale-coefficient));
+     box-sizing: border-box;
+}
+ #phone .bank .bank-content.center {
+     display: flex;
+     align-items: center;
+     padding-top: calc(44px * var(--scale-coefficient));
+     flex-direction: column;
+     color: black;
+}
+ #phone .bank .bank-content.center .house {
+     height: calc(52px * var(--scale-coefficient));
+     width: calc(52px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content.center .house image {
+     height: calc(52px * var(--scale-coefficient));
+     width: calc(52px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content.center .paytype {
+     font-size: calc(14px * var(--scale-coefficient));
+     margin-top: calc(19px * var(--scale-coefficient));
+     font-weight: 700;
+}
+ #phone .bank .bank-content.center input::-webkit-outer-spin-button, #phone .bank .bank-content.center input::-webkit-inner-spin-button {
+    /* display: none;
+     <- Crashes Chrome on hover */
+     -webkit-appearance: none;
+     margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+ #phone .bank .bank-content.center input {
+     border: none;
+     font-family: 'SF UI Display';
+     margin-top: calc(30px * var(--scale-coefficient));
+     width: calc(227px * var(--scale-coefficient));
+     height: calc(40px * var(--scale-coefficient));
+     border-radius: calc(5px * var(--scale-coefficient));
+     background-color: rgb(229, 229, 229);
+     padding-left: calc(11px * var(--scale-coefficient));
+     padding-right: calc(11px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content.center .button {
+     width: calc(127px * var(--scale-coefficient));
+     height: calc(33px * var(--scale-coefficient));
+     border-radius: calc(5px * var(--scale-coefficient));
+    /* background-color: rgb(51, 51, 51);
+     */
+     background-color: rgb(229, 229, 229);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: calc(11px * var(--scale-coefficient));
+     font-weight: 300;
+}
+ #phone .bank .bank-content.center .button.pay {
+     margin-top: calc(15px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content.center .button.back {
+     margin-top: calc(15px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content.center .comission {
+     font-size: calc(11px * var(--scale-coefficient));
+     margin-top: calc(6px * var(--scale-coefficient));
+}
+ #phone .bank .seven-bottom-line {
+     position: absolute;
+     bottom: calc(7px * var(--scale-coefficient));
+     background-color: rgb( 51, 51, 51 );
+     height: calc(5px * var(--scale-coefficient));
+     width: calc(142px * var(--scale-coefficient));
+     border-radius: calc(5px * var(--scale-coefficient));
+     left: 50%;
+     transform: translate(-50%, 0);
+}
+ #phone .post .seven-bottom-line {
+     position: absolute;
+     bottom: calc(7px * var(--scale-coefficient));
+     background-color: rgb( 51, 51, 51 );
+     height: calc(5px * var(--scale-coefficient));
+     width: calc(142px * var(--scale-coefficient));
+     border-radius: calc(5px * var(--scale-coefficient));
+     left: 50%;
+     transform: translate(-50%, 0);
+}
+ #phone .bank .bank-content .bottom {
+     width: calc(227px * var(--scale-coefficient));
+     height: calc(40px * var(--scale-coefficient));
+	 border-color: rgb(225, 225, 225);
+     color: black;
+     border-radius: calc(5px * var(--scale-coefficient));
+     background-color: rgb(229, 229, 229);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: 600;
+     font-size: calc(11px * var(--scale-coefficient));
+     margin-top: calc(15px * var(--scale-coefficient));
+}
+
+ /*#phone .bank .bank-content .bottom:hover {
+	background: rgb(255, 255, 255);
+    color: #0070c9;
+ }*/
+ #phone .bank .bank-content .last-operations {
+     color: black;
+     font-size: calc(13px * var(--scale-coefficient));
+     margin-top: calc(20px * var(--scale-coefficient));
+     font-weight: 500;
+}
+ #phone .bank .bank-content .last-operations-today {
+     font-weight: 300;
+     color: rgb(171, 171, 171);
+     margin-top: calc(5px * var(--scale-coefficient));
+     font-size: calc(11px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content .operations-container {
+     height: calc(190px * var(--scale-coefficient));
+     width: 100%;
+     margin-top: calc(17px * var(--scale-coefficient));
+     border-bottom: calc(1px * var(--scale-coefficient)) solid rgba(0, 0, 0, .1);
+     overflow-x: hidden;
+     overflow-y: auto;
+}
+ #phone .bank .bank-content .operations-container .opetaion {
+     display: flex;
+     align-items: center;
+     position: relative;
+     margin-bottom: calc(5px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content .operations-container .opetaion:last-child {
+     margin-bottom: calc(0px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content .operations-container .opetaion img {
+     width: calc(33px * var(--scale-coefficient));
+     height:calc(33px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content .operations-container .opetaion .name {
+     color: black;
+     font-size: calc(11px * var(--scale-coefficient));
+     font-weight: 600;
+     margin-left: calc(10px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content .operations-container .opetaion .summ {
+     font-size: calc(11px * var(--scale-coefficient));
+     font-weight: 600;
+     position: absolute;
+     right: calc(5px * var(--scale-coefficient));
+}
+ #phone .bank .bank-content .bottom:first-child {
+     margin-top: calc(28px * var(--scale-coefficient));
+}
+ #phone .bank .header .label {
+     font-size: calc(11px * var(--scale-coefficient));
+}
+ #phone .bank .header .balance {
+     font-size: calc(18px * var(--scale-coefficient));
+     margin-top: calc(17px * var(--scale-coefficient));
+     font-weight: 700;
+}
+ #phone .contacts.mini {
+     padding-top: calc(40px * var(--scale-coefficient));
+}
+ #phone .contacts.mini-mini {
+     padding-top: calc(31px * var(--scale-coefficient));
+}
+ #phone .contacts {
+     background-image: url(../talrasha_image/talrasha_phone/b.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     height: calc(597px * var(--scale-coefficient));
+     width: calc(280px * var(--scale-coefficient));
+     padding-top: calc(56px * var(--scale-coefficient));
+     box-sizing: border-box;
+     padding-bottom: calc(15px * var(--scale-coefficient));
+}
+ #phone .contacts .container .edit {
+     width: 100%;
+     height: calc(13px * var(--scale-coefficient));
+     text-align: right;
+     font-size: calc(12px * var(--scale-coefficient));
+     font-weight: 500;
+     color: rgb(78, 139, 254);
+     box-sizing: border-box;
+     padding-right: calc(16px * var(--scale-coefficient));
+}
+ #phone .contacts .container .edit .write-messsage {
+     height: calc(18px * var(--scale-coefficient));
+     width: calc(18px * var(--scale-coefficient));
+}
+ #phone .contacts .container .header {
+     height: calc(21px * var(--scale-coefficient));
+     width: calc(250px * var(--scale-coefficient));
+     font-weight: 600;
+     padding-left: calc(15px * var(--scale-coefficient));
+     display: flex;
+     align-items: center;
+     margin-top: calc(11px * var(--scale-coefficient));
+}
+ #phone .contacts .container .header .buttons {
+     border: calc(1px * var(--scale-coefficient)) solid rgb(78, 139, 254);
+     border-radius: calc(5px * var(--scale-coefficient));
+     height: calc(22px * var(--scale-coefficient));
+     width: calc(97px * var(--scale-coefficient));
+     position: absolute;
+     right: calc(16px * var(--scale-coefficient));
+     display: flex;
+}
+ #phone .contacts .container .header .buttons div {
+     width: 50%;
+     height: 100%;
+     font-size: calc(9px * var(--scale-coefficient));
+     color: rgb(78, 139, 254);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ #phone .contacts .container .header .buttons .active {
+     color: white;
+     background-color: rgb(78, 139, 254);
+}
+ #phone .contacts .container .header span {
+     color: black;
+     font-size: calc(24px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container {
+     height: calc(367px * var(--scale-coefficient));
+     width: 100%;
+     margin-top: calc(12px * var(--scale-coefficient));
+     overflow-x: hidden;
+     overflow-y: auto;
+}
+ #phone .contacts .container .numbers-container::-webkit-scrollbar {
+     -webkit-appearance: none;
+}
+ #phone .contacts .container .numbers-container::-webkit-scrollbar-thumb {
+     width: calc(2px * var(--scale-coefficient));
+     background: rgba(0, 0, 0, .3);
+}
+ #phone .contacts .container .numbers-container .numer {
+     border-top: calc(1px * var(--scale-coefficient)) solid rgba(0, 0, 0, .1);
+     width: 100%;
+     height: calc(50px * var(--scale-coefficient));
+     padding-left: calc(27px * var(--scale-coefficient));
+     padding-right: calc(23px * var(--scale-coefficient));
+     display: flex;
+     align-items: center;
+     position: relative;
+     box-sizing: border-box;
+}
+ #phone .contacts .container .numbers-container .key {
+     height: calc(26px * var(--scale-coefficient));
+     background-color: rgb(230,230,231);
+     color: black;
+     display: flex;
+     align-items: center;
+     padding-left: calc(14px * var(--scale-coefficient));
+     font-weight: 500;
+}
+ #phone .contacts .container .number {
+     height: calc(20px * var(--scale-coefficient));
+     width: 100%;
+     border: none;
+     font-size: calc(23px * var(--scale-coefficient));
+     text-align: center;
+     font-family: 'SF UI Display';
+     font-weight: 600;
+     margin-top: calc(20px * var(--scale-coefficient));
+}
+ #phone .contacts .container .input-text {
+     width: 100%;
+     font-weight: 600;
+     text-align: center;
+     color: rgb(78, 139, 254);
+     font-size: calc(11px * var(--scale-coefficient));
+     margin-top: calc(14px * var(--scale-coefficient));
+}
+ #phone .contacts .container .keys-buttos-container {
+     margin-top: calc(50px * var(--scale-coefficient));
+     display: grid;
+     grid-template-columns: repeat(3, calc(58px * var(--scale-coefficient)));
+     grid-gap: calc(11px * var(--scale-coefficient)) calc(21px * var(--scale-coefficient));
+     justify-content: center;
+     font-weight: 600;
+}
+ #phone .contacts .container .keys-buttos-container .key-button {
+     width: calc(58px * var(--scale-coefficient));
+     height: calc(58px * var(--scale-coefficient));
+     border-radius: 50%;
+     background-color: rgb( 229, 229, 229 );
+     color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+ #phone .contacts .container .call-button {
+     width: 100%;
+     height: calc(58px * var(--scale-coefficient));
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     margin-top: calc(10px * var(--scale-coefficient));
+}
+ #phone .contacts .container .call-button .icon {
+     height: calc(58px * var(--scale-coefficient));
+     width: calc(58px * var(--scale-coefficient));
+     background-color: rgb(76, 216, 102);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+ #phone .contacts .container .head-label {
+     width: 100%;
+     color: black;
+     padding-left: calc(14px * var(--scale-coefficient));
+     padding-right: calc(14px * var(--scale-coefficient));
+     display: flex;
+     box-sizing: border-box;
+}
+ #phone .contacts .container .message-contact {
+     width: 100%;
+     height: calc(29px * var(--scale-coefficient));
+     font-size: calc(10px * var(--scale-coefficient));
+     font-weight: 500;
+     color: rgb(151, 151, 154);
+     border-top: calc(1px * var(--scale-coefficient)) solid rgba(0, 0, 0, .1);
+     margin-top: calc(18px * var(--scale-coefficient));
+     padding-left: calc(14px * var(--scale-coefficient));
+     box-sizing: border-box;
+     display: flex;
+     align-items: center;
+     padding-top: calc(6px * var(--scale-coefficient));
+}
+ #phone .contacts .container .messages-list {
+     width: 100%;
+     padding-left: calc(15px * var(--scale-coefficient));
+     padding-right: calc(23px * var(--scale-coefficient));
+     height: calc(432px * var(--scale-coefficient));
+     box-sizing: border-box;
+     margin-top: calc(5px * var(--scale-coefficient));
+     overflow-x: hidden;
+     overflow-y: auto;
+}
+ #phone .contacts .container .input-message {
+     border: calc(1px * var(--scale-coefficient)) solid rgb(225, 226, 229);
+     font-family: 'SF UI Display';
+     margin-top: calc(2px * var(--scale-coefficient));
+     width: calc(214px * var(--scale-coefficient));
+     border-radius: calc(10px * var(--scale-coefficient));
+     height: calc(29px * var(--scale-coefficient));
+     position: absolute;
+     right: calc(16px * var(--scale-coefficient));
+     bottom: calc(26px * var(--scale-coefficient));
+     padding-left: calc(10px * var(--scale-coefficient));
+     padding-right: calc(28px * var(--scale-coefficient));
+}
+ #phone .contacts .container .send {
+     position: absolute;
+     border-radius: 50%;
+     background-color: rgb(74, 213, 98);
+     width: calc(23px * var(--scale-coefficient));
+     height: calc(23px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     right: calc(19px * var(--scale-coefficient));
+     bottom: calc(29px * var(--scale-coefficient));
+}
+ #phone .contacts .container .send svg {
+     width: calc(13px * var(--scale-coefficient));
+     height: calc(15px * var(--scale-coefficient));
+     pointer-events: none;
+}
+ #phone .contacts .container .messages-list::-webkit-scrollbar {
+     -webkit-appearance: none;
+}
+ #phone .contacts .container .messages-list::-webkit-scrollbar-thumb {
+     width: calc(2px * var(--scale-coefficient));
+     background: rgba(0, 0, 0, .3);
+}
+ #phone .contacts .container .messages-list .message-cont {
+     width: 100%;
+     margin-top: calc(9px * var(--scale-coefficient));
+     width: 100%;
+     margin-top: calc(9px * var(--scale-coefficient));
+     display: flex;
+     flex-direction: column;
+}
+ #phone .contacts .container .messages-list .message-cont.right {
+     align-items: flex-end;
+}
+ #phone .contacts .container .messages-list .message-cont .message-text {
+     background-color: rgb(225, 226, 229);
+     width: fit-content;
+     height: auto;
+     border-radius: calc(3px * var(--scale-coefficient));
+     color: black;
+     padding: calc(12px * var(--scale-coefficient));
+     font-size: calc(12px * var(--scale-coefficient));
+     font-weight: 600;
+     box-sizing: border-box;
+}
+ #phone .contacts .container .messages-list .message-cont .message-time {
+     color: rgb(175,181,186);
+     font-size: calc(8px * var(--scale-coefficient));
+     margin-top: calc(5px * var(--scale-coefficient));
+}
+ #phone .contacts .container .head-label-name {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     height: calc(59px * var(--scale-coefficient));
+     align-items: center;
+}
+ #phone .contacts .container .head-label-name img {
+     height: calc(46px * var(--scale-coefficient));
+     width: calc(46px * var(--scale-coefficient));
+}
+ #phone .contacts .container .head-label-name svg {
+     height: calc(21px * var(--scale-coefficient));
+     width: calc(21px * var(--scale-coefficient));
+     position: absolute;
+     right: calc(16px * var(--scale-coefficient));
+     top: calc(42px * var(--scale-coefficient));
+}
+ #phone .contacts .container .head-label-name .name {
+     font-size: calc(11px * var(--scale-coefficient));
+     color: black;
+     font-weight: 500;
+     margin-top: calc(4px * var(--scale-coefficient));
+}
+ #phone .contacts .container .head-label-messages {
+     width: 100%;
+     color: black;
+     display: flex;
+     box-sizing: border-box;
+     font-size: calc(11px * var(--scale-coefficient));
+     font-weight: 500;
+     justify-content: center;
+}
+ #phone .contacts .container .message-contact img {
+     position: absolute;
+     right: calc(11px * var(--scale-coefficient));
+     width: calc(21px * var(--scale-coefficient));
+     height: calc(21px * var(--scale-coefficient));
+}
+ #phone .contacts .container .head-label-messages .right {
+     position: absolute;
+     right: calc(17px * var(--scale-coefficient));
+     color: rgb(78, 139, 254);
+}
+ #phone .contacts .container .head-label div {
+     font-size: calc(12px * var(--scale-coefficient));
+     font-weight: 500;
+}
+ #phone .contacts .container .pers-info {
+     width: 100%;
+     height: calc(55px * var(--scale-coefficient));
+     display: flex;
+     align-items: center;
+     padding-left: calc(14px * var(--scale-coefficient));
+     padding-right: calc(14px * var(--scale-coefficient));
+     margin-top: calc(26px * var(--scale-coefficient));
+     box-sizing: border-box;
+}
+ #phone .contacts .container .pers-info .inputs input {
+     margin-left: calc(13px * var(--scale-coefficient));
+}
+ #phone .contacts .container .phone-info {
+     margin-top: calc(26px * var(--scale-coefficient));
+     width: 100%;
+     padding-left: calc(14px * var(--scale-coefficient));
+     padding-right: calc(14px * var(--scale-coefficient));
+     box-sizing: border-box;
+}
+ #phone .contacts .container .phone-info .phone-info-help-text {
+     font-size: calc(10px * var(--scale-coefficient));
+     color: black;
+     font-weight: 500;
+}
+ #phone .contacts .container .phone-info input {
+     border: none;
+     border-bottom: calc(1px * var(--scale-coefficient)) solid rgba(0, 0, 0, .1);
+     font-family: 'SF UI Display';
+     margin-top: calc(2px * var(--scale-coefficient));
+     width: 100%;
+}
+ #phone .contacts .container .phone-info input::-webkit-outer-spin-button, #phone .contacts .container .phone-info input::-webkit-inner-spin-button {
+    /* display: none;
+     <- Crashes Chrome on hover */
+     -webkit-appearance: none;
+     margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+ #phone .contacts .container .pers-info input {
+     border: none;
+     border-bottom: calc(1px * var(--scale-coefficient)) solid rgba(0, 0, 0, .1);
+     font-family: 'SF UI Display';
+     margin-top: calc(2px * var(--scale-coefficient));
+}
+ #phone .contacts .container .pers-info img {
+     width: calc(48px * var(--scale-coefficient));
+     height: calc(46px * var(--scale-coefficient));
+}
+ #phone .contacts .container .call-button .icon .call-img {
+     height: calc(23px * var(--scale-coefficient));
+     width: calc(23px * var(--scale-coefficient));
+     pointer-events: none;
+}
+ #phone .contacts .container .call-button .clear {
+     position: absolute;
+     right: calc(30px * var(--scale-coefficient));
+     height: calc(32px * var(--scale-coefficient));
+     width: calc(46px * var(--scale-coefficient));
+}
+ #phone .contacts .container .keys-buttos-container .key-button .num {
+     font-size: calc(24px * var(--scale-coefficient));
+     pointer-events: none;
+}
+ #phone .contacts .container .keys-buttos-container .key-button .words {
+     font-size: calc(7px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container .item{
+     width: 100%;
+     height: calc(32px * var(--scale-coefficient));
+     border-bottom: calc(1px * var(--scale-coefficient)) solid rgba(0, 0, 0, .1);
+     padding-left: calc(14px * var(--scale-coefficient));
+     display: flex;
+     align-items: center;
+     color: black;
+     position: relative;
+     box-sizing: border-box;
+     padding-right: calc(30px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container .item svg{
+     height: calc(20px * var(--scale-coefficient));
+     width: calc(20px * var(--scale-coefficient));
+     position: absolute;
+     right: calc(10px * var(--scale-coefficient));
+     opacity: .5;
+}
+ #phone .contacts .container .numbers-container .numer.msg {
+     padding-left: calc(15px * var(--scale-coefficient));
+     height: calc(61px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container .numer.msg .info-message-container {
+     font-weight: 400;
+}
+ #phone .contacts .container .numbers-container .numer.msg .timego {
+     position: absolute;
+     top: calc(19px * var(--scale-coefficient));
+     right: calc(19px * var(--scale-coefficient));
+     color: rgb(164, 164, 164);
+     font-size: calc(11px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container .numer.msg .info-message-container .msg-name {
+     color: black;
+     font-size: calc(14px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container .numer.msg .info-message-container .msg-text {
+     color: rgb(164, 164, 164);
+     font-size: calc(14px * var(--scale-coefficient));
+     width: 100%;
+     height: calc(16px * var(--scale-coefficient));
+     overflow: hidden;
+}
+ #phone .contacts .container .numbers-container .numer .reading {
+     position: absolute;
+     left: calc(2px * var(--scale-coefficient));
+     width: calc(9px * var(--scale-coefficient));
+     height: calc(9px * var(--scale-coefficient));
+     background-color: rgb( 0, 120, 250 );
+     border-radius: 50%;
+}
+ #phone .contacts .container .numbers-container .numer img {
+     width: calc(48px * var(--scale-coefficient));
+     height: calc(46px * var(--scale-coefficient));
+     margin-right: calc(11px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container .numer .info-container {
+     color: black;
+     display: flex;
+     flex-direction: column;
+     font-weight: 400;
+}
+ #phone .contacts .container .numbers-container .numer .time {
+     color: rgba(0,0,0,.5);
+     position: absolute;
+     right: calc(23px * var(--scale-coefficient));
+     font-size: calc(10px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container .numer .info-container .num {
+     font-size: calc(18px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container .numer .info-container .name {
+     font-size: calc(9px * var(--scale-coefficient));
+}
+ #phone .contacts .container .numbers-container .numer:last-child {
+     border-bottom: calc(1px * var(--scale-coefficient)) solid rgba(0, 0, 0, .1);
+}
+ #phone .contacts .container .imput-container {
+     width: 100%;
+     height: calc(26px * var(--scale-coefficient));
+     margin-top: calc(15px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+}
+ #phone .contacts .container .imput-container input {
+     height: 100%;
+     width: calc(250px * var(--scale-coefficient));
+     border: none;
+     background-color: rgb(230,230,231);
+     border-radius: calc(3px * var(--scale-coefficient));
+     padding-left: calc(28px * var(--scale-coefficient));
+     font-family: 'SF UI Display';
+}
+ #phone .contacts .container .imput-container img {
+     position: absolute;
+     left: calc(25px * var(--scale-coefficient));
+     height: calc(12px * var(--scale-coefficient));
+     width: calc(12px * var(--scale-coefficient));
+}
+ #phone .contacts .bottom-block {
+     height: calc(59px * var(--scale-coefficient));
+     width: 100%;
+     position: absolute;
+     bottom: calc(7px * var(--scale-coefficient));
+     border-top: calc(1px * var(--scale-coefficient)) solid rgba(0, 0, 0, .1);
+}
+ #phone .contacts .bottom-block .bottoms {
+     height: calc(54px * var(--scale-coefficient));
+     display: flex;
+     color: rgb(162, 162, 162);
+}
+ #phone .contacts .bottom-block .bottoms .item {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+    /* margin: auto;
+     */
+     height: calc(39px * var(--scale-coefficient));
+     width: calc(46px * var(--scale-coefficient));
+     font-size: calc(8px * var(--scale-coefficient));
+     position: relative;
+     margin-left: auto;
+     margin-right: auto;
+}
+ #phone .contacts .bottom-block .bottoms .item:nth-child(1) img {
+     width: calc(20px * var(--scale-coefficient));
+     height: calc(19px * var(--scale-coefficient));
+}
+ #phone .contacts .bottom-block .bottoms .item:nth-child(2) img {
+     width: calc(19px * var(--scale-coefficient));
+     height: calc(18px * var(--scale-coefficient));
+}
+ #phone .contacts .bottom-block .bottoms .item img {
+     pointer-events: none;
+}
+ #phone .contacts .bottom-block .bottoms .item:nth-child(3) img {
+     width: calc(25px * var(--scale-coefficient));
+     height: calc(16px * var(--scale-coefficient));
+}
+ #phone .contacts .bottom-block .bottoms .item:nth-child(4) img {
+     width: calc(19px * var(--scale-coefficient));
+     height: calc(18px * var(--scale-coefficient));
+}
+ #phone .contacts .bottom-block .bottoms .item:nth-child(5) img {
+     width: calc(28px * var(--scale-coefficient));
+     height: calc(13px * var(--scale-coefficient));
+}
+ #phone .contacts .bottom-block .bottoms .item.active img {
+     filter: brightness(0.0);
+}
+ #phone .contacts .bottom-block .bottoms .item span {
+     position: absolute;
+     bottom: 0;
+     pointer-events: none;
+}
+ #phone .contacts .bottom-block .line {
+     background-color: rgb( 51, 51, 51 );
+     height: calc(5px * var(--scale-coefficient));
+     width: calc(82px * var(--scale-coefficient));
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: calc(5px * var(--scale-coefficient));
+}
+ #phone .contacts .seven-bottom-line {
+     position: absolute;
+     bottom: calc(7px * var(--scale-coefficient));
+     background-color: rgb( 51, 51, 51 );
+     height: calc(5px * var(--scale-coefficient));
+     width: calc(142px * var(--scale-coefficient));
+     border-radius: calc(5px * var(--scale-coefficient));
+     left: 50%;
+     transform: translate(-50%, 0);
+}
+ 
+ #phone .gps .header {
+     height: calc(108px * var(--scale-coefficient));
+     width: 100%;
+}
+ #phone .gps .header img {
+     margin-top: calc(33px * var(--scale-coefficient));
+     margin-left: calc(119px * var(--scale-coefficient));
+}
+ #phone .gps .header .cancel {
+     font-size: calc(10px * var(--scale-coefficient));
+     position: absolute;
+     right: calc(16px * var(--scale-coefficient));
+     font-weight: 400;
+     top: calc(48px * var(--scale-coefficient));
+}
+ #phone .gps .gps-content {
+     height: 440px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: black;
+	 overflow-x: hidden;
+	 overflow-y: scroll;
+}
+ #phone .gps .gps-content svg{
+     margin-top: calc(44px * var(--scale-coefficient));
+     width: calc(48px * var(--scale-coefficient));
+     height: calc(52px * var(--scale-coefficient));
+}
+ #phone .gps .gps-content svg image{
+     width: calc(48px * var(--scale-coefficient));
+     height: calc(52px * var(--scale-coefficient));
+}
+ #phone .gps .gps-content .label {
+     font-size: calc(24px * var(--scale-coefficient));
+     margin-top: calc(10px * var(--scale-coefficient));
+	 padding-bottom: 10px;
+     font-weight: 700;
+}
+ #phone .gps .gps-content input {
+     border: none;
+     font-family: 'SF UI Display';
+     margin-top: calc(22px * var(--scale-coefficient));
+     width: calc(227px * var(--scale-coefficient));
+     height: calc(40px * var(--scale-coefficient));
+     border-radius: calc(3px * var(--scale-coefficient));
+     padding-left: calc(11px * var(--scale-coefficient));
+     padding-right: calc(11px * var(--scale-coefficient));
+     background-color: rgb(229, 229, 229);
+}
+ #phone .gps .gps-content .price {
+     width: calc(83px * var(--scale-coefficient));
+     font-size: calc(11px * var(--scale-coefficient));
+     font-weight: 600;
+     text-align: center;
+     margin-top: calc(13px * var(--scale-coefficient));
+}
+ #phone .gps .gps-content .pay-button {
+     margin-top: calc(17px * var(--scale-coefficient));
+     width: calc(127px * var(--scale-coefficient));
+     height: calc(33px * var(--scale-coefficient));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: calc(11px * var(--scale-coefficient));
+     font-weight: 500;
+     background-color: rgb(229, 229, 229);
+     border-radius: calc(4px * var(--scale-coefficient));
+}
+ #phone .gps {
+     background-image: url(../talrasha_image/talrasha_phone/post.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     height: calc(597px * var(--scale-coefficient));
+     width: calc(280px * var(--scale-coefficient));
+}
+
+ #phone .gps .seven-bottom-line {
+     position: absolute;
+     bottom: calc(7px * var(--scale-coefficient));
+     background-color: rgb( 51, 51, 51 );
+     height: calc(5px * var(--scale-coefficient));
+     width: calc(142px * var(--scale-coefficient));
+     border-radius: calc(5px * var(--scale-coefficient));
+     left: 50%;
+     transform: translate(-50%, 0);
+}
+
+ #phone .gps .gps-content.center .button.back {
+     margin-top: calc(15px * var(--scale-coefficient));
+}
+
+ #phone .gps .gps-content.center {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     color: black;
+}
+
+.app-outline-buttonda {
+    background-color: rgb(229, 229, 229);
+    border-radius: calc(5px * var(--scale-coefficient));
+	border-color: rgb(225, 225, 225);
+    outline: none;
+    box-shadow: none;
+    padding: 10px 32px;
+    border-radius: 10px;
+    font-family: 'Helvetica Neue Medium';
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+	margin-bottom: 5px;
+}
+.app-outline-buttonda:hover {
+    background: rgb(255, 255, 255);
+    color: #0070c9;
+}
+
+.app-outline-buttondanet {
+    background-color: rgb(229, 229, 229);
+    border-radius: calc(5px * var(--scale-coefficient));
+	border-color: rgb(225, 225, 225);
+    outline: none;
+    box-shadow: none;
+    padding: 10px 26px;
+    border-radius: 10px;
+    font-family: 'Helvetica Neue Medium';
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+	margin-bottom: 5px;
+}
+.app-outline-buttondanet:hover {
+    background: rgb(255, 255, 255);
+    color: #0070c9;
+}
+
+.app-outline-buttondanetda {
+    background-color: rgb(229, 229, 229);
+    border-radius: calc(5px * var(--scale-coefficient));
+	border-color: rgb(225, 225, 225);
+    outline: none;
+    box-shadow: none;
+    padding: 10px 46px;
+    border-radius: 10px;
+    font-family: 'Helvetica Neue Medium';
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+	margin-bottom: 5px;
+}
+.app-outline-buttondanetda:hover {
+    background: rgb(255, 255, 255);
+    color: #0070c9;
+}
+
+.app-outline-button {
+    background-color: rgb(229, 229, 229);
+    border-radius: calc(5px * var(--scale-coefficient));
+	border-color: rgb(225, 225, 225);
+    outline: none;
+    box-shadow: none;
+    padding: 10px 20px;
+    font-family: 'Helvetica Neue Medium';
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: center;
+}
+.app-outline-button:hover {
+    background: rgb(255, 255, 255);
+    color: #0070c9;
+}

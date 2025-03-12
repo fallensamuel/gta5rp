@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "LONDONSIXTY.ttf";
+    src: url(../talrasha_font/talrasha_chalet/LONDONSIXTY.ttf);
+}
+body #GovPassport {
+    background: no-repeat;
+    background-image: url(../talrasha_image/talrasha_document/talrasha_gov_passport.png);
+    width: 482px;
+    height: 550px;
+
+    font-family: "LONDONSIXTY.ttf";
+
+    position: absolute;
+    right: 9%;
+    top: 24%;
+}
+body #GovPassport .name {
+    color: white !important;
+    position: relative;
+    left: 4.7em;
+    top: 28.9em;
+}
+body #GovPassport .rank {
+    color: white !important;
+    position: relative;
+    left: 4.7em;
+    top: 28.8em;
+}
+body #GovPassport .id {
+    font-size: 15px;
+    color: white !important;
+
+    position: relative;
+    top: 27.6em;
+    left: 14.8em;
+}
+body #GovPassport .name,
+body #GovPassport .id {
+    font-size: 15px;
+    color: #1c1c1c;
+}

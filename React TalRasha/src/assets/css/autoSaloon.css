@@ -1,0 +1,415 @@
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../fonts/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../fonts/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+
+ul{
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.75);
+	line-height: 19px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+#carsBlock {
+    width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0;
+    color: white;
+    position: relative;
+}
+
+.carsbgshadow{
+	background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.45) 100%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-top: -125px;
+	z-index: -1;
+}
+
+.carsBlock{
+    width: 30.55556vh;
+    height: 28.61111vh;
+    margin-top: 125px;
+    margin-left: 18px;
+}
+
+.infoBlock{
+	top: 210px;
+    right: 5.85185vh;
+    width: 28.7037vh;
+    height: 30.55556vh;
+    margin-top: 219px;
+    margin-left: 45px;
+    display:none;
+	position: absolute;
+}
+
+.headBlock{
+    color: #FFFFFF;
+    width: 28.7037vh;
+    height: 3.24074vh;
+    margin-left: 45px;
+    line-height: 3.24074vh;
+    text-align: left;
+    font-family: TalRashaTTBold;
+	font-size: 16px;
+	margin-bottom: -5px;
+}
+
+.headBlockinfo{
+    color: #FFFFFF;
+    width: 28.7037vh;
+    height: 3.24074vh;
+    margin-left: 19px;
+    line-height: 3.24074vh;
+    text-align: left;
+    font-family: TalRashaTTBold;
+	font-size: 16px;
+	margin-bottom: -5px;
+}
+
+.headBlockColor{
+    color: #FFFFFF;
+    width: 28.7037vh;
+    height: 3.24074vh;
+    margin-left: -1px;
+    line-height: 3.24074vh;
+    text-align: left;
+    font-family: TalRashaTTBold;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+.selectCar{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 835px;
+	width: 315px;
+	direction: rtl;
+}
+
+.listCars{
+    margin:0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    background-position-y: 80px;
+    width: 315px;
+}
+
+.catalogItem img,.catalogItem div{
+    float: left;
+}
+.modelCar{
+    width: 315px;
+    margin-left: 0.13519vh;
+    height: 60px;
+    line-height: 5.7037vh;
+    font-size: 1.55185vh;
+	text-align: center;
+}
+
+.modelCar:hover{
+	background: rgba(255, 255, 255, 0.1);
+}
+.catalogItem img{
+    width: 1.85185vh;
+    height: 1.85185vh;
+    padding: 0.92593vh 1.85185vh;
+    margin-left: 0.18519vh;
+    margin-left: 0;
+}
+.selectedCar img{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+    color: #FFFFFF;
+}
+.selectedCar div{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+    color: #FFFFFF;
+}
+
+.baseCar{
+    width: 25vh;
+    height: 18.51852vh;
+    margin-top: 0.96296vh;
+    margin-bottom: 0.46296vh;
+    padding: 0.64815vh 1.85185vh;
+}
+
+.fullOptCar{
+    width: 25vh;
+    height: 18.51852vh;
+    margin-left: 0.46296vh;
+    margin-top: 0.46296vh;
+    margin-bottom: 0.46296vh;
+    padding: 0.64815vh 1.85185vh;
+    font-family: TalRashaTTRegular;
+    line-height: 1.2963vh;
+    font-size: 1.2963vh;
+}
+.fullOptCar p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.fullOptCar b{
+    font-family: TalRashaTTRegular;
+}
+
+.baseCar p{
+    margin: 7px 0;
+    font-family: TalRashaTTRegular;
+	font-size: 14px;
+}
+
+.paramVal{
+    width: 4.62963vh;
+    height: 2px;
+    margin-right: 0.37037vh;
+    float: left;
+}
+
+.valTrue{
+	margin-top: 6px;
+	margin-bottom: 6px;
+	background: rgba(255, 255, 255, .9);
+}
+
+.valFalse{
+	margin-top: 6px;
+	margin-bottom: 6px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.talrashabuyBlock{
+    bottom: 327px;
+    left: 555px;
+    width: 100%;
+    position: absolute;
+    display:none;
+}
+
+.optionBlock{
+    top: 183px;
+    right: 5.85185vh;
+    width: 28.61111vh;
+    position: absolute;
+    display:none;
+}
+
+.optionBlock .headBlock{
+    margin-left: 0;
+}
+
+.btnBlock{
+    background-image: url(../img/autoSaloon/bgBtnBlack.png);
+    width: 28.61111vh;
+    height: 3.24074vh;
+    margin-top: 0.46296vh; 
+}
+.btnBlock .border{
+    background-color: #fff;
+    width: 0.37037vh;
+    height: 3.24074vh;
+    float: left;
+}
+
+.btnBlock .textBtn{
+    width: 28.61111vh;
+    height: 3.24074vh;
+    line-height: 3.24074vh;
+    text-align: center;
+    font-family: TalRashaTTRegular;
+}
+
+.buyCarOptions{
+    height: 18.51852vh;
+    margin-top: 0.46296vh;
+    margin-bottom: -1.46296vh;
+    padding-top: 1.85185vh;
+}
+.optionCar{
+    background: rgba(0,0,0, 0.25);
+    margin: 5px 0;
+    height: 3.24074vh;
+    line-height: 3.24074vh;
+    font-family: TalRashaTTRegular;
+    padding-left: 2.31481vh;
+}
+.btnOption{
+    border: 0.09259vh solid #fff;
+    padding: 0.09259vh;
+    height: 1.85185vh;
+    width: 4.53704vh;
+    float: right;
+    margin-top: 0.46296vh;
+    margin-right: 2.31481vh;
+}
+.btnOption div{
+    margin: 1px;
+}
+
+.btnOption .on{
+    float: right;
+    width: 2.22222vh;
+    height: 1.66667vh;
+    background-color: #fff;
+}
+
+.btnOption .off{
+    float: left;
+    width: 2.22222vh;
+    height: 1.66667vh;
+    background-color: #fff;
+}
+
+.summInfo{
+	position: relative;
+	left: -554px;
+	top: 70px;
+    line-height: 2.31481vh;
+    font-family: TalRashaTTRegular;
+}
+.summInfo p{
+    text-align: center;
+    font-size: 48px;
+	color: #FFFFFF;
+	line-height: 57px;
+}
+
+.btnBuyCartalrashaflex{
+	display: flex;
+    align-items: center;
+}
+
+.btnBuyCar{
+    background: #FBB82E;
+	border-radius: 5px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 170px;
+	height: 40px;
+	margin: 48px;
+    /*margin: 0 auto;*/
+    font-weight: 500;
+	font-family: TalRashaTTRegular;
+	font-size: 16px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnBuyCar:hover{
+	background: #FFC82E;
+	box-shadow: 0px 0px 40px rgba(251, 184, 46, 0.5);
+}
+
+.btnBuyCartalrashawo{
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    text-align: center;
+    width: 170px;
+	height: 40px;
+	margin: 48px;
+    /*margin: 0 auto;*/
+    font-weight: 500;
+	font-family: TalRashaTTRegular;
+	font-size: 16px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnBuyCartalrashawo:hover{
+	background: rgba(255, 255, 255, 0.25);
+}
+
+.selectColorBlock{
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 0.46296vh;
+    background: rgba(255, 255, 255, 0.1);
+    height: 20.37037vh;
+    padding: 0.46296vh 0.46296vh;
+    display:none;
+}
+
+/*.selectColorBlock::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, .5);
+	width: 2px;
+}*/
+
+.selectColorBlock::-webkit-scrollbar {
+	-webkit-appearance: none;
+	background: rgba(255, 255, 255, .5);
+}
+
+.selectColorBlock::-webkit-scrollbar-thumb {
+    top: 0.18519vh;
+    background: rgba(255, 255, 255, .9);
+    background-repeat: repeat-y;
+	width: 2px;
+}
+
+.selectColorBlock .selectColor{
+    border: 0.09259vh solid gba(255, 255, 255, 0.25);
+	box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+}
+
+.selectColorBlock .color:hover{
+	border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+}
+	
+.selectColorBlock .color{
+    /*border: 0.09259vh solid #1f1f1f;*/
+}
+
+.selectColorBlock div{
+    width:2.96296vh;
+    height:2.96296vh;
+    float: left;
+    margin: 7px;
+	border-radius: 5px;
+}
+
+
+
+#selectCar::-webkit-scrollbar {
+	-webkit-appearance: none;
+	background: rgba(255, 255, 255, .5);
+}
+ 
+/*#selectCar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .5);
+	width: 2px;
+}*/
+ 
+#selectCar::-webkit-scrollbar-thumb {
+    top: 0.18519vh;
+    background: rgba(255, 255, 255, .9);
+    background-repeat: repeat-y;
+	width: 2px;
+}
+
+/*
+::-webkit-scrollbar
+::-webkit-scrollbar-button
+::-webkit-scrollbar-track
+::-webkit-scrollbar-track-piece 
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-corner
+::-webkit-resizer.
+*/

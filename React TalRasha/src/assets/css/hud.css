@@ -1,0 +1,587 @@
+
+#unionHUD {
+    font-family: TalRashaTTRegular;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../fonts/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../fonts/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+@font-face {
+	font-family: TalRashaGeometria;
+	src: url(../fonts/talrasha_geometria/Geometria.ttf)
+}
+
+#unionHUD .serv-logo {
+    width: calc(40.25px * var(--scale-coefficient));
+    height: calc(21px * var(--scale-coefficient));
+    position: absolute;
+    right: calc(34px * var(--scale-coefficient));
+    top: calc(17px * var(--scale-coefficient));
+}
+
+#unionHUD .moneyhud {
+    width: calc(21px * var(--scale-coefficient));
+    height: calc(21px * var(--scale-coefficient));
+    position: absolute;
+    right: calc(52px * var(--scale-coefficient));
+    top: calc(9px * var(--scale-coefficient));
+}
+
+#unionHUD .lrphud {
+    width: calc(101px * var(--scale-coefficient));
+    height: calc(40px * var(--scale-coefficient));
+    position: absolute;
+    right: calc(111px * var(--scale-coefficient));
+    top: calc(10px * var(--scale-coefficient));
+}
+
+#unionHUD .onlinehud {
+    width: calc(13px * var(--scale-coefficient));
+    height: calc(13px * var(--scale-coefficient));
+    position: absolute;
+    right: calc(10px * var(--scale-coefficient));
+    top: calc(15px * var(--scale-coefficient));
+}
+
+
+#unionHUD .streetwheel {
+    width: calc(210px * var(--scale-coefficient));
+    height: calc(41px * var(--scale-coefficient));
+    position: absolute;
+    right: calc(31px * var(--scale-coefficient));
+    top: calc(246px * var(--scale-coefficient));
+    box-sizing: border-box;
+}
+
+#unionHUD .streetwheel.timer {
+    top: calc(263px * var(--scale-coefficient));
+	right: calc(59px * var(--scale-coefficient));
+}
+
+#unionHUD .streetwheel.timer .info {
+    width: 100%;
+}
+
+#unionHUD .streetwheel.timer .info .lrp {
+    color: #FFFFFF;
+    width: 100%;
+	font-size: 14px;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	text-align: right;
+}
+
+#unionHUD .streetwheel.timer .info .lrpremained {
+    color: #FFFFFF;
+    width: 100%;
+	font-size: 11px;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	font-weight: normal;
+	text-align: right;
+}
+
+#unionHUD .streetwheel.timer .info .name {
+    display: inline-block;
+	position: relative;
+	top: calc(22px * var(--scale-coefficient));
+	color: #5E3F00;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: TalRashaGeometria;
+}
+
+
+#unionHUD .streetwheel svg {
+    width: calc(28px * var(--scale-coefficient));
+    height: calc(28px * var(--scale-coefficient));
+    margin-left: calc(15px * var(--scale-coefficient));
+}
+
+#unionHUD .streetwheel .info {
+    margin-left: calc(20px * var(--scale-coefficient));
+    font-size: calc(14px * var(--scale-coefficient));
+    line-height: calc(16px * var(--scale-coefficient));
+}
+
+#unionHUD .streetwheel .info .name {
+    color: #FFFFFF;
+}
+
+#unionHUD .streetwheel .info .label {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+
+#unionHUD .streetwheel .right {
+    position: absolute;
+    width: calc(20px * var(--scale-coefficient));
+    height: calc(11px * var(--scale-coefficient));
+    top: 0;
+    right: 0;
+    margin-left: 0;
+}
+
+#unionHUD .streetwheel .left {
+    width: calc(20px * var(--scale-coefficient));
+    height: calc(11px * var(--scale-coefficient));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+}
+
+#unionHUD .street {
+    width: calc(210px * var(--scale-coefficient));
+    height: calc(41px * var(--scale-coefficient));
+    position: absolute;
+    right: calc(31px * var(--scale-coefficient));
+    top: calc(206px * var(--scale-coefficient));
+    box-sizing: border-box;
+}
+
+#unionHUD .street.timer {
+    top: calc(223px * var(--scale-coefficient));
+	right: calc(59px * var(--scale-coefficient));
+}
+
+#unionHUD .street.timer .info {
+    width: 100%;
+}
+
+#unionHUD .street.timer .info .lrp {
+    color: #FFFFFF;
+    width: 100%;
+	font-size: 14px;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	text-align: right;
+}
+
+#unionHUD .street.timer .info .lrpremained {
+    color: #FFFFFF;
+    width: 100%;
+	font-size: 11px;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	font-weight: normal;
+	text-align: right;
+}
+
+#unionHUD .street.timer .info .name {
+    display: inline-block;
+	position: relative;
+	top: calc(22px * var(--scale-coefficient));
+	color: #5E3F00;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: TalRashaGeometria;
+}
+
+
+#unionHUD .street svg {
+    width: calc(28px * var(--scale-coefficient));
+    height: calc(28px * var(--scale-coefficient));
+    margin-left: calc(15px * var(--scale-coefficient));
+}
+
+#unionHUD .street .info {
+    margin-left: calc(20px * var(--scale-coefficient));
+    font-size: calc(14px * var(--scale-coefficient));
+    line-height: calc(16px * var(--scale-coefficient));
+}
+
+#unionHUD .street .info .name {
+    color: #FFFFFF;
+}
+
+#unionHUD .street .info .label {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+
+#unionHUD .street .right {
+    position: absolute;
+    width: calc(20px * var(--scale-coefficient));
+    height: calc(11px * var(--scale-coefficient));
+    top: 0;
+    right: 0;
+    margin-left: 0;
+}
+
+#unionHUD .street .left {
+    width: calc(20px * var(--scale-coefficient));
+    height: calc(11px * var(--scale-coefficient));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+}
+
+#unionHUD .timebankmicro {
+    width: calc(100px * var(--scale-coefficient));
+    height: calc(43px * var(--scale-coefficient));
+    position: absolute;
+    right: calc(112px * var(--scale-coefficient));
+    bottom: calc(28px * var(--scale-coefficient));
+    box-sizing: border-box;
+    color: #FFFFFF;
+	font-style: normal;
+	font-weight: 500;
+	text-align: left;
+}
+
+#unionHUD .timebankmicro .date  {
+	font-size: calc(12px * var(--scale-coefficient));
+	padding-bottom: calc(7px * var(--scale-coefficient));
+}
+
+#unionHUD .timebankmicro .talrashabank  {
+	font-size: calc(12px * var(--scale-coefficient));
+	color: #FBB82E;
+}
+
+#unionHUD .timebankmicroimg{
+    width: calc(21px * var(--scale-coefficient));
+    height: calc(21px * var(--scale-coefficient));
+	margin-top: calc(-39px * var(--scale-coefficient));
+	margin-left: calc(-27px * var(--scale-coefficient));
+}
+
+#unionHUD .timebankmicrobankimg {
+    width: calc(21px * var(--scale-coefficient));
+    height: calc(21px * var(--scale-coefficient));
+	margin-top: calc(-1px * var(--scale-coefficient));
+	margin-left: calc(-27px * var(--scale-coefficient));
+}
+
+#unionHUD .timebankmicro .talrashamicro  {
+	margin-top: calc(-46px * var(--scale-coefficient));
+	margin-left: calc(110px * var(--scale-coefficient));
+	font-size: calc(12px * var(--scale-coefficient));
+	color: #FBB82E;
+}
+
+#unionHUD .timebankmicro .da {
+    width: calc(66px * var(--scale-coefficient));
+    height: calc(51px * var(--scale-coefficient));
+}
+
+#unionHUD .timebankmicro .off {
+    width: calc(66px * var(--scale-coefficient));
+    height: calc(51px * var(--scale-coefficient));
+}
+
+#unionHUD .onlineinfo {
+    width: calc(210px * var(--scale-coefficient));
+    height: calc(159px * var(--scale-coefficient));
+    position: absolute;
+    right: calc(10px * var(--scale-coefficient));
+    top: calc(6px * var(--scale-coefficient));
+    box-sizing: border-box;
+	font-weight: 500;
+	text-align: center;
+    color: #FFFFFF;
+}
+
+#unionHUD .onlineinfo .domain {
+	font-family: TalRashaTTRegular;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+#unionHUD .onlineinfo .domain b {
+	font-weight: 800;
+}
+
+#unionHUD .infolabel .online  {
+	font-size: calc(13px * var(--scale-coefficient));
+	text-align: left;
+	position: relative;
+	top: calc(21px * var(--scale-coefficient));
+	right: calc(123px * var(--scale-coefficient));
+}
+
+#unionHUD .infolabel  {
+	font-size: calc(13px * var(--scale-coefficient));
+	text-align: left;
+	padding-bottom: calc(10px * var(--scale-coefficient));
+}
+
+#unionHUD .onlineinfoimg{
+    width: calc(13px * var(--scale-coefficient));
+    height: calc(13px * var(--scale-coefficient));
+	margin-top: calc(-17px * var(--scale-coefficient));
+	margin-left: calc(75px * var(--scale-coefficient));
+}
+
+#unionHUD .streetinfo {
+    width: calc(210px * var(--scale-coefficient));
+    height: calc(43px * var(--scale-coefficient));
+    position: absolute;
+    left: calc(387px * var(--scale-coefficient));
+    bottom: calc(30px * var(--scale-coefficient));
+    box-sizing: border-box;
+	font-weight: 500;
+    color: #FFFFFF;
+	text-align: left;
+}
+
+#unionHUD .infostreet{
+	font-size: calc(16px * var(--scale-coefficient));
+	color: #FBB82E;
+	font-weight: bold;
+}
+
+#unionHUD .infostreet .talrasha{
+	font-weight: 500;
+	font-size: calc(14px * var(--scale-coefficient));
+	color: #FFFFFF;
+	width: 280px;
+}
+
+#unionHUD .streetinfoimg{
+    width: calc(32px * var(--scale-coefficient));
+    height: calc(32px * var(--scale-coefficient));
+	margin-top: calc(-33px * var(--scale-coefficient));
+	margin-left: calc(-46px * var(--scale-coefficient));
+}
+
+#unionHUD .infomoney  {
+	top: calc(695px * var(--scale-coefficient));
+	right: calc(-500px * var(--scale-coefficient));
+	position: relative;
+	font-size: calc(12px * var(--scale-coefficient));
+	width: 50px;
+	height: 43px;
+	font-weight: 500;
+}
+
+#unionHUD .maininfo {
+    width: calc(210px * var(--scale-coefficient));
+    height: calc(159px * var(--scale-coefficient));
+    position: absolute;
+    right: calc(31px * var(--scale-coefficient));
+    top: calc(252px * var(--scale-coefficient));
+    box-sizing: border-box;
+    font-size: calc(12px * var(--scale-coefficient));
+    line-height: calc(14px * var(--scale-coefficient));
+    color: #FFFFFF;
+}
+
+#unionHUD .maininfo .time svg {
+    width: calc(18px * var(--scale-coefficient));
+    height: calc(21px * var(--scale-coefficient));
+    position: relative;
+    top: calc(5px * var(--scale-coefficient));
+    margin-right: calc(10px * var(--scale-coefficient));
+}
+
+#unionHUD .maininfo .cash svg {
+    width: calc(19px * var(--scale-coefficient));
+    height: calc(18px * var(--scale-coefficient));
+    position: relative;
+    top: calc(5px * var(--scale-coefficient));
+    margin-right: calc(9px * var(--scale-coefficient));
+}
+
+#unionHUD .maininfo .bank svg {
+    width: calc(20px * var(--scale-coefficient));
+    height: calc(16px * var(--scale-coefficient));
+    position: relative;
+    top: calc(5px * var(--scale-coefficient));
+    margin-right: calc(8px * var(--scale-coefficient));
+}
+
+#unionHUD .maininfo .online  {
+    margin-top: calc(5px * var(--scale-coefficient));
+    margin-left: calc(21px * var(--scale-coefficient));
+}
+
+#unionHUD .maininfo .time  {
+    margin-left: calc(21px * var(--scale-coefficient));
+}
+
+#unionHUD .maininfo .bank  {
+    margin-left: calc(10px * var(--scale-coefficient));
+    margin-top: calc(-90px * var(--scale-coefficient));
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#unionHUD .maininfo .line {
+    width: calc(151px * var(--scale-coefficient));
+    height: calc(0.5px * var(--scale-coefficient));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 2.98%, rgba(255, 255, 255, 0) 2.99%, rgba(255, 255, 255, 0.7) 41.52%, rgba(255, 255, 255, 0) 78.49%);
+    margin-top: calc(2px * var(--scale-coefficient));
+    position: relative;
+    margin-left: calc(44px * var(--scale-coefficient));
+	top: calc(160px * var(--scale-coefficient));
+}
+
+#unionHUD .maininfo .bottom-block {
+    display: flex;
+}
+
+#unionHUD .maininfo .mic {
+    width: calc(25px * var(--scale-coefficient));
+    height: calc(25px * var(--scale-coefficient));
+    margin-top: calc(8px * var(--scale-coefficient));
+    margin-left: calc(30px * var(--scale-coefficient));
+}
+
+#unionHUD .maininfo .sim {
+    width: calc(15px * var(--scale-coefficient));
+    height: calc(15px * var(--scale-coefficient));
+    margin-top: calc(14px * var(--scale-coefficient));
+    margin-left: calc(15px * var(--scale-coefficient));
+    margin-right: calc(3px * var(--scale-coefficient));
+}
+
+#unionHUD .maininfo .info {
+    margin-top: calc(9px * var(--scale-coefficient));
+    margin-left: calc(3px * var(--scale-coefficient));
+}
+
+#unionHUD .maininfo .info .label {
+    color: #FFFFFF; 
+}
+
+#unionHUD .maininfo .info .text {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+#unionHUD .help{
+    width: calc(210px * var(--scale-coefficient));
+    height: calc(315px * var(--scale-coefficient));
+    left: calc(20px * var(--scale-coefficient));
+    position: absolute;
+    top: 53%;
+    transform: translate(0, -50%);
+    box-sizing: border-box;
+    padding-top: calc(22px * var(--scale-coefficient));
+    padding-left: calc(17px * var(--scale-coefficient));
+    padding-right: calc(30px * var(--scale-coefficient));
+}
+
+#unionHUD .help .key {
+    width: 100%;
+    height: calc(17px * var(--scale-coefficient));
+    margin-bottom: calc(6px * var(--scale-coefficient));
+    display: flex;
+    position: relative;
+	left: calc(-117px * var(--scale-coefficient));
+}
+
+#unionHUD .help span {
+    float: left;
+    font-weight: 500;
+    font-size: calc(12px * var(--scale-coefficient));
+    line-height: calc(14px * var(--scale-coefficient));
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+#unionHUD .help .keyimg {
+    float: right;
+    width: calc(24px * var(--scale-coefficient));
+    height: calc(24px * var(--scale-coefficient));
+	top: calc(-10px * var(--scale-coefficient));
+	margin-right: calc(10px * var(--scale-coefficient));
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: calc(5px * var(--scale-coefficient));
+    display: flex;
+    justify-content: center;
+	font-weight: bold;
+    align-items: center;
+font-size: calc(14px * var(--scale-coefficient));
+line-height: calc(18px * var(--scale-coefficient));
+/* identical to box height */
+
+
+color: #FFFFFF;
+position: absolute;
+right: 0;
+z-index: -1;
+}
+
+#unionHUD .help .keyimg.alt {
+    font-size: calc(9px * var(--scale-coefficient));
+
+}
+
+#unionHUD .help .keyimg svg {
+    width: calc(9px * var(--scale-coefficient));
+    height: calc(10px * var(--scale-coefficient));
+}
+
+
+#unionHUD .disabled.left svg:nth-of-type(1) {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: calc(-38px * var(--scale-coefficient));
+    transform: scaleX(-1);
+}
+#unionHUD .disabled.left svg:nth-of-type(2) {
+    transform: rotate(0deg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+#unionHUD  .disabled svg:nth-of-type(1) {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: calc(-38px * var(--scale-coefficient));
+    transform: scaleX(1);
+}
+#unionHUD .disabled svg:nth-of-type(2) {
+    transform: rotate(-180deg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+#unionHUD  .disabled.hud svg:nth-of-type(1) {
+    top: calc(320px * var(--scale-coefficient));
+}
+#unionHUD .disabled.hud svg:nth-of-type(2) {
+    top: calc(320px * var(--scale-coefficient));
+}
+
+#unionHUD  .disabled.left label {
+    left: 0;
+}
+
+#unionHUD .disabled svg:nth-of-type(1) {
+    transform: scaleX(1);
+}
+
+#unionHUD  .disabled svg:nth-of-type(2) {
+    transform: rotate(180deg);
+}
+
+#unionHUD .svg_one {
+    width: calc(30px * var(--scale-coefficient));
+    height: calc(100px * var(--scale-coefficient));
+}
+
+#unionHUD .svg_two {
+    width: calc(24px * var(--scale-coefficient));
+    height: calc(24px * var(--scale-coefficient));
+}
+

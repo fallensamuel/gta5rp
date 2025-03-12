@@ -1,0 +1,450 @@
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+#houseMenu {
+    font-family: TalRashaTTRegular;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#houseMenu .talrashabghousemenu {
+	position: absolute;
+	width: calc(1922px * var(--scale-coefficient));
+	height: calc(1082px * var(--scale-coefficient));
+	left: calc(-316px * var(--scale-coefficient));
+	top: calc(-109px * var(--scale-coefficient));
+	background: url(../talrasha_image/talrasha_selector_character/talrasha_bg_shadow.png) no-repeat, radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0.01%, rgba(0, 0, 0, 0.6) 0.02%, rgba(0, 0, 0, 0.8) 100%);
+	z-index: -1;
+}
+
+
+#houseMenu .house-header, #houseMenu .house-menu-header {
+    background-color: black;
+    text-align: center;
+    width: calc(1289px * var(--scale-coefficient));
+    height: calc(97px * var(--scale-coefficient));
+    color: #fff;
+    font-size: calc(30px * var(--scale-coefficient));
+	background: rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+     position: relative;
+}
+
+
+#houseMenu .house-header a, #houseMenu .house-menu-header a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#houseMenu .house-green-color {
+    color: #06ca5a;
+}
+
+#houseMenu .house-red-color {
+    color: #ca0606;
+}
+
+
+
+#houseMenu .house-body {
+    position: relative;
+	background: rgba(255, 255, 255, 0.1);
+    width: calc(1289px * var(--scale-coefficient));
+    height: calc(766px * var(--scale-coefficient));
+	backdrop-filter: blur(1px);
+}
+
+#houseMenu .house-stats {
+    position: relative;
+    top: calc(10px * var(--scale-coefficient));
+}
+
+#houseMenu .left-block {
+        position: absolute;
+    left: calc(660px * var(--scale-coefficient));
+    top: calc(50px * var(--scale-coefficient));
+}
+
+#houseMenu .left-block a {
+        color: rgba(255, 255, 255, 0.75);
+    font-size: calc(22px * var(--scale-coefficient));
+    text-transform: none;
+    position: relative;
+        line-height: calc(40px * var(--scale-coefficient));
+}
+
+
+
+#houseMenu .left-block .white-color {
+    color: #fff;
+    font-size: calc(22px * var(--scale-coefficient));
+        line-height: calc(36px * var(--scale-coefficient));
+	left: calc(300px * var(--scale-coefficient));
+	position: absolute;
+	width: calc(300px * var(--scale-coefficient));
+    text-align: right;
+}
+
+#houseMenu .green-color {
+    color: #06ca5a;
+    font-weight: 600;
+}
+
+#houseMenu .left-bottom-block {
+    position: absolute;
+    padding: calc(59px * var(--scale-coefficient));
+    bottom: calc(315px * var(--scale-coefficient));
+    right: calc(100px * var(--scale-coefficient));
+    font-size:calc(30px * var(--scale-coefficient));
+    color: white;
+}
+
+#houseMenu .left-bottom-block .price-container {
+        display: flex;
+    align-items: center;
+    margin-bottom: calc(13px * var(--scale-coefficient));
+}
+
+
+#houseMenu .price {
+    font-size: calc(24px * var(--scale-coefficient));
+    color: #0ca80b;
+}
+
+
+
+#houseMenu .buy-button {
+    width: calc(393px * var(--scale-coefficient));
+    height: calc(68px * var(--scale-coefficient));
+	background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: calc(22px * var(--scale-coefficient));
+    border-radius: calc(10px * var(--scale-coefficient));
+        display: flex;
+    justify-content: center;
+    align-items: center;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+#houseMenu .buy-button:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+
+#houseMenu .right-block {
+        padding: calc(20px * var(--scale-coefficient));
+}
+
+#houseMenu .right-block .button {
+    position: relative;
+    left: calc(55px * var(--scale-coefficient));
+    border-radius: calc(10px * var(--scale-coefficient));
+    margin-bottom: calc(27px * var(--scale-coefficient));
+    background: rgba(255, 255, 255, 0.1);
+    width: calc(443px * var(--scale-coefficient));
+    height: calc(68px * var(--scale-coefficient));
+    font-size: calc(22px * var(--scale-coefficient));
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+}
+
+#houseMenu .right-block .button:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+#houseMenu .right-block .button.pledged {
+	position: absolute;
+    top: 0;
+    left: calc(643px * var(--scale-coefficient));
+}
+
+#houseMenu .right-block .button.pledgedtwo {
+	position: absolute;
+    top: 94;
+    left: calc(643px * var(--scale-coefficient));
+}
+
+#houseMenu .right-block .button .svg-cont {
+     width: calc(68px * var(--scale-coefficient));
+    height: calc(68px * var(--scale-coefficient));
+    min-width: calc(68px * var(--scale-coefficient));
+    min-height: calc(68px * var(--scale-coefficient));
+    border-radius: calc(10px * var(--scale-coefficient));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#houseMenu .right-block .button a {
+    width: -webkit-fill-available;
+    text-align: left;
+	padding-left: 20px;
+}
+
+
+#houseMenu .right-block .img-class {
+    height: calc(378px * var(--scale-coefficient));
+    width: calc(553px * var(--scale-coefficient));
+	border-radius: calc(10px * var(--scale-coefficient));
+}
+
+
+#houseMenu .right-block .button img {
+    position: absolute;
+    left: calc(35px * var(--scale-coefficient));
+    padding-top: calc(6px * var(--scale-coefficient));
+}
+
+
+
+#houseMenu .right-block .button span {
+    transition: 0.25s;
+    position: absolute;
+    width: calc(5px * var(--scale-coefficient));
+    height: 100%;
+    background: #ffffff00;
+    z-index: 0;
+    left: 0px;
+    transform: translateX(0px);
+}
+
+#houseMenu .right-block .disabled-button:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#houseMenu .right-block .disabled-button {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#houseMenu .right-block .disabled-button span {
+    display: none;
+}
+
+#houseMenu .house-unowned .button:hover span {
+    transition: 0.25s;
+    background: #06ca5a;
+    transform: translateX(calc(-7px * var(--scale-coefficient)));
+}
+
+#houseMenu .house-owned .button:hover span {
+    transition: 0.25s;
+    background: #ca0606;
+    transform: translateX(calc(-7px * var(--scale-coefficient)));
+}
+
+#houseMenu .house-plan {
+    text-align: center;
+}
+
+#houseMenu .house-plan img {
+    padding-top: calc(15px * var(--scale-coefficient));
+}
+
+#houseMenu .house-plan .backbutton {
+    transition: 0.6s;
+    width: calc(220px * var(--scale-coefficient));
+    height: calc(36px * var(--scale-coefficient));
+    background: #12ae52;
+    color: #fff;
+    right: calc(11px * var(--scale-coefficient));
+    bottom: calc(11px * var(--scale-coefficient));
+    position: absolute;
+    text-align: center;
+}
+
+#houseMenu .house-plan .backbutton a {
+    font-size: calc(15px * var(--scale-coefficient));
+    font-weight: 600;
+    text-transform: uppercase;
+    top: calc(6px * var(--scale-coefficient));
+}
+
+#houseMenu .house-plan .backbutton:hover {
+    transition: 0.6s;
+    background: #06ca5a;
+}
+
+#houseMenu .house-menu {
+    padding: calc(10px * var(--scale-coefficient));
+}
+
+#houseMenu .house-menu-border {
+    position: absolute;
+    width: calc(573px * var(--scale-coefficient));
+    height: calc(722px * var(--scale-coefficient));
+	border-radius: calc(5px * var(--scale-coefficient));
+}
+
+#houseMenu .modern-container {
+        display: flex;
+    right: calc(26px * var(--scale-coefficient));
+    position: absolute;
+}
+
+#houseMenu .house-modern {
+    width: calc(320px * var(--scale-coefficient));
+    text-align: center;
+}
+
+#houseMenu .house-control {
+    width: calc(320px * var(--scale-coefficient));
+    text-align: center;
+}
+
+#houseMenu .house-modern a, #houseMenu .house-control a {
+   /*color: rgba(255, 255, 255, 0.75);*/
+    font-size: calc(24px * var(--scale-coefficient));
+	pointer-events: none;
+}
+
+#houseMenu .house-control a svg {
+	margin-right: calc(10px * var(--scale-coefficient));
+    position: relative;
+    top: calc(3px * var(--scale-coefficient));
+}
+
+#houseMenu .house-modern .label, #houseMenu .house-control .label {
+    height: calc(57px * var(--scale-coefficient));
+        display: flex;
+    justify-content: center;
+    align-items: center;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+#houseMenu .house-modern .label, #houseMenu .house-control .label.a {
+    /*border-right: calc(2px * var(--scale-coefficient)) solid black;*/
+}
+
+
+#houseMenu .house-control .button {
+        margin-bottom: calc(22px * var(--scale-coefficient));
+    /* background: rgba(255, 255, 255, 0.9); */
+    width: calc(300px * var(--scale-coefficient));
+    height: calc(63px * var(--scale-coefficient));
+    border-radius: calc(10px * var(--scale-coefficient));
+    background: rgba(255, 255, 255, 0.1);
+    /* text-transform: uppercase; */
+    /* text-align: left; */
+    display: flex;
+    align-items: center;
+    position: relative;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+#houseMenu .house-control .button:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+#houseMenu .house-control .button a {
+    font-size: calc(20px * var(--scale-coefficient));
+        position: absolute;
+    left: calc(71px * var(--scale-coefficient));
+}
+
+#houseMenu .house-control.nalog .button a {
+	left: calc(71px * var(--scale-coefficient));
+}
+
+#houseMenu .house-control .button svg {
+        position: absolute;
+    left: calc(23px * var(--scale-coefficient));
+	pointer-events: none;
+}
+
+
+#houseMenu .house-control-buttons {
+        margin-top: calc(32px * var(--scale-coefficient));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#houseMenu .house-control.nalog .balance.first {
+	 margin-top: calc(30px * var(--scale-coefficient));
+}
+
+#houseMenu .house-control.nalog .balance {
+	color: rgba(255, 255, 255, 0.75);
+    font-size: calc(25px * var(--scale-coefficient));
+    text-align: center;
+	margin-top: calc(10px * var(--scale-coefficient));
+}
+
+#houseMenu .house-control.nalog .vipstatus {
+	color: rgba(255, 255, 255, 0.75);
+    font-size: calc(20px * var(--scale-coefficient));
+    margin-top: calc(76px * var(--scale-coefficient));
+}
+
+#houseMenu .house-control.nalog .button.custom {
+	 margin-top: calc(85px * var(--scale-coefficient));
+}
+
+#houseMenu .house-modern-buttons {
+    margin-top: calc(32px * var(--scale-coefficient));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#houseMenu .big-button {
+    width: calc(310px * var(--scale-coefficient));
+    height: calc(148px * var(--scale-coefficient));
+     border-radius: calc(10px * var(--scale-coefficient));
+        background: rgba(255, 255, 255, 0.1);
+    margin-bottom: calc(22px * var(--scale-coefficient));
+        display: flex;
+    flex-direction: column;
+        align-items: center;
+		    color: rgba(255, 255, 255, 0.75);
+}
+
+#houseMenu .big-button:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 12px rgb(255 255 255 / 25%);
+	color: #FFFFFF;
+}
+
+
+#houseMenu .big-button a {
+    margin-top: calc(24px * var(--scale-coefficient));
+    font-size: calc(20px * var(--scale-coefficient));
+}
+
+#houseMenu .big-button svg {
+    margin-top: calc(23px * var(--scale-coefficient));
+    }
+
+
+
+#houseMenu .big-button-disabled {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#houseMenu .big-button-disabled:hover {
+    background: rgba(255, 255, 255, 0.7);
+}

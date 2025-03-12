@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,800');
+#medPass {
+    background-image: url(../img/medicCerf/bg.png);
+    width: 39.62962962962963vh;
+    height: 60.46296296296296vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#medPass .userPic img {
+    position: relative;
+    left: 11.85185185185185vh;
+    top: 11.85185185185185vh;
+
+    width: 15.74074074074074vh;
+    height: 15.74074074074074vh;
+}
+#medPass .info .Name {
+    font-size: 1.666666666666667vh;
+    color: #222222;
+
+    position: relative;
+    top: 15.98vh;
+    text-align: center;
+}
+#medPass .info .Rank {
+    font-size: 1.666666666666667vh;
+    color: #222222;
+
+    position: relative;
+    top: 19.5vh;
+    text-align: center;
+}
+#medPass .info .ID {
+    font-size: 2.222222222222222vh;
+    color: #222222;
+
+    position: relative;
+    top: 35.240741vh;
+    text-align: center;
+    font-weight: 800;
+}

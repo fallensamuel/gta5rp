@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="killList">
+        <div v-cloak="v-cloak" v-for="kill in list">
+        <div class="log">
+            <span class="killer"
+                  :style="{background: kill.color}"
+            >{{kill.killer}}</span>
+            <span class="img-list">
+                <img src="img/bullet.png" style="margin-right: 20px;">
+                <img src="img/skull.png" style="position:absolute; margin-left: -15px;">
+            </span>
+            <span class="death"
+                  :style="{background: kill.colorTwo}"
+            >{{kill.player}}</span>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.9"></script>
+    <script src="talrasha_source/talrasha_capture_kill_list.js"></script>
+</body>
+</html>

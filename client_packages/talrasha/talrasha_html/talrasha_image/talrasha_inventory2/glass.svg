@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 27" width="42" height="27">
+	<defs>
+		<image width="42" height="27" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAbCAYAAAAK5R1TAAAE80lEQVRYR72Y248UVRDGf3W6exaEZWenZ1mIXBQlEJBoEEwkoKhEsoCJd5REQVBIBPfFv8IX7xckGhMForiJBPH2AAkRwwMoMRLdVbwghOv0LAouy0yfOqZnd8nO3pyBxX7tqq++/k5VnaoWhnzSkzHeEqAOIyNxegibbwHc0H4VvPXDu0EWoq4DXAHP30Xx9PeDecrgkJmJ+LIWx2FEfwVfiPUMRK0V0KjApH4Svj8ZbIyTRoS5iHxCMXdgIOdBiE4YiencgOgRbH5bBVGv3MTPzANZQuy/CqdO9wUcmGiQvRWry9AxL8AfnVfOokIEEzYj/ImNtldG1GTXIdr+v6nZwypRVeVOdOTLcOxCb7IDKNowDmOfQc02yLVVqMUwmaXTGG8tnuzum6v9iXrh/TgZh+Y2ATpMDCqH8TLLcaauO/4lvz5ErxuBOb8e4w4SR7srRx9Oy4apGH0QdVshf7QHuZxokJ2NdYvReCP81T6c4avAEkymGTG/YXOfDkzUC1eCxNjcliqAh9/Ub7gDtXPQ/GtAMQnQS9GkiHQNaj6CM4eHP3o1iElRmefwzOcUc9+WE/UaluDsVDT/OmCrgb0qtl7mUZxJ9xRVt6KNozBxM0a/Jm7fe1UCVw2anozvrybWd5Ki6iIahHNxspRYX4T8312YjaNAxxNQC9K/TUnR4QLBFUcjXidFcxbiGgI/KLlL0VJIdZAqjEb9OoTzSBzjAtOfszMU7UWwJ8qK2ITPIhxPbqqEqMGE6xB3pnsyAr9hAarzIZlsZLA06JmgRmHIgBRQd6KbhEGkgNPxGMagEgH/AHEp3sBPwqUWkUPY3BelIkoEtNyLBpuEYOzNWLsMtZvh7BG8+ibELATzGbFpBe2A2APXp+eKA0/BH0Fgr8XqYkR+xKZ2QcEj0JlYWYSRvcTSCjYZ56Q/TsLat1AICFJTsNqEyBFs9AGk6zD+GgwHBD9chDIXrXkF4lp8XY+x2yi0H6oqrfzsXTidgs2/W/LzMo+ASVXf6mpD/JpmjG2h0N6GCZ/HmG8ExjZi4hWIOQ3OKwWx0ftVkUyMU/WziM19CEfBdeJkGsbtJ85/VTVWMlQrN4F0Ijhsakv3cWYm4JkmxF0Pbs9lgt8DsgBHG2gBx0yE1subwLLT8N1qnGvDmo8hd64877xwFUjU++qqWA0vfKLUHXputS5VpqHR21UPN0F2DtbNQ6M3uwuw982U5FX4ALigehXq6jHeU+V7T20Wk1qLrzuqz/dS15mFRm/17GflinYV1gw0Su7Yyhc4L/s4zmXR6I0y9bzsYzgXditTDd6KrlrJbe050T4tp34SxjyJ0lLxEpdMXM49RMxmiH4qT5XaLH7NBhzfYXM7Kkuj0ulswJMvKUb7ByFaaivLcXIjWvMSHO8YEjwIb8ORpMsO4vy+gW3D6fiswrEPG+38zznCyzyNk2vQaCNQGJwoyQZ6YU1pl1dJKu7n/gTG3oBn5yPMQGjp/eUDk22cgm9XoprHd7sohL/A4YvltpmJGLMUXBr13oPTp3q/H2yvT+FlH0aYjtPfweQQLZa+FJdBzASUk6juhPyxyo40ncbzm0qY6k4iLle6dkXOEuf2UNp83e1o4UM4l+uLOcQPiGRYabgFq/PAhd2DiUU4gacHKbT/UFXBXYqcnEY8GydJzx7RNSOwHaLk5JKCG7Do/gU8VPQqiupjwwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Инвентарь персонаж">
+		<g id="Man">
+			<g id="Иконки">
+				<use id="очки" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+			</g>
+		</g>
+	</g>
+</svg>

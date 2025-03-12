@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Hud Capture Page</title>
+    <link rel="stylesheet" href="talrasha_css/talrasha_capture_hud.css">
+</head>
+<body>
+  <div id="app">
+    <div class="hud_notify" style="display: none;" id="hudNotify">
+        <span class="notify" ></span>
+    </div>
+      <div class="hud_capture" style="display: none;" id="hudCapt">
+     <div class="block_global">
+        <span class="hud_faction" id="prot-name">F</span>
+        <div class="block">
+            <span class="hud_time" id="time">00:00</span>
+            <span class="hud_count_deff" id="deff-count">0</span>
+            <span class="hud_img">
+                <img src="talrasha_image/talrasha_deff.png" alt="" style="margin-right: 25px;">
+                <img src="talrasha_image/talrasha_battle.png" alt="">
+            </span>
+            <span class="hud_count_battle" id="battle-count">0</span>
+        </div>
+        <span class="hud_faction2" id="forw-name">B</span>
+    </div>  
+    </div>
+  </div>
+
+  <script src="talrasha_source/talrasha_capture_hud.js"></script>
+</body>
+</html>

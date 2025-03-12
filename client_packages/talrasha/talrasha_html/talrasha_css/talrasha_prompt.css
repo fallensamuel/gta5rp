@@ -1,0 +1,107 @@
+@font-face {
+    font-family: LONDONSIXTY;
+    src: url(../talrasha_font/talrasha_chalet/Chalet-LondonNineteenSixty.woff);
+}
+
+@font-face {
+	font-family: TalRashaTTBold;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Bold.ttf)
+}
+
+@font-face {
+	font-family: TalRashaTTRegular;
+	src: url(../talrasha_font/talrasha_ttnorms/TTNorms-Regular.ttf)
+}
+
+
+#prompt {
+    font-family: TalRashaTTRegular;
+    color: white;
+    width: 420px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+}
+
+#prompt .header {
+    height: 41px;
+    line-height: 41px;
+    padding-left: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+	
+	background: linear-gradient(89.79deg, rgba(255, 6, 6, 0.15) -2.2%, rgba(255, 0, 0, 0.15) 53.72%);
+	
+    /* position: absolute;
+    left: 11px;
+    top: 107px;
+    width: 420px;
+    height: 41px;
+    z-index: 3; */
+}
+
+#prompt .text {
+    height: 42px;
+    /* background-color: #00000075; */
+    line-height: 42px;
+    padding-left: 16px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #FFFFFF;
+
+
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    /* opacity: 0.749;
+    position: absolute;
+    left: 11px;
+    top: 148px;
+    width: 420px;
+    height: 42px;
+    z-index: 4; */
+
+}
+
+#prompt span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+    /* box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5); */
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.2);
+    /* font: 18px/48px LONDONSIXTY; */
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    line-height: 38px;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+#prompt spann {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0px -10px;
+    /* box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5); */
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.2);
+    /* font: 18px/48px LONDONSIXTY; */
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    line-height: 38px;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+#prompt spantext {
+    height: 42px;
+    /* background-color: #00000075; */
+    line-height: 42px;
+    padding-left: 30px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #FFFFFF;
+}

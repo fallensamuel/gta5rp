@@ -1,0 +1,283 @@
+@font-face {
+    font-family: Ubuntu;
+    src: local(Ubuntu), url("../talrasha_font/talrasha_ubuntu/Ubuntu.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: local(Montserrat), url("../talrasha_font/talrasha_montserrat/Montserrat.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Norwester;
+    src: local(Norwester), url("../talrasha_font/talrasha_norwester/Norwester.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Numans;
+    src: local(Norwester), url("../talrasha_font/talrasha_numans/Numans.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OrbitronMedium';
+    src: url("../talrasha_font/talrasha_orbitron_medium/Orbitron_Medium.ttf");
+}
+
+@font-face {
+    font-family: 'AGAalenBold';
+    src: url("../talrasha_font/talrasha_player_menu/AGAalenBold.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url("../talrasha_font/talrasha_player_menu/OPENSANS-SEMIBOLD.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url("../talrasha_font/talrasha_player_menu/OPENSANS-BOLD.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    src: url("../talrasha_font/talrasha_player_menu/OPENSANS-EXTRABOLD.ttf");
+}
+
+@font-face {
+    font-family: 'Agencyb';
+    src: url("../talrasha_font/talrasha_player_menu/AGENCYB.ttf");
+}
+
+@font-face {
+    font-family: 'Agencyr';
+    src: url("../talrasha_font/talrasha_player_menu/AGENCYR.ttf");
+}
+
+@font-face {
+    font-family: 'Aqua Grotesque';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aqua Grotesque'), url('../talrasha_font/talrasha_aqua/aqua.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('OpenSans-Regular'), url('../talrasha_font/talrasha_open_sans/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('OpenSans-Semibold'), url('../talrasha_font/talrasha_open_sans/OpenSans-Semibold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('OpenSans-Bold'), url('../talrasha_font/talrasha_open_sans/OpenSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Chalet-LondonNineteenSixty';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Chalet-LondonNineteenSixty'), url('../talrasha_font/talrasha_chalet/Chalet-LondonNineteenSixty.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Chalet-ParisNineteenSixty';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Chalet-LondonNineteenSixty'), url('../talrasha_font/talrasha_chalet/Chalet-ParisNineteenSixty.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'FuturaBookC';
+	src: url('../talrasha_font/talrasha_futura/futurabookc.eot'); /* IE 9 Compatibility Mode */
+	src: url('../talrasha_font/talrasha_futura/futurabookc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../talrasha_font/talrasha_futura/futurabookc.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../talrasha_font/talrasha_futura/futurabookc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../talrasha_font/talrasha_futura/futurabookc.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../talrasha_font/talrasha_futura/futurabookc.svg#futurabookc') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'FuturaDemiC';
+	src: url('../talrasha_font/talrasha_futura/futurademic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../talrasha_font/talrasha_futura/futurademic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../talrasha_font/talrasha_futura/futurademic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../talrasha_font/talrasha_futura/futurademic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../talrasha_font/talrasha_futura/futurademic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../talrasha_font/talrasha_futura/futurademic.svg#futurademic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'FuturaMediumC';
+	src: url('../talrasha_font/talrasha_futura/futuramediumc.eot'); /* IE 9 Compatibility Mode */
+	src: url('../talrasha_font/talrasha_futura/futuramediumc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../talrasha_font/talrasha_futura/futuramediumc.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../talrasha_font/talrasha_futura/futuramediumc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../talrasha_font/talrasha_futura/futuramediumc.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../talrasha_font/talrasha_futura/futuramediumc.svg#futuramediumc') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'FuturaLightC';
+	src: url('../talrasha_font/talrasha_futura/futuralightc.eot'); /* IE 9 Compatibility Mode */
+	src: url('../talrasha_font/talrasha_futura/futuralightc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../talrasha_font/talrasha_futura/futuralightc.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../talrasha_font/talrasha_futura/futuralightc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../talrasha_font/talrasha_futura/futuralightc.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../talrasha_font/talrasha_futura/futuralightc.svg#futuralightc') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Regular.eot');
+    src: local('SF UI Display Regular'), local('SFUIDisplay-Regular'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Regular.woff2') format('woff2'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Regular.woff') format('woff'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Ultralight.eot');
+    src: local('SF UI Display Ultralight'), local('SFUIDisplay-Ultralight'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Ultralight.eot?#iefix') format('embedded-opentype'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Ultralight.woff2') format('woff2'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Ultralight.woff') format('woff'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Ultralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Heavy.eot');
+    src: local('SF UI Display Heavy'), local('SFUIDisplay-Heavy'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Heavy.woff2') format('woff2'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Heavy.woff') format('woff'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Black.eot');
+    src: local('SF UI Display Black'), local('SFUIDisplay-Black'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Black.woff2') format('woff2'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Black.woff') format('woff'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Semibold.eot');
+    src: local('SF UI Display Semibold'), local('SFUIDisplay-Semibold'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Semibold.woff2') format('woff2'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Semibold.woff') format('woff'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Bold.eot');
+    src: local('SF UI Display Bold'), local('SFUIDisplay-Bold'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Bold.woff2') format('woff2'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Bold.woff') format('woff'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Thin.eot');
+    src: local('SF UI Display Thin'), local('SFUIDisplay-Thin'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Thin.woff2') format('woff2'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Thin.woff') format('woff'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Medium.eot');
+    src: local('SF UI Display Medium'), local('SFUIDisplay-Medium'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Medium.woff2') format('woff2'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Medium.woff') format('woff'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Light.eot');
+    src: local('SF UI Display Light'), local('SFUIDisplay-Light'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Light.woff2') format('woff2'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Light.woff') format('woff'),
+        url('../talrasha_font/talrasha_sfui_display/SFUIDisplay-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tahoma';
+	src: url('../talrasha_font/talrasha_tahoma/Tahoma.eot');
+	src: local('Tahoma'),
+		url('../talrasha_font/talrasha_tahoma/Tahoma.eot?#iefix') format('embedded-opentype'),
+		url('../talrasha_font/talrasha_tahoma/Tahoma.woff') format('woff'),
+		url('../talrasha_font/talrasha_tahoma/Tahoma.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
